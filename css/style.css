@@ -1,0 +1,353 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-style: normal;
+}
+h1 {
+    text-shadow: 2px 2px #444;
+}
+h2 {
+    padding-bottom: 30px;
+}
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+input {
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 0;
+}
+textarea {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 0;
+}
+
+/*
+ * Colors
+ */
+.bgc-blue {
+    background: #508BC5;
+}
+.bgc-dark-blue {
+    background: #3270A5;
+}
+.bgc-green {
+    background: #218826;
+}
+.bgc-black {
+    background: #000;
+}
+.bgc-grey {
+    background: #E6E6E6;
+}
+.bgc-grey-light {
+    background: #F4F4F4;
+}
+.txt-green {
+    color: #218826;
+}
+.txt-grey {
+    color: #606060;
+}
+.txt-cyan,
+.txt-cyan:hover,
+.txt-cyan:active {
+    color: #00FFFF;
+}
+
+footer a,
+footer a:hover,
+.button,
+.button:hover,
+.button:focus,
+.conan-header .nav-link,
+.conan-header .nav-link:hover,
+#contact-us .button-subscribe,
+#contact-us .button-subscribe:hover {
+    color: #fff;
+}
+
+/*
+ * General
+ */
+.section-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-content h2 {
+    font-weight: 300;
+}
+.footer-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.seperator {
+    width: 100%;
+    max-width: 100%;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/*
+ * Sections
+ */
+.conan-header .navbar-brand {
+    max-width: 200px;
+}
+.conan-header .navbar-nav {
+    align-items: center;
+}
+.conan-header .navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+.conan-header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.social-icons {
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+#hero {
+    color: #fff;
+}
+.hero-description {
+    font-weight: 300;
+    font-size: 1.25em;
+}
+a.github-link,
+a.github-link:hover {
+    text-decoration: underline;
+}
+.dl-version {
+    font-size: 0.8em;
+}
+.button-get-started {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#our-users .user-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#our-users ul {
+    padding-left: 20px;
+}
+#our-users ul li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+#our-users ul li::before {
+    position: absolute;
+    color: #218826;
+    content: "\2022";
+    margin-left: -1em;
+}
+#our-users h3 {
+    padding-bottom: 20px;
+}
+
+
+#community {
+    position: relative;
+    color: #fff;
+}
+#community .community-bg-img {
+    display: none;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+
+
+#testimonials .testimonial-content {
+    max-width: 430px;
+    margin: 0 auto;
+}
+#testimonials .testimonial-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+#testimonials .quote {
+    font-style: italic;
+    margin-top: 1rem;
+}
+#testimonials .slick-next,
+#testimonials .slick-prev {
+    display: none;
+}
+
+
+
+#contact-us {
+    color: #fff;
+}
+#contact-us h2 {
+    padding-bottom: 0;
+}
+.cu-form-container {
+    padding-top: 40px;
+}
+    .cu-form-left {
+        text-align: center;
+    }
+    .cu-form-right {
+        text-align: center;
+    }
+    #contact-us .cu-input-div {
+        padding-bottom: 17px;
+    }
+    #contact-us input {
+        width: 259px;
+    }
+    #contact-us .button-submit {
+        width: 100%;
+        max-width: 260px;
+    }
+.subscribe-form-container {
+    padding-top: 40px;
+}
+    .subscribe-text {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .button-subscribe {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: -4px;
+    }
+
+
+#terms-and-conditions h2,
+#terms-and-conditions h3,
+#privacy-policy h2,
+#privacy-policy h3 {
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+}
+#terms-and-conditions h3,
+#privacy-policy h3 {
+    font-size: 1.25rem;
+}
+#privacy-policy a {
+    word-break: break-all; /* mobile fix */
+}
+
+
+
+footer {
+    font-size: 14px;
+}
+footer ul {
+    padding-left: 0;
+}
+footer ul li {
+    list-style: none;
+}
+
+/*
+ * Media Queries
+ */
+@media only screen and (min-width: 576px) {
+    /* Bootstrap: sm */
+    .conan-header .navbar-brand {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Bootstrap: md */
+    /*
+     * Sections
+     */
+    .conan-header .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .conan-header .navbar-nav {
+        margin-left: auto;
+        height: 67px;
+    }
+    .conan-header .navbar-expand-md .navbar-nav .nav-download {
+        height: 100%;
+        padding-top: 22px;
+        background: #3270A5;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-download::before,
+    .button-download::before {
+        content: url("../img/download-arrow.png");
+        position: relative;
+        top: 3px;
+        left: -2px;
+    }
+
+
+    .cu-form-left {
+        text-align: right;
+    }
+    .cu-form-right {
+        text-align: left;
+    }
+    #contact-us .button-submit {
+        max-width: 550px;
+    }
+    #testimonials .slick-prev::before {
+        content: url("../img/arrow-left.png");
+        font-size: 45px;
+        color: #000;
+    }
+    #testimonials .slick-next::before {
+        content: url("../img/arrow-right.png");
+        font-size: 45px;
+        color: #000;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Bootstrap: lg */
+    /*
+     * Sections
+     */
+    .conan-header .navbar-brand {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Bootstrap: xl */
+    /*
+     * Sections
+     */
+    .community-bg-img {
+        display: block;
+    }
+}
+
+
