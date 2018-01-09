@@ -183,9 +183,9 @@ a.github-link:hover {
 
 
 #mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 input, #mktoForm_1479 span{
-    display: inline-flex;;
-    margin: 0;
-    padding: 0;
+    display: inline-flex;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #mktoForm_1479 input{
@@ -201,9 +201,10 @@ a.github-link:hover {
     margin-left: 0px !important;
 }
 
-#mktoForm_1479 .mktoButtonWrap .mktoSimple button{
+#mktoForm_1479 button{
     padding: 0 5px 0 5px;
     height: 32px;
+    margin-left: 20px;
 }
 
 #community a, #community a:hover {
