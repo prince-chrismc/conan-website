@@ -190,12 +190,21 @@ a.github-link:hover {
 
 #mktoForm_1479 input{
     padding: 5px;
+    height: 32px;
 }
 
 #mktoForm_1479 label{
-    width: 0px;
+    width: 0px !important;
 }
 
+#mktoForm_1479 .mktoButtonWrap .mktoSimple{
+    margin-left: 0px !important;
+}
+
+#mktoForm_1479 .mktoButtonWrap .mktoSimple button{
+    padding: 0 5px 0 5px;
+    height: 32px;
+}
 
 #community a, #community a:hover {
     color: #3CE540;
