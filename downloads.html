@@ -76,7 +76,7 @@
         </div>
         <div class="row justify-content-center bggrey pb-4">
             <div class="boxed-content col-lg-4">
-                <a ng-href="https://pypi.python.org/pypi/conan" analytics-on="" analytics-event="pypi_homepage" analytics-category="download_installer" href="https://pypi.python.org/pypi/conan">
+                <a ng-href="https://pypi.python.org/pypi/conan" data-os="pypi_homepage" analytics-on="" analytics-event="pypi_homepage" analytics-category="download_installer" href="https://pypi.python.org/pypi/conan">
                     <img src="img/pypi.png" height="112px">
                     <h2 class="boxed-content-title mt-4">Any OS: From <b>pypi</b></h2>
                     <p> $ pip install conan</p>
@@ -84,7 +84,7 @@
             </div>
             <div class="boxed-content col-lg-4">
                 <i class="fa fa-github"></i>
-                <a href="https://github.com/conan-io/conan" target="_new" analytics-on="" analytics-event="github" analytics-category="download_installer">
+                <a href="https://github.com/conan-io/conan" target="_new" data-os="github" analytics-on="" analytics-event="github" analytics-category="download_installer">
                     <h2 class="boxed-content-title mt-4">Any OS: From source</h2>
                     <p>Go to github</p></a>
             </div>
@@ -97,14 +97,14 @@
         <div class="row justify-content-center mb-5">
             <div class="boxed-content col-lg-2"><i class="fa fa-apple"></i>
                 <h2 class="boxed-content-title mt-4">OSx: From Homebrew</h2> <a
-                        ng-href="http://brew.sh/" analytics-on=""
+                        ng-href="http://brew.sh/" analytics-on="" data-os="brew_homepage"
                         analytics-event="brew_homepage" analytics-category="download_installer"
                         href="http://brew.sh/"><p> $ brew install conan</p></a>
             </div>
 
             <div class="boxed-content col-lg-2"><a
                     ng-href="https://github.com/conan-io/conan/releases/download/1.0.0-beta.5/conan-ubuntu-64_1_0_0-beta_5.deb"
-                    analytics-on="" analytics-event="ubuntu" analytics-category="download_installer"
+                    analytics-on="" data-os="ubuntu" analytics-event="ubuntu" analytics-category="download_installer"
                     href="https://github.com/conan-io/conan/releases/download/1.0.0-beta.5/conan-ubuntu-64_1_0_0-beta_5.deb">
                 <div class="boxed-content"><i class="fa fa-linux"></i>
                     <h2 class="boxed-content-title mt-4">Ubuntu/Debian x64 installer</h2>
@@ -114,10 +114,10 @@
                 <div class="boxed-content"><i class="fa fa-windows"></i>
                     <h2 class="boxed-content-title mt-4">Windows installer</h2>
                     <p><a href="https://github.com/conan-io/conan/releases/download/1.0.0-beta.5/conan-win-32_1_0_0-beta_5.exe"
-                    analytics-on="" analytics-event="windows"
+                    analytics-on="" analytics-event="windows" data-os="windows"
                     analytics-category="download_installer">Download x86_64</a></p>
                     <p><a href="https://github.com/conan-io/conan/releases/download/1.0.0-beta.5/conan-win-64_1_0_0-beta_5.exe"
-                    analytics-on="" analytics-event="windows"
+                    analytics-on="" analytics-event="windows" data-os="windows"
                     analytics-category="download_installer">Download x86</a></p>
                 </div>
             </div>
@@ -125,6 +125,7 @@
                 <div class="boxed-content"><a ng-href="https://aur.archlinux.org/packages/conan/"
                                               analytics-on="" analytics-event="arch_aur_homepage"
                                               analytics-category="download_installer"
+                                              data-os="arch_aur_homepage"
                                               href="https://aur.archlinux.org/packages/conan/"> <img
                         src="img/arch.png" height="120px">
                     <h2 class="boxed-content-title mt-4"><b>Arch AUR</b> package</h2>
