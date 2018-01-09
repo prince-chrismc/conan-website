@@ -24,9 +24,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://app-lon04.marketo.com/js/forms2/js/forms2.min.js"></script>
 </head>
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header class="conan-header bgc-blue">
     <div class="container header-container">
         <nav class="navbar navbar-expand-md">
@@ -371,17 +375,17 @@
             <div class="row cu-form-container">
                 <div class="cu-form-left col-md-6">
                         <div class="cu-input-div">
-                            <input type="text" placeholder="Name *">
+                            <input type="text" name="Name" placeholder="Name *">
                         </div>
                         <div class="cu-input-div">
-                            <input type="email" placeholder="Email *">
+                            <input type="email" name="email" placeholder="Email *">
                         </div>
                         <div class="cu-input-div">
-                            <input type="text" placeholder="Subject">
+                            <input type="text" name="subject" placeholder="Subject">
                         </div>
                 </div>
                 <div class="cu-form-right col-md-6">
-                    <textarea name="" id="" cols="28" rows="5" placeholder="Message *"></textarea>
+                    <textarea name="message" id="" cols="28" rows="5" placeholder="Message *"></textarea>
                 </div>
 
                 <div class="text-center cu-form-submit-container col-md-12">
@@ -392,7 +396,8 @@
         <div class="row subscribe-form-container">
             <div class="col text-center">
                 <span class="subscribe-text">SIGN UP FOR RELEASE UPDATES:</span>
-                <input type="text" placeholder="EMAIL">
+                <form id="mktoForm_1479"></form>
+                <script>MktoForms2.loadForm("//app-lon04.marketo.com", "256-FNZ-187", 1479);</script>
                 <a href="#" class="button button-subscribe bgc-green">>></a>
             </div>
         </div>
