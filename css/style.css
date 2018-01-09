@@ -181,6 +181,11 @@ a.github-link:hover {
     bottom:0;
 }
 
+#community a, #community a:hover {
+    color: #ccd46c;
+    font-weight: bold;
+}
+
 
 #testimonials .testimonial-content {
     max-width: 430px;
