@@ -1,0 +1,43 @@
+
+#downloads{
+    color: #606060;
+}
+
+#downloads h1{
+    text-shadow: none; // 2px 2px #b1afaf;
+}
+
+#downloads h2{
+    margin-bottom: -1.5rem!important;
+}
+
+.boxed-content>i {
+    font-size: 7em;
+    color: #3270a5;
+}
+
+.boxed-content p {
+    font-size: 0.8em;
+    text-transform: none;
+    margin-bottom: 0.2rem;
+}
+
+.boxed-content .boxed-content-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boxed-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.boxed-content a, .boxed-content a:hover {
+    color: #606060;
+}
+
+.bggrey{
+    background-color: #F4F4F4;
+}
