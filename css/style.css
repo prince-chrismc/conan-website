@@ -189,8 +189,12 @@ a.github-link:hover {
 }
 
 #mktoForm_1479 input{
-    padding: 5px;
+    padding: 5px !important;
     height: 32px;
+}
+
+#mktoForm_1479 .mktoAsterix{
+    display: none;
 }
 
 #mktoForm_1479 label{
@@ -202,7 +206,7 @@ a.github-link:hover {
 }
 
 #mktoForm_1479 button{
-    padding: 0 5px 0 5px;
+    padding: 0 5px 0 5px !important;
     height: 32px;
     margin-left: 20px;
 }
