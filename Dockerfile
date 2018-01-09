@@ -11,9 +11,7 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common
 RUN sudo add-apt-repository ppa:chris-lea/node.js 
 RUN sudo apt-get update
-RUN sudo apt-get -y install nodejs
-RUN sudo npm install -g npm
-
+RUN sudo apt-get -y install curl
 
 ENV USER conan
 USER conan
@@ -25,4 +23,7 @@ ENV HOME /home/conan
 RUN mkdir /home/conan/web
 ADD * /home/conan/web/
 WORKDIR /home/conan/web
-RUN sudo npm install --production
+RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+RUN sudo apt-get install -y nodejs
+RUN echo $(npm --version)
+RUN npm install
