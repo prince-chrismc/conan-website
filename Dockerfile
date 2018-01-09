@@ -18,12 +18,18 @@ USER conan
 WORKDIR /home/conan
 ENV HOME /home/conan
 
-
-# Copy files and change permission
-RUN mkdir /home/conan/web
-ADD * /home/conan/web/
-WORKDIR /home/conan/web
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 RUN sudo apt-get install -y nodejs
 RUN echo $(npm --version)
+
+# Copy files and change permission
+RUN mkdir /home/conan/web
+ADD css /home/conan/web/css
+ADD img /home/conan/web/img
+ADD js /home/conan/web/js
+ADD slick /home/conan/web/slick
+ADD *.html /home/conan/web/
+ADD web.js /home/conan/web/
+ADD package.json /home/conan/web/
+WORKDIR /home/conan/web
 RUN npm install
