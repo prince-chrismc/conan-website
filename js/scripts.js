@@ -2,7 +2,7 @@ $(document).ready(function(){
     //Activate user slider
     $('.our-users-slider').slick({
         variableWidth: true,
-        speed: 10000,
+        speed: 5000,
         autoplay: true,
         autoplaySpeed: 0,
         infinite: true,
