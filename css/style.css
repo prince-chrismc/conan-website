@@ -225,6 +225,7 @@ a.github-link:hover {
     #contact-us .button-submit {
         width: 100%;
         max-width: 260px;
+        border: none;
     }
 .subscribe-form-container {
     padding-top: 40px;
