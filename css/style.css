@@ -37,7 +37,8 @@ textarea {
 .bgc-dark-blue {
     background: rgba(50, 112, 165, 1); /* #3270A5 */
 }
-a.bgc-dark-blue:hover {
+a.bgc-dark-blue:hover,
+button.bgc-dark-blue:hover {
     background: rgba(50, 112, 165, 0.5);
 }
 .bgc-green {
