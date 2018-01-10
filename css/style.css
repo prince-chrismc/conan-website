@@ -35,10 +35,16 @@ textarea {
     background: #508BC5;
 }
 .bgc-dark-blue {
-    background: #3270A5;
+    background: rgba(50, 112, 165, 1); /* #3270A5 */
+}
+a.bgc-dark-blue:hover {
+    background: rgba(50, 112, 165, 0.5);
 }
 .bgc-green {
-    background: #218826;
+    background: rgba(33, 136, 38, 1); /* #218826 */
+}
+a.bgc-green:hover {
+    background: rgba(33, 136, 38, 0.5);
 }
 .bgc-black {
     background: #000;
@@ -126,9 +132,16 @@ footer a:hover,
 #hero {
     color: #fff;
 }
+#hero h1 {
+    margin-bottom: 30px;
+}
 .hero-description {
     font-weight: 300;
     font-size: 1.25em;
+    margin-bottom: 50px;
+}
+.hero-gitbub-row {
+    margin-top: 40px;
 }
 a.github-link,
 a.github-link:hover {
@@ -164,6 +177,7 @@ a.github-link:hover {
     margin-left: -1em;
 }
 #our-users h3 {
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -180,7 +194,13 @@ a.github-link:hover {
     right:0;
     bottom:0;
 }
-
+#community a {
+    color: #3CE540;
+    color: rgba(60, 229, 64, 1);
+}
+#community a:hover {
+    color: rgba(60, 229, 64, 0.5);
+}
 
 #mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 input, #mktoForm_1479 span{
     display: inline-flex;
@@ -212,14 +232,9 @@ a.github-link:hover {
     margin-left: 20px;
 }
 
-#community a, #community a:hover {
-    color: #3CE540;
-    font-weight: bold;
-}
-
 
 #testimonials .testimonial-content {
-    max-width: 430px;
+    max-width: 550px;
     margin: 0 auto;
 }
 #testimonials .testimonial-title {
@@ -229,10 +244,6 @@ a.github-link:hover {
 #testimonials .quote {
     font-style: italic;
     margin-top: 1rem;
-}
-#testimonials .slick-next,
-#testimonials .slick-prev {
-    display: none;
 }
 
 
@@ -315,6 +326,13 @@ footer ul li {
     .conan-header .navbar-brand {
         max-width: 300px;
     }
+
+    .button-download {
+        margin-right: 10px;
+    }
+    .button-get-started {
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -345,6 +363,10 @@ footer ul li {
         left: -2px;
     }
 
+    #testimonials .section-content {
+        padding-top: 115px;
+    }
+
 
     .cu-form-left {
         text-align: right;
@@ -354,6 +376,10 @@ footer ul li {
     }
     #contact-us .button-submit {
         max-width: 550px;
+    }
+    #testimonials .slick-prev,
+    #testimonials .slick-next {
+        top: 28%;
     }
     #testimonials .slick-prev::before {
         content: url("../img/arrow-left.png");
@@ -375,6 +401,10 @@ footer ul li {
     .conan-header .navbar-brand {
         max-width: 100%;
     }
+
+    #hero {
+        height: 428px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -382,7 +412,7 @@ footer ul li {
     /*
      * Sections
      */
-    .community-bg-img {
+    #community .community-bg-img {
         display: block;
     }
 }
