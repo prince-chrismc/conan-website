@@ -415,6 +415,9 @@ footer ul li {
     #community .community-bg-img {
         display: block;
     }
+    footer ul {
+        padding-left: 50px;
+    }
 }
 
 
