@@ -161,8 +161,6 @@ a.github-link:hover {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 #our-users ul {
     padding-left: 20px;
@@ -186,6 +184,7 @@ a.github-link:hover {
 #community {
     position: relative;
     color: #fff;
+    box-shadow: inset 0px 11px 15px -9px #333, inset 0px -11px 8px -10px #333;
 }
 #community .community-bg-img {
     display: none;
@@ -195,12 +194,16 @@ a.github-link:hover {
     right:0;
     bottom:0;
 }
+#community .community-content {
+    font-size: 15px;
+    font-weight: 300;
+}
 #community a {
-    color: #3CE540;
-    color: rgba(60, 229, 64, 1);
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
 }
 #community a:hover {
-    color: rgba(60, 229, 64, 0.5);
+    text-decoration: underline !important;
 }
 
 #mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 input, #mktoForm_1479 span{
@@ -237,6 +240,7 @@ a.github-link:hover {
 #testimonials .testimonial-content {
     max-width: 550px;
     margin: 0 auto;
+    text-align: center;
 }
 #testimonials .testimonial-title {
     font-size: 22px;
