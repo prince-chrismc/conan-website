@@ -19,6 +19,14 @@ $(document).ready(function(){
         autoplay: false,
         dots: false,
         speed: 800,
-        accessibility: true
+        accessibility: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 });
