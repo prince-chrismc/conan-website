@@ -379,17 +379,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row cu-form-container">
                 <div class="cu-form-left col-md-6">
                         <div class="cu-input-div">
-                            <input type="text" name="Name" placeholder="Name *">
+                            <input type="text" name="Name" placeholder="Name *" required>
                         </div>
                         <div class="cu-input-div">
-                            <input type="email" name="email" placeholder="Email *">
+                            <input type="email" name="email" placeholder="Email *" required>
                         </div>
                         <div class="cu-input-div">
-                            <input type="text" name="subject" placeholder="Subject">
+                            <input type="text" name="subject" placeholder="Subject *" required>
                         </div>
+                        <input type="text" name="_gotcha" style="display:none" />
                 </div>
                 <div class="cu-form-right col-md-6">
-                    <textarea name="message" id="" cols="28" rows="5" placeholder="Message *"></textarea>
+                    <textarea name="message" id="" cols="28" rows="5" placeholder="Message *" required></textarea>
                 </div>
 
                 <div class="text-center cu-form-submit-container col-md-12">
