@@ -2,9 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif !important;
     font-style: normal;
 }
-h1 {
-    text-shadow: 2px 2px #444;
-}
 h2 {
     padding-bottom: 30px;
 }
@@ -135,6 +132,7 @@ footer a:hover,
 }
 #hero h1 {
     margin-bottom: 30px;
+    text-shadow: 2px 2px #444;
 }
 .hero-description {
     font-weight: 300;
