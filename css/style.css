@@ -44,6 +44,9 @@ button.bgc-dark-blue:hover {
 a.bgc-green:hover {
     background: rgba(33, 136, 38, 0.5);
 }
+.bgc-green-ce {
+    background: #2ABC55;
+}
 .bgc-black {
     background: #000;
 }
@@ -103,6 +106,12 @@ footer a:hover,
     padding: 10px 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+.spacer-80 {
+    height: 80px;
+}
+.spacer-30 {
+    height: 30px;
 }
 
 /*

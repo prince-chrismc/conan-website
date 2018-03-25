@@ -20,13 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script src="https://use.fontawesome.com/dc136a1c2e.js"></script>
 </head>
 <body>
 
@@ -64,77 +57,135 @@
 
 
 <section id="downloads">
-    <div class="container section-content">
-        <div class="row justify-content-center">
-            <h1 class="txt-grey">Downloads: Version 1.1.1</h1>
+    <div class="container ">
+        <div class="row justify-content-center section-content">
+            <h1 class="txt-grey">Downloads</h1>
         </div>
-    </div>
-    <div class="container text-center">
-        <div class="row justify-content-center bggrey pt-4">
-            <div class="boxed-content">
-                <strong>Recommended <small><br>Valid for any OS or architecture!</small></strong>
-            </div>
-        </div>
-        <div class="row justify-content-center bggrey pb-4">
-            <div class="boxed-content col-lg-4">
-                <a ng-href="https://pypi.python.org/pypi/conan" data-action="download_installer" data-os="pypi_homepage" analytics-on="" analytics-event="pypi_homepage" analytics-category="download_installer" href="https://pypi.python.org/pypi/conan">
-                    <img src="img/pypi.png" height="112px">
-                    <h2 class="boxed-content-title mt-4">Any OS: From <b>pypi</b></h2>
-                    <p> $ pip install conan</p>
-                </a>
-            </div>
-            <div class="boxed-content col-lg-4">
-                <i class="fa fa-github"></i>
-                <a href="https://github.com/conan-io/conan" target="_new" data-action="download_installer" data-os="github" analytics-on="" analytics-event="github" analytics-category="download_installer">
-                    <h2 class="boxed-content-title mt-4">Any OS: From source</h2>
-                    <p>Go to github</p></a>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4 mb-4">
-            <div class="boxed-content">
-                <strong>Other installers <small><br>(may have limitations, please use the Pypi installer if possible)</small></strong>
-            </div>
-        </div>
-        <div class="row justify-content-center mb-5">
-            <div class="boxed-content col-lg-2"><i class="fa fa-apple"></i>
-                <h2 class="boxed-content-title mt-4">OSx: From Homebrew</h2> <a
-                        ng-href="http://brew.sh/" analytics-on="" data-action="download_installer" data-os="brew_homepage"
-                        analytics-event="brew_homepage" analytics-category="download_installer"
-                        href="http://brew.sh/"><p> $ brew install conan</p></a>
-            </div>
+        <div class="row">
+            <div class="col-lg-9 download-conan-client">
+                <div class="row">
+                    <div class="col text-center pb-2 version">Conan 1.1.1</div>
+                </div>
+                <div class="row mr-md-0">
+                    <div class="col bgc-blue text-center text-white download-sub-header">
+                        <h2>Conan Client</h2>
+                    </div>
+                </div>
 
-            <div class="boxed-content col-lg-2"><a
-                    analytics-on="" data-action="download_installer" data-os="ubuntu" analytics-event="ubuntu" analytics-category="download_installer"
-                    href="https://bintray.com/conan/installers/download_file?file_path=conan-ubuntu-64_1_1_1.deb">
-                <div class="boxed-content"><i class="fa fa-linux"></i>
-                    <h2 class="boxed-content-title mt-4">Ubuntu/Debian x64 installer</h2>
-                    <p>Download</p></div>
-            </a></div>
-            <div class="boxed-content col-lg-2">
-                <div class="boxed-content"><i class="fa fa-windows"></i>
-                    <h2 class="boxed-content-title mt-4">Windows installer</h2>
-                    <p><a href="https://bintray.com/conan/installers/download_file?file_path=conan-win-64_1_1_1.exe"
-                    analytics-on="" analytics-event="windows" data-action="download_installer" data-os="windows"
-                    analytics-category="download_installer">Download x86_64</a></p>
-                    <p><a href="https://bintray.com/conan/installers/download_file?file_path=conan-win-32_1_1_1.exe"
-                    analytics-on="" analytics-event="windows" data-action="download_installer" data-os="windows"
-                    analytics-category="download_installer">Download x86</a></p>
+                <div class="row justify-content-center bggrey mr-md-0 pt-4">
+                    <div class="boxed-content">
+                        <strong>Recommended <small><br>Valid for any OS or architecture!</small></strong>
+                    </div>
+                </div>
+                <div class="row justify-content-center bggrey mr-md-0 pb-4">
+                    <div class="boxed-content col-lg-4">
+                        <a ng-href="https://pypi.python.org/pypi/conan" data-action="download_installer" data-os="pypi_homepage" analytics-on="" analytics-event="pypi_homepage" analytics-category="download_installer" href="https://pypi.python.org/pypi/conan">
+                            <img src="img/pypi.png" height="112px">
+                            <h2 class="boxed-content-title mt-4">Any OS: From <b>pypi</b></h2>
+                            <p> $ pip install conan</p>
+                        </a>
+                    </div>
+                    <div class="boxed-content col-lg-4">
+                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/conan-io/conan" target="_new" data-action="download_installer" data-os="github" analytics-on="" analytics-event="github" analytics-category="download_installer">
+                            <h2 class="boxed-content-title mt-4">Any OS: From source</h2>
+                            <p>Go to github</p></a>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4 mb-4">
+                    <div class="boxed-content">
+                        <strong>Other installers <small><br>(may have limitations, please use the Pypi installer if possible)</small></strong>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-5">
+                    <div class="boxed-content col-lg-3"><i class="fa fa-apple"></i>
+                        <h2 class="boxed-content-title mt-4">OSx: From Homebrew</h2> <a
+                                ng-href="http://brew.sh/" analytics-on="" data-action="download_installer" data-os="brew_homepage"
+                                analytics-event="brew_homepage" analytics-category="download_installer"
+                                href="http://brew.sh/"><p> $ brew install conan</p></a>
+                    </div>
+
+                    <div class="boxed-content col-lg-3"><a
+                            analytics-on="" data-action="download_installer" data-os="ubuntu" analytics-event="ubuntu" analytics-category="download_installer"
+                            href="https://bintray.com/conan/installers/download_file?file_path=conan-ubuntu-64_1_1_1.deb">
+                        <div class="boxed-content"><i class="fa fa-linux"></i>
+                            <h2 class="boxed-content-title mt-4">Ubuntu/Debian x64 installer</h2>
+                            <p>Download</p></div>
+                    </a></div>
+                    <div class="boxed-content col-lg-3">
+                        <div class="boxed-content"><i class="fa fa-windows"></i>
+                            <h2 class="boxed-content-title mt-4">Windows installer</h2>
+                            <p><a href="https://bintray.com/conan/installers/download_file?file_path=conan-win-64_1_1_1.exe"
+                            analytics-on="" analytics-event="windows" data-action="download_installer" data-os="windows"
+                            analytics-category="download_installer">Download x86_64</a></p>
+                            <p><a href="https://bintray.com/conan/installers/download_file?file_path=conan-win-32_1_1_1.exe"
+                            analytics-on="" analytics-event="windows" data-action="download_installer" data-os="windows"
+                            analytics-category="download_installer">Download x86</a></p>
+                        </div>
+                    </div>
+                    <div class="boxed-content col-lg-3">
+                        <div class="boxed-content"><a ng-href="https://aur.archlinux.org/packages/conan/"
+                                                      analytics-on="" analytics-event="arch_aur_homepage"
+                                                      analytics-category="download_installer"
+                                                      data-os="arch_aur_homepage"
+                                                      data-action="download_installer"
+                                                      href="https://aur.archlinux.org/packages/conan/"> <img
+                                src="img/arch.png" height="120px">
+                            <h2 class="boxed-content-title mt-4"><b>Arch AUR</b> package</h2>
+                            <p> $ pacaur -S conan</p></a>
+                            <p></p></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 download-artifactory-ce">
+                <div class="row">
+                    <div class="col text-center pb-2 version">Artifactory 5.10.0</div>
+                </div>
+                <div class="row">
+                    <div class="col bgc-green-ce text-center text-white download-sub-header">
+                        <h2>Artifactory for C/C++ CE</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 bggrey">
+                        <div class="spacer-80 d-none d-lg-block"></div>
+                        <div class="spacer-30 d-block d-lg-none"></div>
+                        <div class="c-plus-plus text-center">
+                            <a href="https://jfrog.com/open-source/" target="_blank">
+                                <img src="img/c++.svg" class="img-c-plusplus" alt="Artifactory for C/C++ CE" />
+                            </a>
+                            <div class="zip-install">
+                                <img src="img/zip.svg" class="img-zip-file" alt="zip file">
+                                ZIP INSTALL
+                            </div>
+                        </div>
+                        <div class="seperator-b"></div>
+                    </div>
+                    <div class="col-12 text-center bggrey download-artifactory-additional">
+                        <div class="mb-4 mt-4 download-option download-docker-img">
+                            <img src="img/logo/docker-vertical-362.png" class="img-fluid" alt="">
+                            <div>Pull Latest Artifactory Docker Image</div>
+                        </div>
+                        <div class="mb-4 download-option download-debian">
+                            <img src="img/logo/debian.svg" class="img-fluid" alt="">
+                            <div>Download Debian</div>
+                        </div>
+                        <div class="mb-4 download-option download-rpm">
+                            <img src="img/logo/rpm-120.png" class="img-fluid" alt="">
+                            <div>Download RPM</div>
+                        </div>
+                        <div class="mb-4 artifactory-terms-conditions">
+                            <a href="https://jfrog.com/aritfactory-community-edition-c-c-eula/"
+                               class="text-dark artifactory-tc-link"
+                               target="_blank">Terms and conditions</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="boxed-content col-lg-2">
-                <div class="boxed-content"><a ng-href="https://aur.archlinux.org/packages/conan/"
-                                              analytics-on="" analytics-event="arch_aur_homepage"
-                                              analytics-category="download_installer"
-                                              data-os="arch_aur_homepage"
-                                              data-action="download_installer"
-                                              href="https://aur.archlinux.org/packages/conan/"> <img
-                        src="img/arch.png" height="120px">
-                    <h2 class="boxed-content-title mt-4"><b>Arch AUR</b> package</h2>
-                    <p> $ pacaur -S conan</p></a>
-                    <p></p></div>
-            </div>
         </div>
-    </div>
+        <div class="row pt-4"></div>
+    </div><!-- .container -->
 
 </section>
 
@@ -175,6 +226,13 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script src="https://use.fontawesome.com/dc136a1c2e.js"></script>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
