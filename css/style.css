@@ -164,6 +164,24 @@ a.github-link:hover {
 }
 
 
+
+#artifactory-ce-cta {
+    padding: 8px 0;
+    font-weight: 300;
+}
+.artifactory-read-more-cta:after {
+    content: ">";
+    position: relative;
+    top: 1px;
+    right: 0;
+    padding-left: 5px;
+    transition: right .2s ease-in-out;
+}
+.artifactory-read-more-cta:hover:after {
+    right: -5px;
+}
+
+
 #our-users .user-box {
     margin-left: 20px;
     margin-right: 20px;
