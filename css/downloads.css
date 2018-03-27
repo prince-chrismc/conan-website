@@ -81,6 +81,9 @@
 .download-artifactory-additional img {
     max-width: 50px;
 }
+.download-artifactory-additional .download-docker-img img {
+    max-width: 65px;
+}
 #downloads .download-option {
     font-size: 12px;
 }

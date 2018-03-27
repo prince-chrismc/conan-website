@@ -144,7 +144,7 @@
                 </div>
                 <div class="row">
                     <div class="col bgc-green-ce text-center text-white download-sub-header">
-                        <h2>Artifactory for C/C++ CE</h2>
+                        <h2>Artifactory CE for C/C++</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -152,28 +152,43 @@
                         <div class="spacer-80 d-none d-lg-block"></div>
                         <div class="spacer-30 d-block d-lg-none"></div>
                         <div class="c-plus-plus text-center">
-                            <a href="https://jfrog.com/open-source/#conan" target="_blank">
+                            <a href="https://jfrog.com/open-source/#conan"
+                               target="_blank" class="jfrog-artifactory-ce-cta">
                                 <img src="img/c++.svg" class="img-c-plusplus" alt="Artifactory for C/C++ CE" />
                             </a>
                             <div class="zip-install">
+                                <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" targeet="_blank" class="text-dark artifactory-download-zip-cta">
                                 <img src="img/zip.svg" class="img-zip-file" alt="zip file">
-                                ZIP INSTALL
+                                ZIP INSTALL</a>
                             </div>
                         </div>
                         <div class="seperator-b"></div>
                     </div>
                     <div class="col-12 text-center bggrey download-artifactory-additional">
                         <div class="mb-4 mt-4 download-option download-docker-img">
-                            <img src="img/logo/docker-vertical-362.png" class="img-fluid" alt="">
-                            <div>Pull Latest Artifactory Docker Image</div>
+                            <img src="img/logo/docker-vertical-362.png" class="img-fluid" alt="Docker Image">
+                            <div>
+                                <a href="#"
+                                   data-toggle="popover"
+                                   data-content="Copy pull command to clipboard"
+                                   class="text-dark artifactory-docker-image-cta"
+                                   target="_blank"><u>Pull Latest Artifactory Docker Image</u></a>
+                                <input class="to-copy d-none" type="text" value="docker pull docker.bintray.io/jfrog/artifactory-oss">
+                            </div>
                         </div>
                         <div class="mb-4 download-option download-debian">
-                            <img src="img/logo/debian.svg" class="img-fluid" alt="">
-                            <div>Download Debian</div>
+                            <img src="img/logo/debian.svg" class="img-fluid" alt="Debian">
+                            <div><a href="https://api.bintray.com/content/jfrog/artifactory-debs/pool/main/j/jfrog-artifactory-oss-deb/jfrog-artifactory-cpp-ce-$latest.deb;bt_package=jfrog-artifactory-cpp-ce-deb"
+                                    target="_blank"
+                                    class="text-dark artifactory-debian-cta">Debian</a>
+                            </div>
                         </div>
                         <div class="mb-4 download-option download-rpm">
-                            <img src="img/logo/rpm-120.png" class="img-fluid" alt="">
-                            <div>Download RPM</div>
+                            <img src="img/logo/rpm-120.png" class="img-fluid" alt="rpm">
+                            <div><a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm"
+                                    target="_blank"
+                                    class="text-dark artifactory-rpm-cta">Download RPM</a>
+                            </div>
                         </div>
                         <div class="mb-4 artifactory-terms-conditions">
                             <a href="https://jfrog.com/aritfactory-community-edition-c-c-eula/"
