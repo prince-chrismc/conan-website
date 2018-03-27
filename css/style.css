@@ -44,6 +44,9 @@ button.bgc-dark-blue:hover {
 a.bgc-green:hover {
     background: rgba(33, 136, 38, 0.5);
 }
+.bgc-green-ce {
+    background: #2ABC55;
+}
 .bgc-black {
     background: #000;
 }
@@ -104,6 +107,12 @@ footer a:hover,
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.spacer-80 {
+    height: 80px;
+}
+.spacer-30 {
+    height: 30px;
+}
 
 /*
  * Sections
@@ -152,6 +161,24 @@ a.github-link:hover {
 .button-get-started {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+
+
+#artifactory-ce-cta {
+    padding: 8px 0;
+    font-weight: 300;
+}
+.artifactory-read-more-cta:after {
+    content: ">";
+    position: relative;
+    top: 1px;
+    right: 0;
+    padding-left: 5px;
+    transition: right .2s ease-in-out;
+}
+.artifactory-read-more-cta:hover:after {
+    right: -5px;
 }
 
 
