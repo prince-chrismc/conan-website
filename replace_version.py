@@ -33,8 +33,8 @@ def change_version(old_version, new_version):
     replace_in_file("index.html", '<span class="dl-version">%s</span>' % old_version,
                     '<span class="dl-version">%s</span>' % new_version)
 
-    replace_in_file("downloads.html", 'Version %s' % old_version,
-                    'Version %s' % new_version)
+    replace_in_file("downloads.html", ' %s' % old_version,
+                    ' %s' % new_version)
 
     replace_in_file("downloads.html", '_%s' % old_version.replace(".", "_"),
                     '_%s' % new_version.replace(".", "_"))
