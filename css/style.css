@@ -304,6 +304,9 @@ a.github-link:hover {
         max-width: 260px;
         border: none;
     }
+    #contact-us input#terms_cu {
+        width: auto;
+    }
 .subscribe-form-container {
     padding-top: 40px;
 }
