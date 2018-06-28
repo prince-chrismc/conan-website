@@ -275,7 +275,11 @@ a.github-link:hover {
     font-style: italic;
     margin-top: 1rem;
 }
-
+#testimonials #conan-banner img {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+}
 
 
 #contact-us {
