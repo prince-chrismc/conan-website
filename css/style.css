@@ -318,7 +318,7 @@ a.github-link:hover {
 .subscribe-form-container .mktoForm {
     width: 320px !important;
 }
-.subscribe-form-container .mktoForm .mktoFormRow:nth-child(2) {
+.subscribe-form-container .mktoForm .mktoFormRow:nth-child(3) {
     position: relative;
     left: -240px;
     top: 37px;
@@ -328,12 +328,15 @@ a.github-link:hover {
     position: relative;
     left: -340px;
 }
-.mktoForm .mktoFieldDescriptor .mktoLabel {
+.mktoForm .mktoFieldDescriptor label[for=Communications_Opt_In__c] {
     width: 300px !important;
     padding-top: 10px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+}
+.mktoForm label[for=Email] {
+    width: 0px !important;
 }
 .mktoForm .mktoFieldDescriptor .mktoCheckboxList {
     width: 25px !important;
