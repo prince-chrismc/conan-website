@@ -313,6 +313,33 @@ a.github-link:hover {
     }
 .subscribe-form-container {
     padding-top: 40px;
+    padding-bottom: 35px;
+}
+.subscribe-form-container .mktoForm {
+    width: 320px !important;
+}
+.subscribe-form-container .mktoForm .mktoFormRow:nth-child(2) {
+    position: relative;
+    left: -240px;
+    top: 37px;
+    width: 400px;
+}
+.subscribe-form-container .mktoForm .mktoButtonRow {
+    position: relative;
+    left: -340px;
+}
+.mktoForm .mktoFieldDescriptor .mktoLabel {
+    width: 300px !important;
+    padding-top: 10px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.mktoForm .mktoFieldDescriptor .mktoCheckboxList {
+    width: 25px !important;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
 }
     .subscribe-text {
         font-size: 12px;
