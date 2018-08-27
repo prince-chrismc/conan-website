@@ -328,7 +328,7 @@ a.github-link:hover {
     position: relative;
     left: -340px;
 }
-.mktoForm .mktoFieldDescriptor label[for=Communications_Opt_In__c] {
+#mktoForm_1479 .mktoFieldDescriptor label[for=Communications_Opt_In__c] {
     width: 300px !important;
     padding-top: 10px;
     -webkit-box-ordinal-group: 3;
