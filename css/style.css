@@ -488,3 +488,11 @@ footer ul li {
 }
 
 
+p.subtitle{
+    font-size: 0.7em !important;
+}
+
+p.subtitle a, p.subtitle a:hover, p.subtitle a:visited{
+    text-decoration: underline !important;
+
+}
