@@ -231,16 +231,21 @@ a.github-link:hover {
     text-decoration: underline !important;
 }
 
-#mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 input, #mktoForm_1479 span{
+#mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 span{
     display: inline-flex;
     margin: 0 !important;
     padding: 0 !important;
 }
 
 #mktoForm_1479 input{
+    display: inline-flex;
+    margin: 0;
     padding: 5px !important;
     height: 32px;
     width: 220px !important;
+}
+#mktoForm_1479 input[type='checkbox'] {
+    width: auto !important;
 }
 
 #mktoForm_1479 .mktoAsterix{
