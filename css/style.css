@@ -231,16 +231,21 @@ a.github-link:hover {
     text-decoration: underline !important;
 }
 
-#mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 input, #mktoForm_1479 span{
+#mktoForm_1479 div, #mktoForm_1479, #mktoForm_1479 span{
     display: inline-flex;
     margin: 0 !important;
     padding: 0 !important;
 }
 
 #mktoForm_1479 input{
+    display: inline-flex;
+    margin: 0;
     padding: 5px !important;
     height: 32px;
     width: 220px !important;
+}
+#mktoForm_1479 input[type='checkbox'] {
+    width: auto !important;
 }
 
 #mktoForm_1479 .mktoAsterix{
@@ -313,6 +318,36 @@ a.github-link:hover {
     }
 .subscribe-form-container {
     padding-top: 40px;
+    padding-bottom: 35px;
+}
+.subscribe-form-container .mktoForm {
+    width: 320px !important;
+}
+.subscribe-form-container .mktoForm .mktoFormRow:nth-child(3) {
+    position: relative;
+    left: -240px;
+    top: 37px;
+    width: 400px;
+}
+.subscribe-form-container .mktoForm .mktoButtonRow {
+    position: relative;
+    left: -340px;
+}
+#mktoForm_1479 .mktoFieldDescriptor label[for=Communications_Opt_In__c] {
+    width: 300px !important;
+    padding-top: 10px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.mktoForm label[for=Email] {
+    width: 0px !important;
+}
+.mktoForm .mktoFieldDescriptor .mktoCheckboxList {
+    width: 25px !important;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
 }
     .subscribe-text {
         font-size: 12px;
@@ -458,3 +493,21 @@ footer ul li {
 }
 
 
+p.subtitle{
+    font-size: 0.7em !important;
+}
+
+p.subtitle a, p.subtitle a:hover, p.subtitle a:visited{
+    text-decoration: underline !important;
+
+}
+
+.conan-center{
+    margin-left: 30px;
+}
+
+.conan-center span{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 0.9em;
+}

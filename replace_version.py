@@ -29,7 +29,14 @@ def replace_in_file(file_path, search, replace, strict=True):
         handle.write(content)
 
 
-def change_version(old_version, new_version):
+def change_version(new_version):
+    contents = load("index.html")
+    token = '<span class="dl-version">'
+    i = contents.find(token, 1)
+    j = contents[i:].find('</span>', 1) + i
+    old_version = contents[(i + len(token)):j]
+    if "." not in old_version:
+        raise Exception("Last version not found: %s" % old_version)
     replace_in_file("index.html", '<span class="dl-version">%s</span>' % old_version,
                     '<span class="dl-version">%s</span>' % new_version)
 
@@ -44,8 +51,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description='Changes installer version')
-    parser.add_argument('old_version', help='Client old version')
     parser.add_argument('new_version', help='Client new version')
     args = parser.parse_args()
 
-    change_version(args.old_version, args.new_version)
+    change_version(args.new_version)
