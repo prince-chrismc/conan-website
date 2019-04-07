@@ -134,7 +134,9 @@ footer a:hover,
     margin-left: 10px;
     margin-bottom: 5px;
 }
-
+.social-icons .github-star {
+    top: 5px;
+}
 
 #hero {
     color: #fff;
