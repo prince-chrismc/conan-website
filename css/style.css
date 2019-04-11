@@ -134,8 +134,33 @@ footer a:hover,
     margin-left: 10px;
     margin-bottom: 5px;
 }
-.social-icons .github-star {
-    top: 5px;
+.github-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+}
+.github-button:hover .gh-button__stat {
+    color: #4078c0 !important;
+}
+.github-button:hover .gh-button__icon--star {
+    fill: #4078c0;
+}
+.gh-button__stat {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border: 1px solid #d5d5d5;
+    border-left: 0;
+    border-radius: 4px;
+    background: white;
+}
+.gh-button__icon {
+    height: 14px;
+    fill: #333;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #hero {
