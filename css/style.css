@@ -464,6 +464,11 @@ footer ul li {
 
     #testimonials .section-content {
         padding-top: 115px;
+        padding-bottom: 0;
+    }
+
+    .meet-the-conan-team .section-content {
+        padding-top: 0;
     }
 
 
