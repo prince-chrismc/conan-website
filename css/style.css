@@ -543,3 +543,8 @@ p.subtitle a, p.subtitle a:hover, p.subtitle a:visited{
     margin-top: 5px;
     font-size: 0.9em;
 }
+
+.swampup-banner-container {
+   background-color:  #051C2A;
+    border-bottom: 1px solid whitesmoke;
+}
