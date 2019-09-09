@@ -202,9 +202,6 @@ a.github-link:hover {
     height: auto;
     margin-top: -5px;
 }
-.conan-graphic {
-
-}
 .artifactory-read-more-cta:after {
     content: ">";
     position: relative;
