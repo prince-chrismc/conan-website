@@ -195,6 +195,15 @@ a.github-link:hover {
 #artifactory-ce-cta {
     padding: 8px 0;
     font-weight: 300;
+    border-bottom: 1px solid #218826;
+}
+#artifactory-ce-cta .conan-graphic {
+    width: 200px;
+    height: auto;
+    margin-top: -5px;
+}
+.conan-graphic {
+
 }
 .artifactory-read-more-cta:after {
     content: ">";
