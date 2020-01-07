@@ -1,4 +1,4 @@
-FROM nginx:1.16.1
+FROM nginx:1.17.6
 
 # Copy files
-COPY . /etc/nginx/html/
+COPY . /etc/nginx/html
