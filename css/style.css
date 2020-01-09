@@ -193,9 +193,8 @@ a.github-link:hover {
 
 
 #artifactory-ce-cta {
-    padding: 8px 0;
     font-weight: 300;
-    background-color: #1D716B;
+    background-color: #042929;
 }
 #artifactory-ce-cta .conan-graphic {
     width: 200px;
