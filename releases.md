@@ -4,7 +4,7 @@
 
 ## January 13, 2019 - Introducing The New ConanCenter!
 
-When you visit the new ConanCenter, you’ll notice the search bar prominent on the first page. You can use it to search for any package by name or description, and retrieve a list of results showing the package version and number of downloads. 
+When you visit the new ConanCenter, you’ll notice the search bar prominent on the first page. You can use it to search for any package by name and retrieve a list of results showing the package version and number of downloads. 
 You’ll also notice that the new center is focused primarily on package discovery, and meant to help package authors find rich metadata by providing quick access to your Conan packages recipe and configuration information. Each package version has a recipe tab where you can download the recipe as a text file for your project. Package authors can also easily add new packages. Join the [Early Access Program](https://github.com/conan-io/conan-center-index/wiki) on our GitHub repo conan-center-index and make a pull request to recipes. Once approved, those packages are indexed and provided on the new Conan Center UI. 
 
 A few more improvements to the new ConanCenter include:
