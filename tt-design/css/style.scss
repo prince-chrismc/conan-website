@@ -553,6 +553,14 @@ section#downloads {
   }
 } //#downloads
 
+body.privacy-policy {
+  ol, ul {
+    padding-left: 1.5em;
+    margin-top: 10px;
+  }
+}
+
+//resp and other stuff
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba($gray, .5);
   font-family: $main-font;

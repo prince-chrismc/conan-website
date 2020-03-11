@@ -663,6 +663,10 @@ section#downloads .download-questions p {
       margin-left: auto;
       margin-right: auto; } }
 
+body.privacy-policy ol, body.privacy-policy ul {
+  padding-left: 1.5em;
+  margin-top: 10px; }
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(139, 139, 139, 0.5);
