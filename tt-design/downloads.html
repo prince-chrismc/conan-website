@@ -6,19 +6,22 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <title>C/C++ Open Source Package Manager</title>
   <link rel="canonical" href="https://ncamaa.github.io/website" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
 
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <!-- STYLE -->
+  <link rel="stylesheet" href="slick/slick.css" />
+  <link rel="stylesheet" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/scripts.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="downloads">
 
@@ -111,7 +114,7 @@
               <h5>Install with</h5>
               <div class="installers pb-4">
                 <!-- PYTON -->
-                <a href="downloads/conan-pyton.zip" class="cn-box big">
+                <a class="cn-box big" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                   <img src="img/downloads/pyton-small-pack.png" alt="Pyton" class="mr-2">
                   <span>$ pip install conan</span>
                 </a>
@@ -119,19 +122,19 @@
               <h5>Other Installers</h5>
               <div class="installers pb-4">
                 <!-- DARWIN -->
-                <a href="downloads/conan-darwin.zip" class="cn-box small">
+                <a href="https://github.com/Homebrew/homebrew-core/" class="cn-box small">
                   <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
                 </a>
                 <!-- LINUX -->
-                <a href="downloads/conan-linux.zip" class="cn-box small">
+                <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_23_0.deb" class="cn-box small">
                   <img src="img/downloads/linux-small-pack.png" alt="Linux">
                 </a>
                 <!-- WINDOWS -->
-                <a href="downloads/conan-windows.zip" class="cn-box small">
+                <a href="https://dl.bintray.com/conan/installers/conan-win-64_1_23_0.exe" class="cn-box small">
                   <img src="img/downloads/windows-small-pack.png" alt="Windows">
                 </a>
                 <!-- ARCHLINUX -->
-                <a href="downloads/conan-archlinux.zip" class="cn-box small">
+                <a href="https://aur.archlinux.org/packages/conan/" class="cn-box small">
                   <img src="img/downloads/archlinux-small-pack.png" alt="ArchLinux">
                 </a>
               </div>
@@ -174,7 +177,7 @@
               <h5>Download with</h5>
               <div class="installers pb-4">
                 <!-- PYTON -->
-                <a href="downloads/conan-arti-c.zip" class="cn-box big">
+                <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box big">
                   <img src="img/downloads/arti-c-small-pack.png" alt="Artifactory Zip" class="mr-2">
                   <span>Download ZIP for C/C++</span>
                 </a>
@@ -190,7 +193,7 @@
                   <img src="img/downloads/debian-small-pack.png" alt="debian">
                 </a>
                 <!-- RPM -->
-                <a href="downloads/conan-rpm.zip" class="cn-box small">
+                <a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm" class="cn-box small">
                   <img src="img/downloads/rpm-small-pack.png" alt="rpm">
                 </a>
               </div>
@@ -217,10 +220,10 @@
         <h2 class="font-weight-bold pb-3">Questions about Installation?</h2>
         <p>
           Contact the community on
-          <a href="slack.html">
+          <a href="https://cpplang.now.sh/">
             <img src="img/social/slack.svg" alt="slack"> Slack
           </a>
-          or see our <a href="docs.html">
+          or see our <a href="https://docs.conan.io/">
           Docs
           </a>
         </p>

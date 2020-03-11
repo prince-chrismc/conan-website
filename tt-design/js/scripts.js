@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {
     toggleMenu(ham);
   });
 
+  // $('[data-toggle="tooltip"]').tooltip();
 
   //--HOME PAGE--//
   if ( $('body.home').length ) {
@@ -94,8 +95,8 @@ function matchHeight(set) {
 
 //DOWNLOADS MATCH HEIGHT
 function downloadsMatchHeight() {
-  matchHeight(jQuery('.downloads-item-wrapper .text'));
   matchHeight(jQuery('.downloads-item-wrapper .text h4'));
+  matchHeight(jQuery('.downloads-item-wrapper .text'));
   matchHeight(jQuery('.downloads-item-wrapper .text-two'));
   matchHeight(jQuery('.downloads-item-wrapper h3'));
 }
