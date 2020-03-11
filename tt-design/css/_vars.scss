@@ -1,0 +1,17 @@
+$gray: #8B8B8B;
+$blue: #7BA7D3;
+$dark-blue: #2C4257;
+$green: #4CB74A;
+$bright-gray: #EAEBEE;
+$main-font: 'Open Sans', sans-serif;
+
+$xl: '1399.98px';
+$lg: '1199.98px';
+$md: '991.98px';
+$sm: '767.98px';
+$xs: '575.98px';
+$xxs: '478.98px';
+
+@mixin blue-gradient-bg {
+  background: linear-gradient(254.27deg, $dark-blue 51.72%, $blue 98.82%);
+}
