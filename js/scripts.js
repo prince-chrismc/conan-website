@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
         copyToClipboard(textToCopy);
         $(this)
         .tooltip('hide')
-        .attr('data-original-title', "Command Copied")
+        .attr('data-original-title', "Copied!")
         .tooltip('show');
       });
 

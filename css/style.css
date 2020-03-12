@@ -111,7 +111,8 @@
 .tooltip .tooltip-inner {
   background: white;
   color: black;
-  border: 2px solid #e3e4e4; }
+  border: 2px solid #e3e4e4;
+  max-width: 250px; }
 .tooltip .arrow {
   width: 11px;
   height: 11px;
