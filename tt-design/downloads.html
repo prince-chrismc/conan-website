@@ -11,15 +11,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 
   <!-- STYLE -->
-  <link rel="stylesheet" href="slick/slick.css" />
-  <link rel="stylesheet" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- JS -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="slick/slick.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </head>
@@ -114,7 +111,7 @@
               <h5>Install with</h5>
               <div class="installers pb-4">
                 <!-- PYTON -->
-                <a class="cn-box big" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                <a class="cn-box big cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="$ pip install conan">
                   <img src="img/downloads/pyton-small-pack.png" alt="Pyton" class="mr-2">
                   <span>$ pip install conan</span>
                 </a>
@@ -122,19 +119,25 @@
               <h5>Other Installers</h5>
               <div class="installers pb-4">
                 <!-- DARWIN -->
-                <a href="https://github.com/Homebrew/homebrew-core/" class="cn-box small">
+                <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="$ brew install conan">
                   <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
                 </a>
                 <!-- LINUX -->
-                <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_23_0.deb" class="cn-box small">
+                <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_23_0.deb" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/linux-small-pack.png" alt="Linux">
                 </a>
                 <!-- WINDOWS -->
-                <a href="https://dl.bintray.com/conan/installers/conan-win-64_1_23_0.exe" class="cn-box small">
+                <div href="https://dl.bintray.com/conan/installers/conan-win-64_1_23_0.exe" class="cn-box small cn-options" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/windows-small-pack.png" alt="Windows">
-                </a>
-                <!-- ARCHLINUX -->
-                <a href="https://aur.archlinux.org/packages/conan/" class="cn-box small">
+                  <div class="cn-dl-inner position-absolute cn-box">
+                    <!-- Download x86_64 -->
+                    <a class="blue-hover" href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">Download&nbsp;x86_64
+                    <!-- Download x86 -->
+                    <a class="blue-hover" href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe">Download x86</a>
+                  </div>
+                </div>
+                <!-- ARCHLINUX $ yay -S conan-->
+                <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="$ yay -S conan">
                   <img src="img/downloads/archlinux-small-pack.png" alt="ArchLinux">
                 </a>
               </div>
@@ -176,8 +179,8 @@
             <div class="install">
               <h5>Download with</h5>
               <div class="installers pb-4">
-                <!-- PYTON -->
-                <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box big">
+                <!-- ARTIFACTORY ZIP -->
+                <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box big cn-download" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/arti-c-small-pack.png" alt="Artifactory Zip" class="mr-2">
                   <span>Download ZIP for C/C++</span>
                 </a>
@@ -185,15 +188,15 @@
               <h5>Other Installers</h5>
               <div class="installers pb-4">
                 <!-- DOCKER -->
-                <a href="downloads/conan-docker.zip" class="cn-box small">
+                <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="docker pull docker.bintray.io/jfrog/artifactory-cpp-ce">
                   <img src="img/downloads/docker-small-pack.png" alt="Docker">
                 </a>
                 <!-- DEBIAN -->
-                <a href="downloads/conan-debian.zip" class="cn-box small">
+                <a href="downloads/conan-debian.zip" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/debian-small-pack.png" alt="debian">
                 </a>
                 <!-- RPM -->
-                <a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm" class="cn-box small">
+                <a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/rpm-small-pack.png" alt="rpm">
                 </a>
               </div>

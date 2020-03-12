@@ -1,0 +1,36 @@
+$tt-text-color: black;
+$tt-border-color: #e3e4e4;
+$tt-bg-color: white;
+$arrow-border-color: #e3e4e4;
+$arrow-bg-color: white;
+
+.tooltip {
+  .tooltip-inner {
+    background: $tt-bg-color;
+    color: $tt-text-color;
+    border: 2px solid $tt-border-color;
+  }
+  .arrow {
+    width: 11px;
+    height: 11px;
+    border: 2px solid $arrow-border-color;
+    bottom: 1px;
+    &:before {
+      width: 11px;
+      height: 11px;
+      background: $arrow-bg-color;
+      border: 0;
+    }
+  }
+  &.bs-tooltip-top {
+    .arrow {
+      transform: rotate(-135deg);
+    }
+  }
+  &.bs-tooltip-bottom {
+    .arrow {
+      transform: rotate(135deg);
+      top: 2px;
+    }
+  }
+}

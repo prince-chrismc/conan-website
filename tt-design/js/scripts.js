@@ -41,6 +41,48 @@ jQuery(document).ready(function ($) {
 
   } //HOME PAGE
 
+  // DOWNLOADS
+  if ($('body.downloads').length) {
+    // TOOLTIPS
+
+    //cn-copy
+    $('.cn-copy')
+      .attr('data-original-title', "Copy pull command to clipboard")
+      .tooltip()
+      .click(function () {
+        let textToCopy = $(this).data('copy-value');
+        copyToClipboard(textToCopy);
+        $(this)
+        .tooltip('hide')
+        .attr('data-original-title', "Command Copied")
+        .tooltip('show');
+      });
+
+    //cn-options
+    $('.cn-options')
+      .tooltip()
+      .click(function () {
+        $(this)
+          .toggleClass('active');
+        if ($(this).hasClass('active')) {
+          $(this)
+            .tooltip('hide')
+            .attr('data-original-title', "Hide")
+            .tooltip('show');
+        } else {
+          $(this)
+            .tooltip('hide')
+            .attr('data-original-title', "Download")
+            .tooltip('show');
+        }
+
+      });
+
+    $('.cn-download').tooltip();
+
+  }
+
+
 });
 
 jQuery(window).on('load', function () {
@@ -99,4 +141,13 @@ function downloadsMatchHeight() {
   matchHeight(jQuery('.downloads-item-wrapper .text'));
   matchHeight(jQuery('.downloads-item-wrapper .text-two'));
   matchHeight(jQuery('.downloads-item-wrapper h3'));
+}
+
+//copy text to clipboard
+function copyToClipboard(string) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(string).select();
+    document.execCommand("copy");
+    $temp.remove();
 }

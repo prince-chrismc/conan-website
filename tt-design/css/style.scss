@@ -1,6 +1,6 @@
 @import 'hamburger';
 @import 'vars';
-@import 'quick-emmet';
+@import 'bs-tooltip';
 
 @media screen and (min-width: $lg) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -96,6 +96,11 @@ a.big-btn {
 .blue {
   color: $blue;
 }
+.blue-hover {
+  &:hover {
+    color: $blue!important;
+  }
+}
 .bg-blue {
   background-color: $blue;
 }
@@ -103,6 +108,13 @@ a.big-btn {
 .green {
   color: $green;
 }
+
+.green-hover {
+  &:hover {
+    color: $green!important;
+  }
+}
+
 .bg-green {
   background-color: $green;
 }
@@ -477,6 +489,7 @@ section#downloads {
     flex-wrap: wrap;
     margin-left: -2px;
     .cn-box {
+      cursor: pointer;
       background: #fff;
       display: inline-block;
       height: 57px;
@@ -508,6 +521,42 @@ section#downloads {
         max-width: 100%;
         @media screen and (max-width: 768px) {
           font-size: 16px;
+        }
+      }
+      &.cn-options {
+        position: relative;
+        &.active {
+          border: 2px solid $blue;
+          .cn-dl-inner {
+            z-index: 1;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        .cn-dl-inner {
+          z-index: -1;
+          visibility: hidden;
+          opacity: 0;
+          text-align: left;
+          display: block;
+          height: auto;
+          top: 100%;
+          top: calc(100% + 8px);
+          left: -2px;
+          transition: all 0.32s ease;
+          @media screen and (max-width: $sm) {
+            left: unset;
+            right: 0;
+          }
+          &:hover {
+            border: 2px solid #e3e4e4;
+          }
+          a {
+            transition: all 0.32s ease;
+            color: #000;
+            padding: 10px;
+            display: block;
+          }
         }
       }
     }

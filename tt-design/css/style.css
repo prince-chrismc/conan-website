@@ -108,153 +108,25 @@
 .hamburger-inner:after {
   bottom: -10px; }
 
-.e-tar {
-  text-align: right; }
-
-.e-lh1 {
-  line-height: 1; }
-
-.e-vh {
-  visibility: hidden; }
-
-.e-ltr {
-  direction: ltr; }
-
-.e-rtl {
-  direction: rtl; }
-
-.e-bgcc {
-  background-size: cover;
-  background-position: center center; }
-
-.e-df {
-  display: -ms-flex;
-  display: -webkit-box;
-  display: flex; }
-
-.e-ttuc {
-  text-transform: uppercase; }
-
-.e-db {
-  display: block; }
-
-.e-dib {
-  display: inline-block; }
-
-.e-dn {
-  display: none; }
-
-.e-dn-i {
-  display: none !important; }
-
-.e-aic {
-  -ms-align-items: center;
-  -webkit-box-align: center;
-  align-items: center; }
-
-.e-aifs {
-  -ms-align-items: flex-start;
-  -webkit-box-align: start;
-  align-items: flex-start; }
-
-.e-aife {
-  -ms-align-items: flex-end;
-  -webkit-box-align: end;
-  align-items: flex-end; }
-
-.e-tac {
-  text-align: center; }
-
-.e-jcsb {
-  -webkit-box-pack: justify;
-  justify-content: space-between; }
-
-.e-jcc {
-  -webkit-box-pack: center;
-  justify-content: center; }
-
-.e-jcsa {
-  justify-content: space-around; }
-
-.e-jcfs {
-  -webkit-box-pack: start;
-  justify-content: flex-start; }
-
-.e-jcfe {
-  -webkit-box-pack: end;
-  justify-content: flex-end; }
-
-.e-fdc {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column; }
-
-.e-por {
-  position: relative; }
-
-.e-poa {
-  position: absolute; }
-
-.e-w100p {
-  width: 100%; }
-
-.e-flxww {
-  flex-wrap: wrap; }
-
-@media screen and (max-width: 991px) {
-  .e-db-991 {
-    display: block; }
-
-  .e-df-991 {
-    display: -ms-flex;
-    display: -webkit-box;
-    display: flex; }
-
-  .e-dn-991 {
-    display: none; }
-
-  .e-mt40-991 {
-    margin-top: 40px; }
-
-  .e-flxww-991 {
-    flex-wrap: wrap; }
-
-  .e-fdc-991 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column; }
-
-  .e-w100p-991 {
-    width: 100%; } }
-@media screen and (max-width: 767px) {
-  .e-fdc-767 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column; }
-
-  .e-db-767 {
-    display: block; }
-
-  .e-df-767 {
-    display: -ms-flex;
-    display: -webkit-box;
-    display: flex; }
-
-  .e-dn-767 {
-    display: none; } }
-@media screen and (max-width: 480px) {
-  .e-db-480 {
-    display: block; }
-
-  .e-df-480 {
-    display: -ms-flex;
-    display: -webkit-box;
-    display: flex; }
-
-  .e-dn-480 {
-    display: none; } }
-.e-curp {
-  cursor: pointer; }
+.tooltip .tooltip-inner {
+  background: white;
+  color: black;
+  border: 2px solid #e3e4e4; }
+.tooltip .arrow {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #e3e4e4;
+  bottom: 1px; }
+  .tooltip .arrow:before {
+    width: 11px;
+    height: 11px;
+    background: white;
+    border: 0; }
+.tooltip.bs-tooltip-top .arrow {
+  transform: rotate(-135deg); }
+.tooltip.bs-tooltip-bottom .arrow {
+  transform: rotate(135deg);
+  top: 2px; }
 
 @media screen and (min-width: 1199.98px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -330,11 +202,17 @@ a.big-btn {
 .blue {
   color: #7BA7D3; }
 
+.blue-hover:hover {
+  color: #7BA7D3 !important; }
+
 .bg-blue {
   background-color: #7BA7D3; }
 
 .green {
   color: #4CB74A; }
+
+.green-hover:hover {
+  color: #4CB74A !important; }
 
 .bg-green {
   background-color: #4CB74A; }
@@ -611,6 +489,7 @@ section#downloads .installers {
   flex-wrap: wrap;
   margin-left: -2px; }
   section#downloads .installers .cn-box {
+    cursor: pointer;
     background: #fff;
     display: inline-block;
     height: 57px;
@@ -641,6 +520,36 @@ section#downloads .installers {
       @media screen and (max-width: 768px) {
         section#downloads .installers .cn-box.big {
           font-size: 16px; } }
+    section#downloads .installers .cn-box.cn-options {
+      position: relative; }
+      section#downloads .installers .cn-box.cn-options.active {
+        border: 2px solid #7BA7D3; }
+        section#downloads .installers .cn-box.cn-options.active .cn-dl-inner {
+          z-index: 1;
+          visibility: visible;
+          opacity: 1; }
+      section#downloads .installers .cn-box.cn-options .cn-dl-inner {
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        text-align: left;
+        display: block;
+        height: auto;
+        top: 100%;
+        top: calc(100% + 8px);
+        left: -2px;
+        transition: all 0.32s ease; }
+        @media screen and (max-width: 767.98px) {
+          section#downloads .installers .cn-box.cn-options .cn-dl-inner {
+            left: unset;
+            right: 0; } }
+        section#downloads .installers .cn-box.cn-options .cn-dl-inner:hover {
+          border: 2px solid #e3e4e4; }
+        section#downloads .installers .cn-box.cn-options .cn-dl-inner a {
+          transition: all 0.32s ease;
+          color: #000;
+          padding: 10px;
+          display: block; }
 section#downloads a.green:hover {
   color: #4CB74A;
   text-decoration: underline; }
