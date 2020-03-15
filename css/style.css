@@ -277,6 +277,8 @@ section.advantages .advantage {
   section.advantages .advantage p {
     font-size: 0.833rem;
     /* 15/18 */ }
+  section.advantages .advantage .read-more-wrapper .read-more-content {
+    display: none; }
   section.advantages .advantage .read-more span {
     display: inline-block;
     position: relative;

@@ -194,6 +194,11 @@ section.advantages {
     p {
       font-size: 0.833rem; /* 15/18 */
     }
+    .read-more-wrapper {
+      .read-more-content {
+        display: none;
+      }
+    }
     .read-more {
       span {
         display: inline-block;
