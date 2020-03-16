@@ -378,7 +378,7 @@ footer#siteFooter {
   background-repeat: no-repeat;
   background-size: 24vw;
   @media screen and (max-width: 991px) {
-    background: none !important;
+    background-image: none;
   }
   .footer-left {
     border-right: 1px solid #000;
