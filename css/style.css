@@ -130,7 +130,11 @@
   top: 2px; }
 
 @media screen and (min-width: 1199.98px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
     max-width: 1390px !important; } }
 body {
   font-family: "Open Sans", sans-serif !important;
@@ -174,7 +178,7 @@ h1 {
   /* 13/18 */
   transition: all 0.32s ease; }
   .btn:hover {
-    opacity: .75; }
+    opacity: 0.75; }
   .btn.bg-blue:hover {
     color: #fff; }
 
@@ -191,7 +195,8 @@ a.big-btn {
   font-size: 1.111rem;
   /* 20/18 */
   line-height: 1.33em;
-  transition: all 0.32s ease; }
+  transition: all 0.32s ease;
+  font-weight: 400; }
   .cta:hover {
     color: white; }
   .cta.bg-green:hover {
@@ -201,46 +206,46 @@ a.big-btn {
   max-width: 100%; }
 
 .blue {
-  color: #7BA7D3; }
+  color: #7ba7d3; }
 
 .blue-hover:hover {
-  color: #7BA7D3 !important; }
+  color: #7ba7d3 !important; }
 
 .bg-blue {
-  background-color: #7BA7D3; }
+  background-color: #7ba7d3; }
 
 .green {
-  color: #4CB74A; }
+  color: #40be46; }
 
 .green-hover:hover {
-  color: #4CB74A !important; }
+  color: #40be46 !important; }
 
 .bg-green {
-  background-color: #4CB74A; }
+  background-color: #40be46; }
 
 .white {
   color: #fff; }
 
 .gray {
-  color: #8B8B8B; }
+  color: #8b8b8b; }
 
 .bg-gray {
-  background-color: #8B8B8B; }
+  background-color: #8b8b8b; }
 
 .dark-blue {
-  color: #2C4257; }
+  color: #2c4257; }
 
 .bg-dark-blue {
-  background-color: #2C4257; }
+  background-color: #2c4257; }
 
 .bright-gray {
-  color: #EAEBEE; }
+  color: #eaebee; }
 
 .bg-bright-gray {
-  background-color: #EAEBEE; }
+  background-color: #eaebee; }
 
 .blue-gradient-bg {
-  background: linear-gradient(254.27deg, #2C4257 51.72%, #7BA7D3 98.82%); }
+  background: linear-gradient(254.27deg, #2c4257 51.72%, #7ba7d3 98.82%); }
 
 section#hero .hero-bg {
   top: 20px;
@@ -376,9 +381,9 @@ section.contact-us .form-container {
   section.contact-us .form-container .title-mail a {
     color: #000;
     transition: all 0.32s ease;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
     section.contact-us .form-container .title-mail a:hover {
-      color: #7BA7D3; }
+      color: #7ba7d3; }
 section.contact-us img.contact-bg {
   left: -50px;
   top: -200px;
@@ -394,11 +399,11 @@ section.contact-us form.cu-form {
     section.contact-us form.cu-form .form-input input {
       width: 100%;
       border-right: 2px;
-      border: 1px solid #8B8B8B;
+      border: 1px solid #8b8b8b;
       height: 57px;
       padding-left: 15px;
       padding-right: 15px; }
-  section.contact-us form.cu-form .form-submit input[type="submit"] {
+  section.contact-us form.cu-form .form-submit input[type='submit'] {
     width: 190px;
     border: 0;
     margin-left: auto;
@@ -419,22 +424,22 @@ footer#siteFooter .footer-left {
         transition: all 0.32s ease;
         font-weight: 400; }
         footer#siteFooter .footer-left .footer-menu ul li a:hover {
-          color: #2C4257; }
+          color: #2c4257; }
 footer#siteFooter .footer-right form.footer-form h3 {
   font-size: 20px; }
 footer#siteFooter .footer-right form.footer-form label {
   display: none; }
   footer#siteFooter .footer-right form.footer-form label.show-label {
     display: inline-block; }
-footer#siteFooter .footer-right form.footer-form input:not([type="checkbox"]) {
+footer#siteFooter .footer-right form.footer-form input:not([type='checkbox']) {
   height: 48px;
   border-radius: 2px; }
-  footer#siteFooter .footer-right form.footer-form input:not([type="checkbox"])#footerEmail {
+  footer#siteFooter .footer-right form.footer-form input:not([type='checkbox'])#footerEmail {
     width: 261px;
     border: 1px solid gray;
     background: white;
     padding-left: 15px; }
-  footer#siteFooter .footer-right form.footer-form input:not([type="checkbox"])[type="submit"] {
+  footer#siteFooter .footer-right form.footer-form input:not([type='checkbox'])[type='submit'] {
     padding: 10px 15px; }
 footer#siteFooter .footer-right form.footer-form .form-checkbox {
   position: relative; }
@@ -455,10 +460,10 @@ footer#siteFooter .footer-right form.footer-form .form-checkbox {
     top: 3px;
     left: -13px;
     transition: all 0.12s ease; }
-  footer#siteFooter .footer-right form.footer-form .form-checkbox [type=checkbox]:checked + span {
-    background: #4CB74A;
-    border: 1px solid #4CB74A; }
-  footer#siteFooter .footer-right form.footer-form .form-checkbox [type=checkbox]:checked + span:before {
+  footer#siteFooter .footer-right form.footer-form .form-checkbox [type='checkbox']:checked + span {
+    background: #40be46;
+    border: 1px solid #40be46; }
+  footer#siteFooter .footer-right form.footer-form .form-checkbox [type='checkbox']:checked + span:before {
     content: '\2714';
     position: absolute;
     top: -3px;
@@ -526,7 +531,7 @@ section#downloads .installers {
     section#downloads .installers .cn-box.cn-options {
       position: relative; }
       section#downloads .installers .cn-box.cn-options.active {
-        border: 2px solid #7BA7D3; }
+        border: 2px solid #7ba7d3; }
         section#downloads .installers .cn-box.cn-options.active .cn-dl-inner {
           z-index: 1;
           visibility: visible;
@@ -554,12 +559,12 @@ section#downloads .installers {
           padding: 10px;
           display: block; }
 section#downloads a.green:hover {
-  color: #4CB74A;
+  color: #40be46;
   text-decoration: underline; }
 section#downloads .blue-downloads .cn-box:hover {
-  border: 2px solid #7BA7D3; }
+  border: 2px solid #7ba7d3; }
 section#downloads .green-downloads .cn-box:hover {
-  border: 2px solid #4CB74A; }
+  border: 2px solid #40be46; }
 section#downloads .download-questions h2 {
   font-size: 35px; }
 section#downloads .download-questions p {
@@ -575,7 +580,8 @@ section#downloads .download-questions p {
       margin-left: auto;
       margin-right: auto; } }
 
-body.privacy-policy ol, body.privacy-policy ul {
+body.privacy-policy ol,
+body.privacy-policy ul {
   padding-left: 1.5em;
   margin-top: 10px; }
 
