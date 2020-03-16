@@ -514,7 +514,6 @@ section#downloads .installers {
     font-size: 20px;
     line-height: 1;
     text-align: center;
-    text-replace: none;
     transition: all 0.2s ease; }
     section#downloads .installers .cn-box.small {
       min-width: 68px;
