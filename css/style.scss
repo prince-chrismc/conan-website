@@ -372,8 +372,14 @@ section.contact-us {
     }
   }
 }
-
 footer#siteFooter {
+  background-image: url('../img/footer-bg.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 24vw;
+  @media screen and (max-width: 991px) {
+    background: none !important;
+  }
   .footer-left {
     border-right: 1px solid #000;
     .footer-menu {
