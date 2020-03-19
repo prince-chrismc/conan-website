@@ -5,6 +5,11 @@ const bootstrap_md = '992px';
 
 jQuery(document).ready(function ($) {
 
+  //refresh on mobile orientationchange
+  $(window).bind('orientationchange', function (event) {
+    location.reload(true);
+  });
+
   //--ALL PAGES--//
   //HAMBURGER
   $('.hamburger').on('click',function () {
