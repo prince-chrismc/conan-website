@@ -254,27 +254,27 @@ section.learn-more {
 }
 
 section.users {
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    tbody {
-      tr {
-        td {
-          border: 1px solid;
-          text-align: center;
-          width: 150px;
-          height: 150px;
-          padding: 10px;
-          @media screen and (max-width: $sm) {
-            width: calc(20vw - 6px);
-            max-width: calc(20vw - 6px);
-            height: calc(20vw - 6px);
-            max-height: calc(20vw - 6px);
-          }
-        }
-      }
-    }
-  }
+  // table {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   tbody {
+  //     tr {
+  //       td {
+  //         border: 1px solid;
+  //         text-align: center;
+  //         width: 150px;
+  //         height: 150px;
+  //         padding: 10px;
+  //         @media screen and (max-width: $sm) {
+  //           width: calc(20vw - 6px);
+  //           max-width: calc(20vw - 6px);
+  //           height: calc(20vw - 6px);
+  //           max-height: calc(20vw - 6px);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 section.testis {
