@@ -254,27 +254,36 @@ section.learn-more {
 }
 
 section.users {
-  // table {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   tbody {
-  //     tr {
-  //       td {
-  //         border: 1px solid;
-  //         text-align: center;
-  //         width: 150px;
-  //         height: 150px;
-  //         padding: 10px;
-  //         @media screen and (max-width: $sm) {
-  //           width: calc(20vw - 6px);
-  //           max-width: calc(20vw - 6px);
-  //           height: calc(20vw - 6px);
-  //           max-height: calc(20vw - 6px);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .users-flex {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    .user-box {
+      width: 20%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+      height: 150px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .users-flex {
+      .user-box {
+        width: 33.3%;
+        height: calc((100vw - 30px) / 3);
+        padding: 10px;
+      }
+    }
+  }
 }
 
 section.testis {
@@ -503,7 +512,9 @@ section#downloads {
     display: flex;
     flex-wrap: wrap;
     margin-left: -2px;
+    max-width: 350px;
     .cn-box {
+      width: 75px;
       cursor: pointer;
       background: #fff;
       display: inline-block;
@@ -575,6 +586,18 @@ section#downloads {
       }
       &.cn-copy {
         font-family: monospace;
+      }
+      &.cn-copy-multiline {
+        position: relative;
+        textarea {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          z-index: -9;
+          width: 1px;
+          height: 1px;
+        }
       }
     }
   }

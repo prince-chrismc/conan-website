@@ -44,10 +44,11 @@ jQuery(document).ready(function ($) {
   // DOWNLOADS
   if ($('body.downloads').length) {
     // TOOLTIPS
+    let copyText = 'Copy pull command to clipboard';
 
     //cn-copy
     $('.cn-copy')
-      .attr('data-original-title', "Copy pull command to clipboard")
+      .attr('data-original-title', copyText)
       .tooltip()
       .click(function () {
         let textToCopy = $(this).data('copy-value');
@@ -57,6 +58,23 @@ jQuery(document).ready(function ($) {
         .attr('data-original-title', "Copied!")
         .tooltip('show');
       });
+
+    $(".cn-copy-multiline")
+    .attr('data-original-title', copyText)
+    .tooltip()
+    .click(function () {
+      let targetId   = $(this).data('copy-target');
+      let copyTarget = $(targetId);
+      let copyString = copyTarget.val();
+      copyString     = copyString.trim();
+      copyTarget.val(copyString);
+      copyTarget.select();
+      document.execCommand('copy');
+      $(this)
+      .tooltip('hide')
+      .attr('data-original-title', "Copied!")
+      .tooltip('show');
+    });
 
     //cn-options
     $('.cn-options')
@@ -141,6 +159,7 @@ function downloadsMatchHeight() {
   matchHeight(jQuery('.downloads-item-wrapper .text'));
   matchHeight(jQuery('.downloads-item-wrapper .text-two'));
   matchHeight(jQuery('.downloads-item-wrapper h3'));
+  matchHeight(jQuery('.downloads-item-wrapper .small-installers'));
 }
 
 //copy text to clipboard

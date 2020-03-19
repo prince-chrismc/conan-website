@@ -64,8 +64,8 @@
   </div>
 </header>
 
-<section id="downloads" class="pt-5">
-  <img src="img/downloads-squares.png" class="position-absolute hero-bg downloads-hero-bg" alt="JFrog Conan">
+<section id="downloads" class="pt-0 pt-md-5">
+  <img src="img/downloads-squares.png" class="position-absolute hero-bg downloads-hero-bg d-none d-xl-inline" alt="JFrog Conan">
   <div class="container">
     <div class="row py-5">
 
@@ -104,7 +104,7 @@
                 </a>
               </div>
               <h5>Other Installers</h5>
-              <div class="installers pb-4">
+              <div class="installers small-installers pb-4">
                 <!-- DARWIN -->
                 <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="brew install conan">
                   <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
@@ -173,10 +173,10 @@
                 </a>
               </div>
               <h5>Other Installers</h5>
-              <div class="installers pb-4">
-                <!-- DOCKER -->
-                <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="docker pull docker.bintray.io/jfrog/artifactory-cpp-ce">
-                  <img src="img/downloads/docker-small-pack.png" alt="Docker">
+              <div class="installers small-installers pb-4">
+                <!-- TAR.GZ -->
+                <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-linux.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
+                  <img src="img/downloads/linux-small-pack.png" alt="tar-gz">
                 </a>
                 <!-- DEBIAN -->
                 <a href="downloads/conan-debian.zip" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
@@ -185,6 +185,30 @@
                 <!-- RPM -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
                   <img src="img/downloads/rpm-small-pack.png" alt="rpm">
+                </a>
+                <!-- DOCKER -->
+                <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="docker pull docker.bintray.io/jfrog/artifactory-cpp-ce">
+                  <img src="img/downloads/docker-small-pack.png" alt="Docker">
+                </a>
+                <!-- DOCKER COMPOSE -->
+                <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/docker/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-compose.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
+                  <img src="img/downloads/compose-small-pack.png" alt="Docker Compose">
+                </a>
+                <!-- DOCKER -->
+                <a class="cn-box small cn-copy-multiline" data-toggle="tooltip" data-placement="top" data-copy-target="#helmTextarea">
+                  <img src="img/downloads/helm-small-pack.png" alt="Docker">
+                  <textarea id="helmTextarea" cols="1" rows="1" class="multiline-copy">
+helm repo add jfrog https://charts.jfrog.io
+helm install --name artifactory jfrog/artifactory-oss
+                  </textarea>
+                </a>
+                <!-- WINDOWS -->
+                <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-windows.zip;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
+                  <img src="img/downloads/windows-small-pack.png" alt="Windows">
+                </a>
+                <!-- MAC -->
+                <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-darwin.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
+                  <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
                 </a>
               </div>
             </div>
