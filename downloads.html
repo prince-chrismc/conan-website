@@ -17,6 +17,7 @@
   <!-- JS -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.lazy.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </head>
@@ -29,7 +30,7 @@
 
       <!-- LOGO -->
       <a href="index.html" class="col-10 col-lg-4 d-block">
-        <img src="img/logo-conan.png" class="" alt="JFrog Conan">
+        <img src="img/logo-conan.png" alt="JFrog Conan">
       </a>
 
       <!-- HAMBURGER -->
@@ -79,7 +80,7 @@
           <div class="content p-4 p-md-5">
             <!-- SMALL TITLE WITH ICON -->
             <div class="small-title d-flex align-items-center">
-              <img src="img/downloads/conan-small-pack.png" alt="Conan Package" class="mr-2">
+              <img data-src="img/downloads/conan-small-pack.png" alt="Conan Package" class="mr-2 lazy">
               <span>Conan 1.21.0</span>
             </div>
             <!-- PACKAGE TITLE -->
@@ -99,7 +100,7 @@
               <div class="installers pb-4">
                 <!-- PYTON -->
                 <a class="cn-box big cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="pip install conan">
-                  <img src="img/downloads/pyton-small-pack.png" alt="Pyton" class="mr-2">
+                  <img data-src="img/downloads/pyton-small-pack.png" alt="Pyton" class="mr-2 lazy">
                   <span>$ pip install conan</span>
                 </a>
               </div>
@@ -107,15 +108,15 @@
               <div class="installers small-installers pb-4">
                 <!-- DARWIN -->
                 <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="brew install conan">
-                  <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
+                  <img class="lazy" data-src="img/downloads/darwin-small-pack.png" alt="Darwin">
                 </a>
                 <!-- LINUX -->
                 <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_23_0.deb" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/linux-small-pack.png" alt="Linux">
+                  <img class="lazy" data-src="img/downloads/linux-small-pack.png" alt="Linux">
                 </a>
                 <!-- WINDOWS -->
                 <div href="https://dl.bintray.com/conan/installers/conan-win-64_1_23_0.exe" class="cn-box small cn-options" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/windows-small-pack.png" alt="Windows">
+                  <img class="lazy" data-src="img/downloads/windows-small-pack.png" alt="Windows">
                   <div class="cn-dl-inner position-absolute cn-box">
                     <!-- Download x86_64 -->
                     <a class="blue-hover" href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">Download&nbsp;x86_64
@@ -125,7 +126,7 @@
                 </div>
                 <!-- ARCHLINUX $ yay -S conan-->
                 <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="yay -S conan">
-                  <img src="img/downloads/archlinux-small-pack.png" alt="ArchLinux">
+                  <img class="lazy" data-src="img/downloads/archlinux-small-pack.png" alt="ArchLinux">
                 </a>
               </div>
             </div>
@@ -147,7 +148,7 @@
           <div class="content p-4 p-md-5">
             <!-- SMALL TITLE WITH ICON -->
             <div class="small-title d-flex align-items-center">
-              <img src="img/downloads/artifactory-small-pack.png" alt="Artifactory" class="mr-2">
+              <img data-src="img/downloads/artifactory-small-pack.png" alt="Artifactory" class="mr-2 lazy">
               <span class="pl-1">JFrog Artifactory (latest version)</span>
             </div>
             <!-- PACKAGE TITLE -->
@@ -168,7 +169,7 @@
               <div class="installers pb-4">
                 <!-- ARTIFACTORY ZIP -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box big cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/arti-c-small-pack.png" alt="Artifactory Zip" class="mr-2">
+                  <img data-src="img/downloads/arti-c-small-pack.png" alt="Artifactory Zip" class="mr-2 lazy">
                   <span>Download ZIP for C/C++</span>
                 </a>
               </div>
@@ -176,27 +177,27 @@
               <div class="installers small-installers pb-4">
                 <!-- TAR.GZ -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-linux.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/linux-small-pack.png" alt="tar-gz">
+                  <img class="lazy" data-src="img/downloads/linux-small-pack.png" alt="tar-gz">
                 </a>
                 <!-- DEBIAN -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory-debs/pool/jfrog-artifactory-oss/jfrog-artifactory-oss-$latest.deb;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/debian-small-pack.png" alt="debian">
+                  <img class="lazy" data-src="img/downloads/debian-small-pack.png" alt="debian">
                 </a>
                 <!-- RPM -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-cpp-ce-$latest.rpm;bt_package=jfrog-artifactory-cpp-ce-rpm" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/rpm-small-pack.png" alt="rpm">
+                  <img class="lazy" data-src="img/downloads/rpm-small-pack.png" alt="rpm">
                 </a>
                 <!-- DOCKER -->
                 <a class="cn-box small cn-copy" data-toggle="tooltip" data-placement="top" data-copy-value="docker pull docker.bintray.io/jfrog/artifactory-cpp-ce">
-                  <img src="img/downloads/docker-small-pack.png" alt="Docker">
+                  <img class="lazy" data-src="img/downloads/docker-small-pack.png" alt="Docker">
                 </a>
                 <!-- DOCKER COMPOSE -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/docker/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-compose.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/compose-small-pack.png" alt="Docker Compose">
+                  <img class="lazy" data-src="img/downloads/compose-small-pack.png" alt="Docker Compose">
                 </a>
                 <!-- DOCKER -->
                 <a class="cn-box small cn-copy-multiline" data-toggle="tooltip" data-placement="top" data-copy-target="#helmTextarea">
-                  <img src="img/downloads/helm-small-pack.png" alt="Docker">
+                  <img class="lazy" data-src="img/downloads/helm-small-pack.png" alt="Docker">
                   <textarea id="helmTextarea" cols="1" rows="1" class="multiline-copy">
 helm repo add jfrog https://charts.jfrog.io
 helm install --name artifactory jfrog/artifactory-oss
@@ -204,11 +205,11 @@ helm install --name artifactory jfrog/artifactory-oss
                 </a>
                 <!-- WINDOWS -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-windows.zip;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/windows-small-pack.png" alt="Windows">
+                  <img class="lazy" data-src="img/downloads/windows-small-pack.png" alt="Windows">
                 </a>
                 <!-- MAC -->
                 <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-darwin.tar.gz;bt_package=jfrog-artifactory-oss" class="cn-box small cn-download" data-toggle="tooltip" data-placement="top" title="Download">
-                  <img src="img/downloads/darwin-small-pack.png" alt="Darwin">
+                  <img class="lazy" data-src="img/downloads/darwin-small-pack.png" alt="Darwin">
                 </a>
               </div>
             </div>
@@ -235,7 +236,7 @@ helm install --name artifactory jfrog/artifactory-oss
         <p>
           Contact the community on
           <a href="https://cpplang.​slack.​com/?id=conan">
-            <img src="img/social/slack.svg" alt="slack"> Slack
+            <img class="lazy" data-src="img/social/slack.svg" alt="slack"> Slack
           </a>
           or see our <a href="https://docs.conan.io/">
           Docs
@@ -341,25 +342,25 @@ helm install --name artifactory jfrog/artifactory-oss
             <!-- TWITTER -->
             <li>
               <a class="mr-2" href="https://twitter.com/conan_io">
-                <img src="img/social/twitter.svg" alt="twitter">
+                <img class="lazy" data-src="img/social/twitter.svg" alt="twitter">
               </a>
             </li>
             <!-- FACEBOOK -->
             <li>
               <a class="mr-2" href="https://facebook.com/conan.io">
-                <img src="img/social/facebook.svg" alt="facebook">
+                <img class="lazy" data-src="img/social/facebook.svg" alt="facebook">
               </a>
             </li>
             <!-- SLACK -->
             <li>
               <a class="mr-2" href="https://cpplang.​slack.​com/?id=conan">
-                <img src="img/social/slack.svg" alt="slack">
+                <img class="lazy" data-src="img/social/slack.svg" alt="slack">
               </a>
             </li>
             <!-- GITHUB -->
             <li>
               <a class="mr-2" href="https://github.com/conan-io">
-                <img src="img/social/github.svg" alt="github">
+                <img class="lazy" data-src="img/social/github.svg" alt="github">
               </a>
             </li>
           </ul>

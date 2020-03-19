@@ -5,6 +5,8 @@ const bootstrap_md = '992px';
 
 jQuery(document).ready(function ($) {
 
+  $('.lazy').Lazy();
+
   //refresh on mobile orientationchange
   $(window).bind('orientationchange', function (event) {
     location.reload(true);
