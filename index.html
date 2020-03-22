@@ -42,11 +42,6 @@
       href="css/style.css"
     />
 
-    <!-- JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.lazy.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -907,8 +902,9 @@
           <div class="col-12">
             <form
               class="cu-form"
-              action=""
-              method="post"
+              action="https://formspree.io/xgezpodn"
+              method="POST"
+              id="contactUsForm"
             >
               <!-- name -->
               <div class="form-input form-name">
@@ -965,8 +961,11 @@
                   type="submit"
                   value="Submit"
                   class="cta bg-green white mt-4"
+                  id="contactUsSubmit"
                 />
               </div>
+
+              <p id="contactUsStatus"></p>
             </form>
           </div>
         </div>
@@ -1044,8 +1043,9 @@
             <div class="inner pl-4">
               <form
                 class="footer-form"
-                action=""
-                method="post"
+                action="https://formspree.io/mlelogyj"
+                method="POST"
+                id="footerForm"
               >
                 <h3 class="mb-3">Sign up for updates</h3>
 
@@ -1071,6 +1071,7 @@
                       type="submit"
                       value="Subscribe"
                       class="cta bg-green white"
+                      id="footerFormSubmit"
                     >
                   </div>
                 </div>
@@ -1092,7 +1093,7 @@
                       aria-label="required"
                     >*</abbr></label>
                 </div>
-
+                <p id="footerFormStatus"></p>
               </form>
 
               <ul class="socials d-flex mt-1 mb-0 pt-2 pl-0">
@@ -1156,6 +1157,14 @@
 
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/hp_formspree.js"></script>
+    <script src="js/footer_formspree.js"></script>
+    <script src="js/scripts.js"></script>
 
   </body>
 
