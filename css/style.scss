@@ -559,6 +559,7 @@ section#downloads {
           }
         }
         .cn-dl-inner {
+          width: auto;
           z-index: -1;
           visibility: hidden;
           opacity: 0;
@@ -587,17 +588,17 @@ section#downloads {
       &.cn-copy {
         font-family: monospace;
       }
-      &.cn-copy-multiline {
-        position: relative;
-        textarea {
-          position: absolute;
-          left: 0;
-          top: 0;
-          opacity: 0;
-          z-index: -9;
-          width: 1px;
-          height: 1px;
-        }
+    }
+    .cn-copy-multiline {
+      position: relative;
+      textarea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: -9;
+        width: 1px;
+        height: 1px;
       }
     }
   }

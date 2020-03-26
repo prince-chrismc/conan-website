@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
     $(".cn-copy-multiline")
     .attr('data-original-title', copyText)
     .tooltip()
-    .click(function () {
+    .click(function (e) {
       let targetId   = $(this).data('copy-target');
       let copyTarget = $(targetId);
       let copyString = copyTarget.val();
@@ -86,18 +86,23 @@ jQuery(document).ready(function ($) {
     //cn-options
     $('.cn-options')
       .tooltip()
-      .click(function () {
-        $(this)
-          .toggleClass('active');
-        if ($(this).hasClass('active')) {
+      .click(function (event) {
+
+        //already active, turn off.
+        if ( $(this).hasClass('active') ) {
+          $('.cn-options').removeClass('active');
           $(this)
+            .tooltip('hide')
+            .attr('data-original-title', "Show Options")
+            .tooltip('show');
+        }
+        //not active
+        else {
+          $('.cn-options').removeClass('active');
+          $(this)
+            .addClass('active')
             .tooltip('hide')
             .attr('data-original-title', "Hide")
-            .tooltip('show');
-        } else {
-          $(this)
-            .tooltip('hide')
-            .attr('data-original-title', "Download")
             .tooltip('show');
         }
 
