@@ -3,18 +3,18 @@ const bootstrap_sm = '769px';
 const bootstrap_md = '992px';
 
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
 
   $('.lazy').Lazy();
 
   //refresh on mobile orientationchange
-  $(window).bind('orientationchange', function (event) {
+  $(window).bind('orientationchange', function(event) {
     location.reload(true);
   });
 
   //--ALL PAGES--//
   //HAMBURGER
-  $('.hamburger').on('click',function () {
+  $('.hamburger').on('click', function() {
     let ham = $(this);
     ham.toggleClass('is-active');
     toggleMenu(ham);
@@ -23,13 +23,13 @@ jQuery(document).ready(function ($) {
   // $('[data-toggle="tooltip"]').tooltip();
 
   //--HOME PAGE--//
-  if ( $('body.home').length ) {
+  if ($('body.home').length) {
 
     //READ MORE SLIDE
-    $('.readMoreLink').on('click',function () {
+    $('.readMoreLink').on('click', function() {
       let that = $(this);
       let target = that.siblings('.readMoreContent');
-      $.when(that.fadeOut()).then(function () {
+      $.when(that.fadeOut()).then(function() {
         that.addClass('d-none');
         target.slideDown();
       });
@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
     });
 
     //MATCH HEIGHT, ADVANTAGES
-    if ( window.matchMedia("(min-width: "+bootstrap_sm+")").matches ) {
+    if (window.matchMedia("(min-width: " + bootstrap_sm + ")").matches) {
       matchHeight($('.one-advantage-content .text'));
     }
 
@@ -57,39 +57,39 @@ jQuery(document).ready(function ($) {
     $('.cn-copy')
       .attr('data-original-title', copyText)
       .tooltip()
-      .click(function () {
+      .click(function() {
         let textToCopy = $(this).data('copy-value');
         copyToClipboard(textToCopy);
         $(this)
-        .tooltip('hide')
-        .attr('data-original-title', "Copied!")
-        .tooltip('show');
+          .tooltip('hide')
+          .attr('data-original-title', "Copied!")
+          .tooltip('show');
       });
 
     $(".cn-copy-multiline")
-    .attr('data-original-title', copyText)
-    .tooltip()
-    .click(function (e) {
-      let targetId   = $(this).data('copy-target');
-      let copyTarget = $(targetId);
-      let copyString = copyTarget.val();
-      copyString     = copyString.trim();
-      copyTarget.val(copyString);
-      copyTarget.select();
-      document.execCommand('copy');
-      $(this)
-      .tooltip('hide')
-      .attr('data-original-title', "Copied!")
-      .tooltip('show');
-    });
+      .attr('data-original-title', copyText)
+      .tooltip()
+      .click(function(e) {
+        let targetId = $(this).data('copy-target');
+        let copyTarget = $(targetId);
+        let copyString = copyTarget.val();
+        copyString = copyString.trim();
+        copyTarget.val(copyString);
+        copyTarget.select();
+        document.execCommand('copy');
+        $(this)
+          .tooltip('hide')
+          .attr('data-original-title', "Copied!")
+          .tooltip('show');
+      });
 
     //cn-options
     $('.cn-options')
       .tooltip()
-      .click(function (event) {
+      .click(function(event) {
 
         //already active, turn off.
-        if ( $(this).hasClass('active') ) {
+        if ($(this).hasClass('active')) {
           $('.cn-options').removeClass('active');
           $(this)
             .tooltip('hide')
@@ -106,35 +106,68 @@ jQuery(document).ready(function ($) {
             .tooltip('show');
         }
 
+
       });
 
     $('.cn-download').tooltip();
+
+    if ($(window).width() <= 768) { //position option box on small width devices
+
+        $('.cn-options').each(function () {
+
+          let that                = $(this);
+          let installersContainer = that.parent('.installers.small-installers.pb-4');
+          let icOffset            = installersContainer.offset();
+          let tooltip             = that.find('.cn-dl-inner');
+          let installersWidth     = installersContainer.outerWidth();
+          let tooltipWidth        = tooltip.outerWidth();
+          let widthDelta          = installersWidth - tooltipWidth;
+          let tooltipOffset       = tooltip.offset();
+          let offSetDelta         = icOffset.left - tooltipOffset.left;
+          let absIndex            = that.index()+1;
+          let alignment           = '';
+          if (absIndex%4 <= 2) {
+            alignment = 'left';
+          } else {
+            alignment = 'right';
+          }
+
+          tooltip.css('left', 'auto');
+          if (alignment == 'left' || $(window).width() < 412) {
+            tooltip.css('right', -offSetDelta );
+          } else {
+            tooltip.css('right', -(offSetDelta+widthDelta) );
+          }
+        });
+
+    }
 
   }
 
 
 });
 
-jQuery(window).on('load', function () {
+jQuery(window).on('load', function() {
 
   //--DOWNLOADS--//
-  if ( $('body.downloads').length ) {
+  if ($('body.downloads').length) {
 
-    //MATCH HEIGHT, ADVANTAGES
-    if ( window.matchMedia("(min-width: "+bootstrap_md+")").matches ) {
+    //MATCH HEIGHT
+    if (window.matchMedia("(min-width: " + bootstrap_md + ")").matches) {
       downloadsMatchHeight();
     }
 
   }
+
 })
 
 //MENU TOGGLE
 function toggleMenu(ham) {
 
-  let hamOffset       = ham.offset();
-  let hamOffsetRight  = ($(window).width() - (hamOffset.left + ham.outerWidth()));
+  let hamOffset = ham.offset();
+  let hamOffsetRight = ($(window).width() - (hamOffset.left + ham.outerWidth()));
   let hamOffsetBottom = hamOffset.top + ham.outerHeight();
-  let headerNav       = $('nav#headerNav');
+  let headerNav = $('nav#headerNav');
 
   if (!headerNav.hasClass('toggled')) {
     headerNav.appendTo('body');
@@ -145,22 +178,22 @@ function toggleMenu(ham) {
   headerNav
     .toggleClass('is-visible')
     .removeClass('align-items-center d-lg-flex')
-    .css('top',hamOffsetBottom)
-    .css('right',hamOffsetRight);
+    .css('top', hamOffsetBottom)
+    .css('right', hamOffsetRight);
 }
 
 //MATCH HEIGHT
 function matchHeight(set) {
   var maxHeight = 0;
   // collect data from all
-  set.each(function () {
+  set.each(function() {
     var thisHeight = jQuery(this).outerHeight();
     if (thisHeight > maxHeight) {
       maxHeight = thisHeight;
     }
   });
   // set data to all by max
-  set.each(function () {
+  set.each(function() {
     jQuery(this).outerHeight(maxHeight);
   });
 }
@@ -176,9 +209,9 @@ function downloadsMatchHeight() {
 
 //copy text to clipboard
 function copyToClipboard(string) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(string).select();
-    document.execCommand("copy");
-    $temp.remove();
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(string).select();
+  document.execCommand("copy");
+  $temp.remove();
 }
