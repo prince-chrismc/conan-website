@@ -11,15 +11,6 @@
   }
 }
 
-body section {
-  display: none !important;
-}
-
-body section.users {
-  display: block !important;
-}
-
-
 body {
   font-family: $main-font !important;
   font-weight: 300;
@@ -178,11 +169,16 @@ header#masthead {
   border-bottom: 1px solid $bright-gray;
 }
 
+
+.hero-bg, .contact-bg {
+  width: 15.6vw;
+  max-width: 300px;
+}
+
 section#hero {
   .hero-bg {
     top: 20px;
     left: 0;
-
     &.downloads-hero-bg {
       top: 150px;
     }
