@@ -36,13 +36,7 @@ jQuery(document).ready(function($) {
       });
     });
 
-    // TESTIMONIALS CAROUSEL
-    $('.testis-carousel').slick({
-      prevArrow: $('.cs-slick-right'),
-      nextArrow: $('.cs-slick-left'),
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
+    testiSlick($);
 
     //MATCH HEIGHT, ADVANTAGES
     if (window.matchMedia("(min-width: " + bootstrap_sm + ")").matches) {
@@ -273,3 +267,29 @@ $.fn.randomize = function(selector){
 
     return this;
 };
+
+function testiSlick($) {
+  // TESTIMONIALS CAROUSEL
+  $('.testis-carousel').slick({
+    prevArrow: $('.cs-slick-right'),
+    nextArrow: $('.cs-slick-left'),
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ] //end responsive
+  });
+}
