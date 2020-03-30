@@ -11,6 +11,15 @@
   }
 }
 
+body section {
+  display: none !important;
+}
+
+body section.users {
+  display: block !important;
+}
+
+
 body {
   font-family: $main-font !important;
   font-weight: 300;

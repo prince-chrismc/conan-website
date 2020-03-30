@@ -1,6 +1,7 @@
 // BOOTSTRAP VARS
-const bootstrap_sm = '769px';
-const bootstrap_md = '992px';
+const bootstrap_sm    = '769px';
+const bootstrap_md    = '992px';
+var shuffleHasStarted = false;
 
 
 jQuery(document).ready(function($) {
@@ -38,13 +39,17 @@ jQuery(document).ready(function($) {
     // TESTIMONIALS CAROUSEL
     $('.testis-carousel').slick({
       prevArrow: $('.cs-slick-right'),
-      nextArrow: $('.cs-slick-left')
+      nextArrow: $('.cs-slick-left'),
+      slidesToShow: 3,
+      slidesToScroll: 3
     });
 
     //MATCH HEIGHT, ADVANTAGES
     if (window.matchMedia("(min-width: " + bootstrap_sm + ")").matches) {
       matchHeight($('.one-advantage-content .text'));
     }
+
+    shuffleUsers(true);
 
   } //HOME PAGE
 
@@ -215,3 +220,56 @@ function copyToClipboard(string) {
   document.execCommand("copy");
   $temp.remove();
 }
+
+//shuffle
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+//shuffle users
+function shuffleUsers(shuffleStack) {
+
+  shuffleHasStarted    = true;
+
+  const intervalFactor = 3000;
+  const fadeFactor     = intervalFactor/5;
+  const numOfBoxes     = $('.users-flex .user-box').length;
+  const stockWrapper   = $('#usersStock'); if (shuffleStack) stockWrapper.find('img').randomize();
+  var i                = 0;
+  var time             = intervalFactor;
+  arr                  = Array.apply(null, {length: numOfBoxes}).map(Number.call, Number);
+  shuffleArray(arr);
+
+  setInterval(function(){
+
+    v       = arr[i];
+    i++;
+    if (i > 14) i = 0;
+
+    userBox = $('.user-box').eq(v);
+    boxImg  = userBox.find('img');
+
+    boxImg.fadeOut(fadeFactor, function () {
+      boxImg.appendTo(stockWrapper);
+      stockImg = stockWrapper.find('img').first();
+      stockImg.appendTo(userBox).hide().fadeIn(fadeFactor);
+    })
+
+  }, intervalFactor);
+}
+
+
+$.fn.randomize = function(selector){
+    (selector ? this.find(selector) : this).parent().each(function(){
+        $(this).children(selector).sort(function(){
+            return Math.random() - 0.5;
+        }).detach().appendTo(this);
+    });
+
+    return this;
+};
