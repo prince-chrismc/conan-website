@@ -27,21 +27,12 @@ jQuery(document).ready(function($) {
   //--HOME PAGE--//
   if ($('body.home').length) {
 
-    //READ MORE SLIDE
-    $('.readMoreLink').on('click', function() {
-      let that = $(this);
-      let target = that.siblings('.readMoreContent');
-      $.when(that.fadeOut()).then(function() {
-        that.addClass('d-none');
-        target.slideDown();
-      });
-    });
-
     testiSlick($);
 
     //MATCH HEIGHT, ADVANTAGES
     if (window.matchMedia("(min-width: " + bootstrap_sm + ")").matches) {
       matchHeight($('.one-advantage-content .text'));
+      matchHeight($('.advantage-text .line-1'));
     }
 
     shuffleUsers(true);
@@ -275,23 +266,7 @@ function testiSlick($) {
   $('.testis-carousel').slick({
     prevArrow: $('.cs-slick-right'),
     nextArrow: $('.cs-slick-left'),
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ] //end responsive
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 }

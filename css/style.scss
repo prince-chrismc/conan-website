@@ -199,6 +199,20 @@ section#hero {
   }
 }
 
+//marketo for errors
+
+html body {
+  .mktoFormRow .mktoError .mktoErrorMsg {
+    border-radius: 0;
+    background: red;
+    text-shadow: none;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+
 section.advantages {
   .adv-col {
     &:first-child,
@@ -232,6 +246,9 @@ section.advantages {
     p {
       font-size: 0.833rem;
       /* 15/18 */
+      strong {
+        font-weight: 700;
+      }
     }
 
     .read-more-wrapper {
@@ -457,6 +474,14 @@ section.contact-us {
         padding-left: 15px;
         padding-right: 15px;
         font-size: 18px;
+      }
+
+      textarea#MktoPersonNotes {
+        transition: all 0.32s ease;
+        height: 171px;
+        &:placeholder-shown {
+          height: 57px;
+        }
       }
 
       .mktoOffset {
