@@ -2,6 +2,7 @@
 const bootstrap_sm    = '769px';
 const bootstrap_md    = '992px';
 var shuffleHasStarted = false;
+// import $ from 'jquery.min';
 
 
 jQuery(document).ready(function($) {
@@ -18,7 +19,7 @@ jQuery(document).ready(function($) {
   $('.hamburger').on('click', function() {
     let ham = $(this);
     ham.toggleClass('is-active');
-    toggleMenu(ham);
+    toggleMenu($, ham);
   });
 
   // $('[data-toggle="tooltip"]').tooltip();
@@ -58,7 +59,7 @@ jQuery(document).ready(function($) {
       .tooltip()
       .click(function() {
         let textToCopy = $(this).data('copy-value');
-        copyToClipboard(textToCopy);
+        copyToClipboard($, textToCopy);
         $(this)
           .tooltip('hide')
           .attr('data-original-title', "Copied!")
@@ -140,11 +141,20 @@ jQuery(document).ready(function($) {
         });
 
     }
-
   }
 
 
+
 });
+$.fn.randomize = function(selector){
+  (selector ? this.find(selector) : this).parent().each(function(){
+    $(this).children(selector).sort(function(){
+      return Math.random() - 0.5;
+    }).detach().appendTo(this);
+  });
+
+  return this;
+};
 
 jQuery(window).on('load', function() {
 
@@ -161,7 +171,7 @@ jQuery(window).on('load', function() {
 })
 
 //MENU TOGGLE
-function toggleMenu(ham) {
+function toggleMenu($, ham) {
 
   let hamOffset = ham.offset();
   let hamOffsetRight = ($(window).width() - (hamOffset.left + ham.outerWidth()));
@@ -207,7 +217,7 @@ function downloadsMatchHeight() {
 }
 
 //copy text to clipboard
-function copyToClipboard(string) {
+function copyToClipboard($, string) {
   var $temp = $("<input>");
   $("body").append($temp);
   $temp.val(string).select();
@@ -258,15 +268,7 @@ function shuffleUsers(shuffleStack) {
 }
 
 
-$.fn.randomize = function(selector){
-    (selector ? this.find(selector) : this).parent().each(function(){
-        $(this).children(selector).sort(function(){
-            return Math.random() - 0.5;
-        }).detach().appendTo(this);
-    });
 
-    return this;
-};
 
 function testiSlick($) {
   // TESTIMONIALS CAROUSEL
