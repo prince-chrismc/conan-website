@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
       matchHeight($('.advantage-text .line-1'));
     }
 
-    shuffleUsers(true);
+    //shuffleUsers(true);
 
   } //HOME PAGE
 

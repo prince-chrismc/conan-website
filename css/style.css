@@ -262,7 +262,6 @@ section#hero .hero-bg {
   section#hero .hero-bg.downloads-hero-bg {
     top: 150px; }
 section#hero .hero-content {
-  max-width: 616px;
   margin-left: auto;
   margin-right: auto; }
   section#hero .hero-content p {
@@ -498,6 +497,8 @@ footer#siteFooter {
           font-weight: 400; }
           footer#siteFooter .footer-left .footer-menu ul li a:hover {
             color: #2c4257; }
+  footer#siteFooter .footer-right h4.sign-up-title {
+    font-size: 20px; }
   footer#siteFooter .footer-right form#mktoForm_1479 {
     padding: 0;
     max-width: 100%;
