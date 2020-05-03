@@ -471,7 +471,7 @@
         </form>
         <div class="row subscribe-form-container">
             <div class="col-12 text-center">
-                <span class="subscribe-text">SIGN UP FOR RELEASE UPDATES:</span>
+                <!-- <span class="subscribe-text">SIGN UP FOR RELEASE UPDATES:</span>
                 <form id="mktoForm_1479"></form>
                 <script>MktoForms2.loadForm("//app-lon04.marketo.com",
                                             "256-FNZ-187", 1479,
@@ -479,7 +479,15 @@
                                                 $("#Email").attr("required", "true");
                                                 $("#mktoForm_1479").removeAttr("novalidate");
                                             });
-                </script>
+                </script> -->
+                <h4 id="signUpHeading">Sign up for release updates</h4>
+              <div class="mktoFormWrapper">
+                <!-- FOOTER FORM HERE -->
+                <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
+                <form id="mktoForm_1479">
+                </form>
+                <script>MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479);</script>
+              </div>
             </div>
         </div>
     </div>
