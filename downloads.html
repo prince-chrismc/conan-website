@@ -291,9 +291,9 @@
                                       rows="1"
                                       class="multiline-copy">
 wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | apt-key add -;
-echo "deb https://jfrog.bintray.com/artifactory-debs {distribution} {components}" | sudo tee -a /etc/apt/sources.list;
+echo "deb https://jfrog.bintray.com/artifactory-pro-debs {distribution} main" | sudo tee -a /etc/apt/sources.list;# To determine your distribution, run lsb_release -c or cat /etc/os-release# Example: echo "deb https://jfrog.bintray.com/artifactory-pro-debs xenial main" | sudo tee -a /etc/apt/sources.list;
 apt-get update;
-sudo apt-get install jfrog-artifactory-oss
+sudo apt-get install jfrog-artifactory-cpp
                           </textarea>
                              Copy&nbsp;Pull&nbsp;Command
                           </a>
