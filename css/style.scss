@@ -796,9 +796,29 @@ footer#siteFooter {
 }
 
 section#downloads {
+
+  .ncta {
+    padding: 12px 16px;
+    color: white;
+    transition: all 0.32s ease;
+    border-radius: 2px;
+    font-weight: 500;
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  .downloads-item-wrapper {
+    height: 100%;
+  }
+
   p {
     font-size: 16px;
     font-weight: 400;
+    &.front-text {
+      font-size: 17px;
+      font-weight: 600;
+    }
   }
 
   h2 {
@@ -820,141 +840,122 @@ section#downloads {
     font-size: 17px;
   }
 
-  .downloads-item-wrapper {
-    p {
-      max-width: 438px;
-    }
+  .package-wrapper {
+    margin-bottom: 8px;
   }
 
-  .installers {
+  .cn-box {
+    min-width: 68px;
+    background: #fff;
+    display: inline-block;
+    height: 57px;
+    border: 1px solid $alt-gray;
+    border-radius: 2px;
+    margin-right: 8px;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -2px;
-    max-width: 350px;
+    align-items: center;
+    padding: 8px 13px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-size: 20px;
 
-    .cn-box {
-      width: 75px;
+    &.copy-text {
+      font-family: monospace;
+    }
+
+    &.cn-copy {
       cursor: pointer;
-      background: #fff;
-      display: inline-block;
-      height: 57px;
-      border: 2px solid #e3e4e4;
-      border-radius: 2px;
-      margin-right: 8px;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      align-items: center;
-      padding: 8px 13px;
-      color: #000;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 1;
-      text-align: center;
-      transition: all 0.2s ease;
+    }
 
-      &.small {
-        min-width: 68px;
-        margin-top: 8px;
+    &.small {
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
-        img {
-          margin-left: auto;
-          margin-right: auto;
+    &.big {
+      width: 295px;
+      max-width: 100%;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    &.cn-main {
+      width: 344px;
+      &.cn-dropdown {
+        padding: 0;
+        .dropdown {
+          height: 100%;
+          padding-left: 0;
+          width: 100%;
+          button.dropdown-toggle {
+            font-size: 20px;
+            padding: 8px 13px;
+            background: transparent;
+            height: 100%;
+            padding-left: 0;
+            color: black;
+            border: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            &:after {
+              margin-right: 15px;
+            }
+          }
+          .dropdown-menu {
+            width: 100%;
+          }
+        }
+        .dropdown-item {
+          cursor: pointer;
         }
       }
+    }
 
-      &.big {
-        width: 295px;
-        max-width: 100%;
-        @media screen and (max-width: 768px) {
-          font-size: 16px;
-        }
+    &.cn-action {
+      background-color: $dark-gray;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 0.32s ease;
+      &:hover {
+        background-color: $blue;
+        border-color: $blue;
       }
-
-      &.cn-options {
-        position: relative;
-
-        &.active {
-          border: 2px solid $blue;
-
-          .cn-dl-inner {
-            z-index: 1;
-            visibility: visible;
-            opacity: 1;
-          }
-        }
-
-        .cn-dl-inner {
-          width: auto;
-          z-index: -1;
-          visibility: hidden;
-          opacity: 0;
-          text-align: left;
-          display: block;
-          height: auto;
-          top: 100%;
-          top: calc(100% + 8px);
-          left: -2px;
-          transition: all 0.32s ease;
-          @media screen and (max-width: $sm) {
-            left: unset;
-            right: 0;
-          }
-
-          &:hover {
-            border: 2px solid #e3e4e4;
-          }
-
-          a {
-            transition: all 0.32s ease;
-            color: #000;
-            padding: 10px;
-            display: block;
-          }
-        }
+      img {
+        margin-left: auto;
+        margin-right: auto;
       }
-
       &.cn-copy {
-        font-family: monospace;
+        background-image: url('../img/copy-icon.png');
+        cursor: pointer;
       }
-    }
-
-    .cn-copy-multiline {
-      position: relative;
-
-      textarea {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        z-index: -9;
-        width: 1px;
-        height: 1px;
+      &.cn-download {
+        background-image: url('../img/download-icon.png');
+        &.disabled {
+          cursor: default;
+          &:hover {
+            background-color: $dark-gray !important;
+            border-color: $dark-gray !important;
+          }
+        }
       }
-    }
-  }
-
-  a.green {
-    &:hover {
-      color: $green;
-      text-decoration: underline;
-    }
-  }
-
-  .blue-downloads {
-    .cn-box {
-      &:hover {
-        border: 2px solid $blue;
-      }
-    }
-  }
-
-  .green-downloads {
-    .cn-box {
-      &:hover {
-        border: 2px solid $green;
+      &.cn-link {
+        background-image: url('../img/link-icon.png');
       }
     }
   }
