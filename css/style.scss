@@ -915,6 +915,8 @@ section#downloads {
             padding-left: 15px;
             &:after {
               margin-right: 15px;
+              color: $gray;
+              font-size: 120%;
             }
           }
           .dropdown-menu {

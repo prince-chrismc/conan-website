@@ -749,7 +749,9 @@ section#downloads .cn-box {
           justify-content: space-between;
           padding-left: 15px; }
           section#downloads .cn-box.cn-main.cn-dropdown .dropdown button.dropdown-toggle:after {
-            margin-right: 15px; }
+            margin-right: 15px;
+            color: #8b8b8b;
+            font-size: 120%; }
         section#downloads .cn-box.cn-main.cn-dropdown .dropdown .dropdown-menu {
           width: 100%; }
       section#downloads .cn-box.cn-main.cn-dropdown .dropdown-item {
