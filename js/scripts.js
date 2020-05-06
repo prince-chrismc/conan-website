@@ -9,6 +9,14 @@ jQuery(document).ready(function($) {
 
   $('.lazy').Lazy();
 
+  $('.small-title-lazy').Lazy({
+    afterLoad: function() {
+      if (window.matchMedia("(min-width: " + bootstrap_sm + ")").matches) {
+        matchHeight($('.small-title'));
+      }
+    }
+  })
+
   //refresh on mobile orientationchange
   $(window).bind('orientationchange', function(event) {
     location.reload(true);
@@ -186,6 +194,7 @@ function toggleMenu($, ham) {
 function matchHeight(set) {
   var maxHeight = 0;
   // collect data from all
+  if (set.length < 2) return;
   set.each(function() {
     var thisHeight = jQuery(this).outerHeight();
     if (thisHeight > maxHeight) {
@@ -200,11 +209,7 @@ function matchHeight(set) {
 
 //DOWNLOADS MATCH HEIGHT
 function downloadsMatchHeight() {
-  matchHeight(jQuery('.downloads-item-wrapper .text h4'));
-  matchHeight(jQuery('.downloads-item-wrapper .text'));
-  matchHeight(jQuery('.downloads-item-wrapper .text-two'));
-  matchHeight(jQuery('.downloads-item-wrapper h3'));
-  matchHeight(jQuery('.downloads-item-wrapper .small-installers'));
+  matchHeight(jQuery('.front-text'))
 }
 
 //copy text to clipboard

@@ -115,15 +115,14 @@
           <div class="col-lg-6 blue-downloads">
             <div class="downloads-item-wrapper bg-bright-gray">
               <div class="top bg-blue p-2">
-                <!-- TITLE -->
-                <h2 class="text-center white pt-1">1. Install Conan</h2>
+
               </div>
-              <div class="content p-4 p-md-5">
+              <div class="content px-4 py-2 p-md-4">
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
                   <img data-src="img/conan-downloads-logo.png"
                        alt="Conan Package"
-                       class="mr-2 lazy">
+                       class="mr-2 small-title-lazy">
                 </div>
                 <!-- TEXT -->
                 <div class="text pb-1">
@@ -287,44 +286,38 @@
           <div class="col-lg-6 mt-3 mt-lg-0 green-downloads">
             <div class="downloads-item-wrapper bg-bright-gray">
               <div class="top bg-green p-2">
-                <!-- TITLE -->
-                <h2 class="text-center white pt-1">2. Install JFrog Artifactory CE</h2>
+
               </div>
-              <div class="content p-4 p-md-5">
+              <div class="content px-4 py-2 p-md-4">
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
-                  <img data-src="img/downloads/artifactory-small-pack.png"
+                  <img data-src="img/arti-downloads-logo.png"
                        alt="Artifactory"
                        class="mr-2 lazy">
-                  <span class="pl-1">JFrog Artifactory (latest version)</span>
                 </div>
-                <!-- PACKAGE TITLE -->
-                <h3 class="green pt-2 pb-2">World's Leading Package Manager</h3>
                 <!-- TEXT -->
-                <div class="text">
-                  <h4>Host and Manage Your Conan Packages</h4>
-                  <p class="pb-4">
-                    JFrog Artifactory Community Edition delivers the
-                    award-winning power of Artifactory package management
-                    to the C/C++ community for free. Host and manage Conan
-                    packages in private repositories across teams.
+                <div class="text pb-1">
+                  <p class="py-3 front-text">
+                    Download the latest version of JFrog Artifactory
+                    Community Edition to host your own private packages
+                    on your own server - for free.
                   </p>
+                  <p class="mb-2">Download:</p>
                 </div>
                 <!-- INSTALL -->
                 <div class="install">
-                  <h5>Download with</h5>
                   <div class="installers pb-4">
                     <!-- ARTIFACTORY ZIP -->
-                    <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip"
-                       class="cn-box big cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img data-src="img/downloads/arti-c-small-pack.png"
-                           alt="Artifactory Zip"
-                           class="mr-2 lazy">
-                      <span>Download ZIP for C/C++</span>
-                    </a>
+                    <div class="package-wrapper d-flex flex-no-wrap" id="artifactoryZipPackage">
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main" id="artiZipMain">
+                         Download Zip
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / ARTIFACTORY ZIP -->
                   </div>
                   <h5>Other Installers</h5>
                   <div class="installers small-installers pb-4">

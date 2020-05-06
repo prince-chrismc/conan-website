@@ -818,6 +818,7 @@ section#downloads {
     &.front-text {
       font-size: 17px;
       font-weight: 600;
+      max-width: 485px;
     }
   }
 
@@ -890,6 +891,10 @@ section#downloads {
 
     &.cn-main {
       width: 344px;
+      &#artiZipMain {
+        width: auto;
+        padding-right: 20px;
+      }
       &.cn-dropdown {
         padding: 0;
         .dropdown {

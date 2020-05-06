@@ -676,7 +676,8 @@ section#downloads p {
   font-weight: 400; }
   section#downloads p.front-text {
     font-size: 17px;
-    font-weight: 600; }
+    font-weight: 600;
+    max-width: 485px; }
 section#downloads h2 {
   font-weight: 300;
   font-size: 25px; }
@@ -725,6 +726,9 @@ section#downloads .cn-box {
         font-size: 16px; } }
   section#downloads .cn-box.cn-main {
     width: 344px; }
+    section#downloads .cn-box.cn-main#artiZipMain {
+      width: auto;
+      padding-right: 20px; }
     section#downloads .cn-box.cn-main.cn-dropdown {
       padding: 0; }
       section#downloads .cn-box.cn-main.cn-dropdown .dropdown {
