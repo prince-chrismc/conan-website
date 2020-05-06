@@ -473,6 +473,163 @@ section.contact-us img.contact-bg {
   top: -200px;
   z-index: 0; }
 
+section.sign-up form#mktoForm_1479 {
+  padding: 0;
+  max-width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 535px !important; }
+  section.sign-up form#mktoForm_1479 input, section.sign-up form#mktoForm_1479 button[type="submit"] {
+    border-radius: 2px !important;
+    border: none !important; }
+  section.sign-up form#mktoForm_1479 h2 {
+    font-weight: 200; }
+  section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) {
+    order: -1; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoError {
+      right: unset !important;
+      bottom: -69px !important; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) label[for="Email"], section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoOffset, section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoClear, section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoGutter.mktoHasWidth {
+      display: none; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) input {
+      width: 100%;
+      border-right: 2px;
+      border: 1px solid #8b8b8b;
+      height: 48px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 18px; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) input#Email {
+      max-width: 100%;
+      width: 332px !important; }
+  section.sign-up form#mktoForm_1479 .mktoButtonRow {
+    order: -1; }
+    section.sign-up form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative {
+      margin-left: 10px !important; }
+      section.sign-up form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative button.mktoButton {
+        height: 48px;
+        border: 0;
+        background: #2c4257;
+        width: 190px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 19px;
+        padding-left: 17px;
+        padding-right: 17px; }
+  section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) {
+    width: 525px;
+    max-width: 100%;
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoAsterix, section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoGutter.mktoHasWidth, section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoValid label {
+      display: none; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoOffset {
+      display: none; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 5px;
+      justify-content: center; }
+      section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField label.mktoLabel.mktoHasWidth {
+        color: #fff;
+        text-align: center;
+        font-weight: 300 !important; }
+        section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField label.mktoLabel.mktoHasWidth a {
+          font-weight: 600 !important;
+          color: #fff !important;
+          text-decoration: underline; }
+      section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired {
+        width: 25px !important;
+        padding-left: 0;
+        padding-top: 2.9px; }
+        section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox'] {
+          opacity: 0; }
+        section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox'] + label {
+          display: block !important;
+          box-sizing: border-box;
+          border-radius: 2px;
+          width: 18px;
+          height: 19px;
+          background: #fff;
+          border: 1px solid #8b8b8b;
+          margin: 0 !important;
+          padding: 0 !important; }
+        section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox']:checked + label:before {
+          content: '\2714';
+          position: absolute;
+          top: 9px;
+          left: 4px;
+          z-index: 2;
+          font-size: 14px;
+          color: #40be46; }
+    @media screen and (max-width: 768px) {
+      section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) {
+        margin-top: 10px;
+        margin-bottom: 10px; } }
+  @media screen and (max-width: 600px) {
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(3) {
+      width: 100%;
+      justify-content: flex-start; }
+    section.sign-up form#mktoForm_1479 .mktoFormRow:nth-child(2) input#Email {
+      width: 210px !important;
+      font-size: 15px; }
+    section.sign-up form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative button.mktoButton {
+      width: 110px !important;
+      font-size: 15px; } }
+section.sign-up form.footer-form h3 {
+  font-size: 20px; }
+section.sign-up form.footer-form label {
+  display: none; }
+  section.sign-up form.footer-form label.show-label {
+    display: inline-block; }
+section.sign-up form.footer-form input:not([type='checkbox']) {
+  height: 48px;
+  border-radius: 2px; }
+  section.sign-up form.footer-form input:not([type='checkbox'])#footerEmail {
+    width: 261px;
+    border: 1px solid gray;
+    background: white;
+    padding-left: 15px; }
+  section.sign-up form.footer-form input:not([type='checkbox'])[type='submit'] {
+    padding: 10px 15px; }
+section.sign-up form.footer-form .form-checkbox {
+  position: relative; }
+  section.sign-up form.footer-form .form-checkbox abbr {
+    display: none; }
+  section.sign-up form.footer-form .form-checkbox input {
+    opacity: 0;
+    position: relative;
+    left: 3px;
+    bottom: -7px;
+    z-index: 3; }
+  section.sign-up form.footer-form .form-checkbox span {
+    height: 19px;
+    width: 18px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: -13px;
+    transition: all 0.12s ease; }
+  section.sign-up form.footer-form .form-checkbox [type='checkbox']:checked + span {
+    background: #40be46;
+    border: 1px solid #40be46; }
+  section.sign-up form.footer-form .form-checkbox [type='checkbox']:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    z-index: 2;
+    font-size: 14px;
+    color: #fff; }
+
 footer#siteFooter {
   background-image: url("../img/footer-bg.png");
   background-position: bottom right;
@@ -482,7 +639,9 @@ footer#siteFooter {
     footer#siteFooter {
       background-image: none; } }
   footer#siteFooter .footer-left {
-    border-right: 1px solid #000; }
+    border-top: 1px solid rgba(139, 139, 139, 0.5);
+    padding-top: 30px;
+    margin-top: 20px; }
     footer#siteFooter .footer-left .footer-menu {
       font-size: 16px; }
       footer#siteFooter .footer-left .footer-menu h4 {
@@ -499,135 +658,6 @@ footer#siteFooter {
             color: #2c4257; }
   footer#siteFooter .footer-right h4.sign-up-title {
     font-size: 20px; }
-  footer#siteFooter .footer-right form#mktoForm_1479 {
-    padding: 0;
-    max-width: 100%;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-wrap: wrap; }
-    footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) {
-      order: -1; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) label[for="Email"], footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoOffset, footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoClear, footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) .mktoGutter.mktoHasWidth {
-        display: none; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) input {
-        width: 100%;
-        border-right: 2px;
-        border: 1px solid #8b8b8b;
-        height: 48px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 18px; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(2) input#Email {
-        max-width: 260px; }
-    footer#siteFooter .footer-right form#mktoForm_1479 .mktoButtonRow {
-      order: -1; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative {
-        margin-left: 10px !important; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative button.mktoButton {
-          height: 48px;
-          border: 0;
-          background: #40be46;
-          color: #fff;
-          font-size: 19px;
-          padding-left: 17px;
-          padding-right: 17px; }
-    footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoAsterix, footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoGutter.mktoHasWidth, footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoValid label {
-      display: none; }
-    footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoOffset {
-      display: none; }
-    footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField {
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-direction: row-reverse;
-      padding-top: 5px; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField label.mktoLabel.mktoHasWidth {
-        font-weight: 300 !important; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField label.mktoLabel.mktoHasWidth a {
-          color: #7ba7d3 !important;
-          font-weight: 400 !important; }
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired {
-        width: 25px !important;
-        padding-left: 0;
-        padding-top: 2.9px; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox'] {
-          opacity: 0; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox'] + label {
-          display: block !important;
-          box-sizing: border-box;
-          border-radius: 2px;
-          width: 18px;
-          height: 19px;
-          background: #fff;
-          border: 1px solid #8b8b8b;
-          margin: 0 !important;
-          padding: 0 !important; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap.mktoRequiredField .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired [type='checkbox']:checked + label:before {
-          content: '\2714';
-          position: absolute;
-          top: 9px;
-          left: 4px;
-          z-index: 2;
-          font-size: 14px;
-          color: #40be46; }
-    @media screen and (max-width: 768px) {
-      footer#siteFooter .footer-right form#mktoForm_1479 .mktoFormRow:nth-child(3) {
-        margin-top: 10px;
-        margin-bottom: 10px; } }
-    @media screen and (max-width: 1100px) {
-      footer#siteFooter .footer-right form#mktoForm_1479 {
-        flex-direction: column; }
-        footer#siteFooter .footer-right form#mktoForm_1479 .mktoButtonRow {
-          order: 0; }
-          footer#siteFooter .footer-right form#mktoForm_1479 .mktoButtonRow span.mktoButtonWrap.mktoNative {
-            margin-left: 0 !important; } }
-  footer#siteFooter .footer-right form.footer-form h3 {
-    font-size: 20px; }
-  footer#siteFooter .footer-right form.footer-form label {
-    display: none; }
-    footer#siteFooter .footer-right form.footer-form label.show-label {
-      display: inline-block; }
-  footer#siteFooter .footer-right form.footer-form input:not([type='checkbox']) {
-    height: 48px;
-    border-radius: 2px; }
-    footer#siteFooter .footer-right form.footer-form input:not([type='checkbox'])#footerEmail {
-      width: 261px;
-      border: 1px solid gray;
-      background: white;
-      padding-left: 15px; }
-    footer#siteFooter .footer-right form.footer-form input:not([type='checkbox'])[type='submit'] {
-      padding: 10px 15px; }
-  footer#siteFooter .footer-right form.footer-form .form-checkbox {
-    position: relative; }
-    footer#siteFooter .footer-right form.footer-form .form-checkbox abbr {
-      display: none; }
-    footer#siteFooter .footer-right form.footer-form .form-checkbox input {
-      opacity: 0;
-      position: relative;
-      left: 3px;
-      bottom: -7px;
-      z-index: 3; }
-    footer#siteFooter .footer-right form.footer-form .form-checkbox span {
-      height: 19px;
-      width: 18px;
-      border: 1px solid black;
-      display: inline-block;
-      position: relative;
-      top: 3px;
-      left: -13px;
-      transition: all 0.12s ease; }
-    footer#siteFooter .footer-right form.footer-form .form-checkbox [type='checkbox']:checked + span {
-      background: #40be46;
-      border: 1px solid #40be46; }
-    footer#siteFooter .footer-right form.footer-form .form-checkbox [type='checkbox']:checked + span:before {
-      content: '\2714';
-      position: absolute;
-      top: -3px;
-      left: 2px;
-      z-index: 2;
-      font-size: 14px;
-      color: #fff; }
   footer#siteFooter .footer-right ul.socials {
     list-style: none; }
 
