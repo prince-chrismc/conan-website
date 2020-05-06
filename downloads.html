@@ -109,7 +109,7 @@
            class="position-absolute hero-bg downloads-hero-bg d-none d-xl-inline"
            alt="JFrog Conan">
       <div class="container">
-        <div class="row py-5">
+        <div class="row pb-3">
 
           <!-- DOWNLOADS #1 -->
           <div class="col-lg-6 blue-downloads">
@@ -190,7 +190,7 @@
                     <!-- / DEBIAN -->
 
                     <!-- WINDOWS -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
+                    <div class="package-wrapper normal-dropdown d-flex flex-no-wrap">
                       <!-- LOGO -->
                       <div class="cn-box small">
                         <img class="lazy"
@@ -232,7 +232,6 @@
                       <div class="cn-box cn-main copy-text">
                          $ yay -S conan
                       </div>
-                      <!-- ACTION -->
                       <!-- ACTION -->
                       <a class="cn-box cn-action cn-copy"
                          data-toggle="tooltip"
@@ -308,7 +307,7 @@
                 <div class="install">
                   <div class="installers pb-4">
                     <!-- ARTIFACTORY ZIP -->
-                    <div class="package-wrapper d-flex flex-no-wrap" id="artifactoryZipPackage">
+                    <div class="package-wrapper mb-0 d-flex flex-no-wrap" id="artifactoryZipPackage">
                       <!-- TEXT -->
                       <div class="cn-box cn-main" id="artiZipMain">
                          Download Zip
@@ -319,156 +318,200 @@
                     </div>
                     <!-- / ARTIFACTORY ZIP -->
                   </div>
-                  <h5>Other Installers</h5>
+                  <p>Other Installers:</p>
+
                   <div class="installers small-installers pb-4">
-                    <!-- TAR.GZ -->
-                    <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-linux.tar.gz;bt_package=jfrog-artifactory-oss"
-                       class="cn-box small cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/linux-small-pack.png"
-                           alt="tar-gz">
-                    </a>
 
-
-                    <!-- DEBIAN OPTIONS -->
-                    <div
-                         class="cn-box small cn-options"
-                         data-toggle="tooltip"
-                         data-placement="top"
-                         title="Show Options">
-                      <img class="lazy"
-                           data-src="img/downloads/debian-small-pack.png"
-                           alt="Debian">
-                      <div class="cn-dl-inner position-absolute cn-box">
-                        <!-- Options -->
-                        <div class="inner-inner">
-                          <!-- Copy -->
-                          <a class="blue-hover cn-copy-multiline"
-                             data-toggle="tooltip"
-                             data-placement="top"
-                             data-copy-target="#debianTextArea">
-                            <textarea id="debianTextArea"
-                                      cols="1"
-                                      rows="1"
-                                      class="multiline-copy">
-wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | apt-key add -;
-echo "deb https://jfrog.bintray.com/artifactory-debs {distribution} {components}" | sudo tee -a /etc/apt/sources.list;
-apt-get update;
-sudo apt-get install jfrog-artifactory-oss
-                          </textarea>
-                             Copy&nbsp;Pull&nbsp;Command
-                          </a>
-                          <!-- Download -->
-                          <a class="blue-hover"
-                             href="https://api.bintray.com/content/jfrog/artifactory-debs/pool/jfrog-artifactory-oss/jfrog-artifactory-oss-$latest.deb;bt_package=jfrog-artifactory-oss">Download</a>
-                        </div>
+                    <!-- LINUX -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/linux-small-pack.png"
+                             alt="Linux">
                       </div>
-                    </div>
-
-
-                    <!-- RPM OPTIONS -->
-                    <div
-                         class="cn-box small cn-options"
-                         data-toggle="tooltip"
-                         data-placement="top"
-                         title="Show Options">
-                      <img class="lazy"
-                           data-src="img/downloads/rpm-small-pack.png"
-                           alt="RPM">
-                      <div class="cn-dl-inner position-absolute cn-box">
-                        <!-- Options -->
-                        <div class="inner-inner">
-                          <!-- Copy -->
-                          <a class="blue-hover cn-copy-multiline"
-                             data-toggle="tooltip"
-                             data-placement="top"
-                             data-copy-target="#rpmTextArea">
-                            <textarea id="rpmTextArea"
-                                      cols="1"
-                                      rows="1"
-                                      class="multiline-copy">
-                                      wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-oss-rpms.repo;
-                                      sudo mv  bintray-jfrog-artifactory-oss-rpms.repo /etc/yum.repos.d/;
-                                      yum install jfrog-artifactory-oss
-                            </textarea>
-                             Copy&nbsp;Pull&nbsp;Command
-                          </a>
-                          <!-- Download -->
-                          <a class="blue-hover"
-                             href="https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-oss/jfrog-artifactory-oss-$latest.rpm;bt_package=jfrog-artifactory-oss">Download</a>
-                        </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Liunx Installer
                       </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-linux.tar.gz" class="cn-box cn-action cn-download">
+                      </a>
                     </div>
+                    <!-- / LINUX -->
 
-                    <!-- DOCKER -->
-                    <a class="cn-box small cn-copy"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       data-copy-value="docker pull docker.bintray.io/jfrog/artifactory-cpp-ce">
-                      <img class="lazy"
-                           data-src="img/downloads/docker-small-pack.png"
-                           alt="Docker">
-                    </a>
-                    <!-- DOCKER COMPOSE -->
-                    <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/docker/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-compose.tar.gz;bt_package=jfrog-artifactory-oss"
-                       class="cn-box small cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/compose-small-pack.png"
-                           alt="Docker Compose">
-                    </a>
-                    <!-- DOCKER -->
-                    <a class="cn-box small cn-copy-multiline"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       data-copy-target="#helmTextarea">
-                      <img class="lazy"
-                           data-src="img/downloads/helm-small-pack.png"
-                           alt="Docker">
-                      <textarea id="helmTextarea"
-                                cols="1"
-                                rows="1"
-                                class="multiline-copy">
-helm repo add jfrog https://charts.jfrog.io
-helm install --name artifactory jfrog/artifactory-oss
-                  </textarea>
-                    </a>
+                    <!-- DARWIN -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/darwin-small-pack.png"
+                             alt="Darwin">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Darwin Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / DARWIN -->
+
                     <!-- WINDOWS -->
-                    <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-windows.zip;bt_package=jfrog-artifactory-oss"
-                       class="cn-box small cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/windows-small-pack.png"
-                           alt="Windows">
-                    </a>
-                    <!-- MAC -->
-                    <a href="https://api.bintray.com/content/jfrog/artifactory/org/artifactory/oss/jfrog-artifactory-oss/$latest/jfrog-artifactory-oss-$latest-darwin.tar.gz;bt_package=jfrog-artifactory-oss"
-                       class="cn-box small cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/darwin-small-pack.png"
-                           alt="Darwin">
-                    </a>
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/windows-small-pack.png"
+                             alt="Windows">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Windows Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-windows.zip" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / WINDOWS -->
+
+                    <!-- DOCKER COMPOSE -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/compose-small-pack.png"
+                             alt="Windows">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Docker Compose Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/docker/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-compose.tar.gz" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / DOCKER COMPOSE -->
+
+                    <!-- DOKCER -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/docker-small-pack.png"
+                             alt="Arc Linux">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main copy-text">
+                         <span class="in-copy-text">$ docker run ... </span>
+                      </div>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy"
+                         data-toggle="tooltip"
+                         data-placement="top"
+                         data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
+                      </a>
+                    </div>
+                    <!-- / DOKCER -->
+
+                    <!-- RPM -->
+                    <div class="package-wrapper package-copy-plus-download d-flex flex-no-wrap position-relative">
+                      <textarea id="artiRpm" cols="1" rows="1" class="position-absolute">
+#Add artifactory.repo file to your yum repository list
+sudo vi /etc/yum.repos.d/artifactory.repo
+#Add the following content
+[Artifactory]
+name=Artifactory
+baseurl=https://releases.jfrog.io/artifactory/artifactory-rpms/
+enabled=1
+gpgcheck=0
+#Optional - if you have GPG signing keys installed, use the below flags to verify the repository metadata signature:
+#gpgkey=https://releases.jfrog.io/artifactory/artifactory-rpms/<PATH_TO_REPODATA_FOLDER>/repomd.xml.key
+#repo_gpgcheck=1
+#Run the install command
+yum update && yum install jfrog-artifactory-cpp-ce
+                      </textarea>
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/rpm-small-pack.png"
+                             alt="rpm">
+                      </div>
+                      <!-- DROPDOWN -->
+                      <div class="cn-box cn-main cn-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButtonRPM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Copy install command
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dropdown-item-copy">
+                              Copy install command
+                            </a>
+                            <a class="dropdown-item dropdown-item-download">
+                              RPM Installer
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy-multiline"
+                         href="#"
+                         data-href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe"
+                         data-copy-target="textarea#artiRpm">
+                      </a>
+                    </div>
+                    <!-- / RPM -->
+
+                    <!-- Debian -->
+                    <div class="package-wrapper package-copy-plus-download d-flex flex-no-wrap position-relative">
+                      <textarea id="artiDebian" cols="1" rows="1" class="position-absolute">
+wget -qO - https://releases.jfrog.io/artifactory/api/gpg/key/public | apt-key add -;
+echo "deb https://releases.jfrog.io/artifactory/artifactory-debs {distribution} main" | sudo tee -a /etc/apt/sources.list;
+# To determine your distribution, run lsb_release -c or cat /etc/os-release
+# Example: echo "deb https://releases.jfrog.io/artifactory/artifactory-debs xenial main" | sudo tee -a /etc/apt/sources.list;
+apt-get update;
+sudo apt-get install jfrog-artifactory-cpp
+                  </textarea>
+                  <!-- LOGO -->
+                  <div class="cn-box small">
+                    <img class="lazy"
+                         data-src="img/downloads/debian-small-pack.png"
+                         alt="debian">
                   </div>
+                  <!-- DROPDOWN -->
+                  <div class="cn-box cn-main cn-dropdown">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButtonDebian" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Copy install command
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item dropdown-item-copy">
+                          Copy install command
+                        </a>
+                        <a class="dropdown-item dropdown-item-download">
+                          Debian Installer
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ACTION -->
+                  <a class="cn-box cn-action cn-copy-multiline"
+                     href="#"
+                     data-href="https://releases.jfrog.io/artifactory/artifactory-pro-debs/pool/jfrog-artifactory-pro/jfrog-artifactory-pro-[RELEASE].deb"
+                     data-copy-target="textarea#artiDebian">
+                  </a>
                 </div>
-                <!-- TEXT TWO -->
-                <div class="text-two">
-                  <h4>Using Conan with Artifactory</h4>
-                  <p class="mb-2">
-                    Once the Conan client is installed, you can access Conan repositories in Artifactory trough its comand line interface.
-                  </p>
-                  <a href="https://www.jfrog.com/confluence/display/JFROG/Conan+Repositories"
-                     class="green">
-                    Read more >
+                <!-- / Debian -->
+
+
+                  </div>
+
+                </div>
+
+                <div class="cta-wrapper">
+                  <a href="https://docs.conan.io/en/latest/installation.html" class="ncta bg-green d-inline-block mt-0">
+                    Getting Started with Artifactory CE
                   </a>
                 </div>
 
@@ -482,16 +525,44 @@ helm install --name artifactory jfrog/artifactory-oss
           <div class="col-12 text-center">
             <h2 class="font-weight-bold pb-3">Questions about Installation?</h2>
             <p>
-              Contact the community on
-              <a href="https://cpplang.​slack.​com/?id=conan">
-                <img class="lazy"
-                     data-src="img/social/slack.svg"
-                     alt="slack"> Slack
-              </a>
-              or see our <a href="https://docs.conan.io/">
-                Docs
-              </a>
+              Check the Docs, contact the community on Slack, or ask for support in Github
             </p>
+            <div class="d-flex justify-content-center mt-4">
+
+              <!-- DOCS -->
+              <a class="q-box d-block"
+                 href="https://docs.conan.io/">
+                <div class="q-top">
+                  <img src="img/docs.svg" alt="Docs">
+                </div>
+                <div class="q-title text-center mt-1">
+                  Docs
+                </div>
+              </a>
+
+              <!-- SLACK -->
+              <a class="q-box d-block"
+                 href="https://cpplang.slack.com/?id=conan">
+                <div class="q-top">
+                  <img src="img/social/slack.svg" alt="Docs">
+                </div>
+                <div class="q-title text-center mt-1">
+                  Slack
+                </div>
+              </a>
+
+              <!-- GITHUB -->
+              <a class="q-box d-block"
+                 href="https://github.com/conan-io">
+                <div class="q-top">
+                  <img src="img/social/github.svg" alt="Docs">
+                </div>
+                <div class="q-title text-center mt-1">
+                  Github
+                </div>
+              </a>
+
+            </div>
           </div>
         </div>
       </div>

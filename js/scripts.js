@@ -50,7 +50,68 @@ jQuery(document).ready(function($) {
   // DOWNLOADS
   if ($('body.downloads').length) {
     // TOOLTIPS
-    let copyText = 'Copy pull command to clipboard';
+    let copyText     = 'Copy install command to clipboard';
+    let downloadText = 'Download';
+    let goToURLText  = 'Go To URL';
+
+
+    $('.cn-download').tooltip({
+      title: downloadText
+    });
+
+    //cn-link
+    $('.cn-link').tooltip({
+      title: goToURLText
+    });
+
+    //dropdown functionality (windows)
+     $('.package-wrapper.normal-dropdown a.dropdown-item').click(function(){
+       let that           = $(this);
+       let text           = that.text();
+       let downloadURL    = that.data('href');
+       let packageWrapper = that.closest('.package-wrapper');
+       let dropdownToggle = packageWrapper.find('.dropdown-toggle');
+       let downloadBtn    = packageWrapper.find('.cn-download');
+       dropdownToggle.text(text);
+       downloadBtn.attr('href', downloadURL);
+     });
+
+     //dropdown functionality (rpm, debian)
+     $('.package-wrapper.package-copy-plus-download a.dropdown-item').click(function(e){
+       let that           = $(this);
+       let text           = that.text();
+       let packageWrapper = that.closest('.package-wrapper');
+       let dropdownToggle = packageWrapper.find('.dropdown-toggle');
+       let packageBtn     = packageWrapper.find('.cn-action');
+       dropdownToggle.text(text);
+       if (that.hasClass('dropdown-item-copy')) { //clicked on copy option
+         packageBtn.removeClass('cn-download').addClass('cn-copy-multiline');
+         packageBtn.attr('data-original-title', copyText);
+         packageBtn.attr('href', '#');
+       } else {
+         let downloadURL = packageBtn.data('href');
+         packageBtn.removeClass('cn-copy-multiline').addClass('cn-download');
+         packageBtn.attr('data-original-title', downloadText);
+         packageBtn.attr('href', downloadURL);
+       }
+     });
+
+     $('.package-wrapper.package-copy-plus-download').on('click', '.cn-copy-multiline', function (e) {
+       e.preventDefault();
+       console.log($(this));
+       let targetSelector = $(this).data('copy-target');
+       let copyTarget     = $(targetSelector);
+       let copyString     = copyTarget.val();
+       copyString         = copyString.trim();
+       copyTarget.val(copyString);
+       copyTarget.select();
+       document.execCommand('copy');
+       $(this)
+         .tooltip('hide')
+         .attr('data-original-title', "Copied!")
+         .tooltip('show');
+     });
+
 
     //cn-copy
     $('.cn-copy')
@@ -65,22 +126,9 @@ jQuery(document).ready(function($) {
           .tooltip('show');
       });
 
-    $(".cn-copy-multiline")
-      .attr('data-original-title', copyText)
-      .tooltip()
-      .click(function(e) {
-        let targetId = $(this).data('copy-target');
-        let copyTarget = $(targetId);
-        let copyString = copyTarget.val();
-        copyString = copyString.trim();
-        copyTarget.val(copyString);
-        copyTarget.select();
-        document.execCommand('copy');
-        $(this)
-          .tooltip('hide')
-          .attr('data-original-title', "Copied!")
-          .tooltip('show');
-      });
+    $('.cn-copy-multiline').tooltip({
+      title: copyText
+    });
 
     //cn-options
     $('.cn-options')
@@ -107,39 +155,6 @@ jQuery(document).ready(function($) {
 
 
       });
-
-    $('.cn-download').tooltip();
-
-    if ($(window).width() <= 768) { //position option box on small width devices
-
-        $('.cn-options').each(function () {
-
-          let that                = $(this);
-          let installersContainer = that.parent('.installers.small-installers.pb-4');
-          let icOffset            = installersContainer.offset();
-          let tooltip             = that.find('.cn-dl-inner');
-          let installersWidth     = installersContainer.outerWidth();
-          let tooltipWidth        = tooltip.outerWidth();
-          let widthDelta          = installersWidth - tooltipWidth;
-          let tooltipOffset       = tooltip.offset();
-          let offSetDelta         = icOffset.left - tooltipOffset.left;
-          let absIndex            = that.index()+1;
-          let alignment           = '';
-          if (absIndex%4 <= 2) {
-            alignment = 'left';
-          } else {
-            alignment = 'right';
-          }
-
-          tooltip.css('left', 'auto');
-          if (alignment == 'left' || $(window).width() < 412) {
-            tooltip.css('right', -offSetDelta );
-          } else {
-            tooltip.css('right', -(offSetDelta+widthDelta) );
-          }
-        });
-
-    }
   }
 
 
