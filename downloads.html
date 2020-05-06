@@ -121,28 +121,24 @@
               <div class="content p-4 p-md-5">
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
-                  <img data-src="img/downloads/conan-small-pack.png"
+                  <img data-src="img/conan-downloads-logo.png"
                        alt="Conan Package"
                        class="mr-2 lazy">
-                  <span>Conan 1.21.0</span>
                 </div>
-                <!-- PACKAGE TITLE -->
-                <h3 class="blue pt-2 pb-2">Worlds First C/C++ Package Solution</h3>
                 <!-- TEXT -->
-                <div class="text">
-                  <h4>DevOps for C/C++ Delivered</h4>
-                  <p class="pb-4">
-                    Conan brings C/C++ and the world of DevOps together!
-                    Fetch and upload packages through a client-server
-                    architecture similar to the "git" push-pull model.
+                <div class="text pb-1">
+                  <p class="py-3 front-text">
+                    Install the latest version of the free and open Source
+                    Conan C and C++ package manager, to start using Conan
+                    and downloading packages from the ConanCenter.
                   </p>
+                  <p class="mb-2">Recommended install (need python in your system):</p>
                 </div>
                 <!-- INSTALL -->
                 <div class="install">
-                  <h5>Install with</h5>
                   <div class="installers pb-4">
                     <!-- PYTON -->
-                    <a class="cn-box big cn-copy"
+                    <a class="cn-box big cn-copy copy-text"
                        data-toggle="tooltip"
                        data-placement="top"
                        data-copy-value="pip install conan">
@@ -152,60 +148,135 @@
                       <span>$ pip install conan</span>
                     </a>
                   </div>
-                  <h5>Other Installers</h5>
+                  <p>Other Installers:</p>
                   <div class="installers small-installers pb-4">
+
                     <!-- DARWIN -->
-                    <a class="cn-box small cn-copy"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       data-copy-value="brew install conan">
-                      <img class="lazy"
-                           data-src="img/downloads/darwin-small-pack.png"
-                           alt="Darwin">
-                    </a>
-                    <!-- LINUX -->
-                    <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_23_0.deb"
-                       class="cn-box small cn-download"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/linux-small-pack.png"
-                           alt="Linux">
-                    </a>
-                    <!-- WINDOWS -->
-                    <div href="https://dl.bintray.com/conan/installers/conan-win-64_1_23_0.exe"
-                         class="cn-box small cn-options"
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/darwin-small-pack.png"
+                             alt="Darwin">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main copy-text">
+                         $ brew install conan
+                      </div>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy"
                          data-toggle="tooltip"
                          data-placement="top"
-                         title="Download">
-                      <img class="lazy"
-                           data-src="img/downloads/windows-small-pack.png"
-                           alt="Windows">
-                      <div class="cn-dl-inner position-absolute cn-box">
-                        <!-- Download x86_64 -->
-                        <div class="inner-inner">
-                          <a class="blue-hover"
-                             href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">Download&nbsp;x86_64 </a>
-                          <!-- Download x86 -->
-                          <a class="blue-hover"
-                             href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe">Download x86</a>
+                         data-copy-value="brew install conan">
+                      </a>
+                    </div>
+                    <!-- / DARWIN -->
+
+                    <!-- DEBIAN -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/debian-small-pack.png"
+                             alt="Debian">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Ubuntu / Debian X64 Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_24_1.deb" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / DEBIAN -->
+
+                    <!-- WINDOWS -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/windows-small-pack.png"
+                             alt="Windows">
+                      </div>
+                      <!-- DROPDOWN -->
+                      <div class="cn-box cn-main cn-dropdown">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Download x86_64
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">
+                              Download x86_64
+                            </a>
+                            <a class="dropdown-item" data-href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe">
+                              Download x86
+                            </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-download"
+                         href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">
+                      </a>
                     </div>
-                    <!-- ARCHLINUX $ yay -S conan-->
-                    <a class="cn-box small cn-copy"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       data-copy-value="yay -S conan">
-                      <img class="lazy"
-                           data-src="img/downloads/archlinux-small-pack.png"
-                           alt="ArchLinux">
-                    </a>
+                    <!-- / WINDOWS -->
+
+                    <!-- ARC LINUX -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/archlinux-small-pack.png"
+                             alt="Arc Linux">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main copy-text">
+                         $ yay -S conan
+                      </div>
+                      <!-- ACTION -->
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy"
+                         data-toggle="tooltip"
+                         data-placement="top"
+                         data-copy-value="yay -S conan">
+                      </a>
+                    </div>
+                    <!-- / ARC LINUX -->
+
+                    <!-- GITHUB -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/github-small-pack.png"
+                             alt="Github">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Any OS: From Source
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://github.com/conan-io/conan" target="_blank" class="cn-box cn-action cn-link">
+                      </a>
+                    </div>
+                    <!-- / GITHUB -->
+
                   </div>
                 </div>
                 <!-- TEXT TWO -->
-                <div class="text-two">
+                <div class="text text-two">
+                  <p>
+                    Read more about Conan installation: </br >
+                    <a href="https://docs.conan.io/en/latest/installation.html">
+                      https://docs.conan.io/en/latest/installation.html
+                    </a>
+                  </p>
+                </div>
+
+                <div class="cta-wrapper">
+                  <a href="https://docs.conan.io/en/latest/installation.html" class="ncta bg-blue d-inline-block mt-3">
+                    Getting Started With Conan
+                  </a>
                 </div>
 
               </div>
@@ -291,9 +362,9 @@
                                       rows="1"
                                       class="multiline-copy">
 wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | apt-key add -;
-echo "deb https://jfrog.bintray.com/artifactory-pro-debs {distribution} main" | sudo tee -a /etc/apt/sources.list;# To determine your distribution, run lsb_release -c or cat /etc/os-release# Example: echo "deb https://jfrog.bintray.com/artifactory-pro-debs xenial main" | sudo tee -a /etc/apt/sources.list;
+echo "deb https://jfrog.bintray.com/artifactory-debs {distribution} {components}" | sudo tee -a /etc/apt/sources.list;
 apt-get update;
-sudo apt-get install jfrog-artifactory-cpp
+sudo apt-get install jfrog-artifactory-oss
                           </textarea>
                              Copy&nbsp;Pull&nbsp;Command
                           </a>
