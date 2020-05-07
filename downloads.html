@@ -312,7 +312,7 @@
                     <div class="package-wrapper mb-0 d-flex flex-no-wrap" id="artifactoryZipPackage">
                       <!-- TEXT -->
                       <div class="cn-box cn-main" id="artiZipMain">
-                         Download Zip
+                         Download tar.gz
                       </div>
                       <!-- ACTION -->
                       <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box cn-action cn-download">
@@ -341,89 +341,6 @@
                       </a>
                     </div>
                     <!-- / LINUX -->
-
-                    <!-- DARWIN -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
-                      <!-- LOGO -->
-                      <div class="cn-box small">
-                        <img class="lazy"
-                             data-src="img/downloads/darwin-small-pack.png"
-                             alt="Darwin">
-                      </div>
-                      <!-- TEXT -->
-                      <div class="cn-box cn-main">
-                         Darwin Installer
-                      </div>
-                      <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz" class="cn-box cn-action cn-download">
-                      </a>
-                    </div>
-                    <!-- / DARWIN -->
-
-                    <!-- WINDOWS -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
-                      <!-- LOGO -->
-                      <div class="cn-box small">
-                        <img class="lazy"
-                             data-src="img/downloads/windows-small-pack.png"
-                             alt="Windows">
-                      </div>
-                      <!-- TEXT -->
-                      <div class="cn-box cn-main">
-                         Windows Installer
-                      </div>
-                      <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-windows.zip" class="cn-box cn-action cn-download">
-                      </a>
-                    </div>
-                    <!-- / WINDOWS -->
-
-                    <!-- DOCKER COMPOSE -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
-                      <!-- LOGO -->
-                      <div class="cn-box small">
-                        <img class="lazy"
-                             data-src="img/downloads/compose-small-pack.png"
-                             alt="Windows">
-                      </div>
-                      <!-- TEXT -->
-                      <div class="cn-box cn-main">
-                         Docker Compose Installer
-                      </div>
-                      <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/docker/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-compose.tar.gz" class="cn-box cn-action cn-download">
-                      </a>
-                    </div>
-                    <!-- / DOCKER COMPOSE -->
-
-                    <!-- DOKCER -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
-                      <!-- LOGO -->
-                      <div class="cn-box small">
-                        <img class="lazy"
-                             data-src="img/downloads/docker-small-pack.png"
-                             alt="Arc Linux">
-                      </div>
-                      <!-- TEXT -->
-                      <a class="cn-box cn-main copy-text show-full-command"
-                        data-toggle="modal"
-                        data-target="#modal"
-                        data-modal-title="Docker Install Command"
-                        data-textarea-content-container="#dockerCommand"
-                        data-toggle="tooltip">
-                         <span class="in-copy-text">$ docker run ... </span>
-                      </a>
-                      <!-- ACTION -->
-                      <a class="cn-box cn-action cn-copy"
-                         data-toggle="tooltip"
-                         data-placement="top"
-                         data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
-                      </a>
-                      <div class="d-none" id="dockerCommand">
-                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest
-                      </div>
-                    </div>
-                    <!-- / DOKCER -->
 
                     <!-- RPM -->
                     <div class="package-wrapper package-copy-plus-download d-flex flex-no-wrap position-relative">
@@ -514,6 +431,88 @@ sudo apt-get install jfrog-artifactory-cpp
                 </div>
                 <!-- / Debian -->
 
+                    <!-- WINDOWS -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/windows-small-pack.png"
+                             alt="Windows">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Windows Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-windows.zip" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / WINDOWS -->
+
+                    <!-- DOCKER COMPOSE -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/compose-small-pack.png"
+                             alt="Windows">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Docker Compose Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/docker/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-compose.tar.gz" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / DOCKER COMPOSE -->
+
+                    <!-- DOKCER -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/docker-small-pack.png"
+                             alt="Arc Linux">
+                      </div>
+                      <!-- TEXT -->
+                      <a class="cn-box cn-main copy-text show-full-command"
+                        data-toggle="modal"
+                        data-target="#modal"
+                        data-modal-title="Docker Install Command"
+                        data-textarea-content-container="#dockerCommand"
+                        data-toggle="tooltip">
+                         <span class="in-copy-text">$ docker run ... </span>
+                      </a>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy"
+                         data-toggle="tooltip"
+                         data-placement="top"
+                         data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
+                      </a>
+                      <div class="d-none" id="dockerCommand">
+                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest
+                      </div>
+                    </div>
+                    <!-- / DOKCER -->
+
+                    <!-- DARWIN -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/darwin-small-pack.png"
+                             alt="Darwin">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main">
+                         Darwin Installer
+                      </div>
+                      <!-- ACTION -->
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz" class="cn-box cn-action cn-download">
+                      </a>
+                    </div>
+                    <!-- / DARWIN -->
 
                   </div>
 
