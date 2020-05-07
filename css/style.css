@@ -473,6 +473,14 @@ section.contact-us img.contact-bg {
   top: -200px;
   z-index: 0; }
 
+section.sign-up img.letter {
+  max-width: 200px;
+  bottom: -10px;
+  left: -130px; }
+  @media screen and (max-width: 480px) {
+    section.sign-up img.letter {
+      bottom: 50px;
+      left: -80px; } }
 section.sign-up form#mktoForm_1479 {
   padding: 0;
   max-width: 100%;
