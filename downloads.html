@@ -274,7 +274,7 @@
                 </div>
 
                 <div class="cta-wrapper">
-                  <a href="https://docs.conan.io/en/latest/installation.html" class="ncta bg-blue d-inline-block mt-3">
+                  <a href="https://docs.conan.io/en/latest/getting_started.html" class="ncta bg-blue d-inline-block mt-3">
                     Getting Started With Conan
                   </a>
                 </div>
@@ -405,15 +405,23 @@
                              alt="Arc Linux">
                       </div>
                       <!-- TEXT -->
-                      <div class="cn-box cn-main copy-text">
+                      <a class="cn-box cn-main copy-text show-full-command"
+                        data-toggle="modal"
+                        data-target="#modal"
+                        data-modal-title="Docker Install Command"
+                        data-textarea-content-container="#dockerCommand"
+                        data-toggle="tooltip">
                          <span class="in-copy-text">$ docker run ... </span>
-                      </div>
+                      </a>
                       <!-- ACTION -->
                       <a class="cn-box cn-action cn-copy"
                          data-toggle="tooltip"
                          data-placement="top"
                          data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
                       </a>
+                      <div class="d-none" id="dockerCommand">
+                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest
+                      </div>
                     </div>
                     <!-- / DOKCER -->
 
@@ -512,7 +520,7 @@ sudo apt-get install jfrog-artifactory-cpp
                 </div>
 
                 <div class="cta-wrapper">
-                  <a href="https://docs.conan.io/en/latest/installation.html" class="ncta bg-green d-inline-block mt-0">
+                  <a href="https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html" class="ncta bg-green d-inline-block mt-0">
                     Getting Started with Artifactory CE
                   </a>
                 </div>
@@ -699,6 +707,26 @@ sudo apt-get install jfrog-artifactory-cpp
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea id="modalTextArea" style="resize: none;" readonly></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary modal-copy-button" id="modalCopyBtn">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JS -->
     <script src="js/jquery.min.js"></script>
