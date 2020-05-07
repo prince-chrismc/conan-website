@@ -141,6 +141,9 @@ body {
   font-weight: 300; }
 
 html {
+  scroll-behavior: smooth; }
+
+html {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
@@ -251,6 +254,9 @@ header#masthead {
   border-bottom: 1px solid #eaebee;
   padding-top: 8px;
   padding-bottom: 8px; }
+  header#masthead .subscribe-btn {
+    border: 1px solid #2c4257;
+    color: #2c4257; }
 
 .hero-bg, .contact-bg {
   width: 15.6vw;
