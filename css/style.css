@@ -108,26 +108,34 @@
 .hamburger-inner:after {
   bottom: -10px; }
 
-.tooltip .tooltip-inner {
-  background: white;
-  color: black;
-  border: 2px solid #e3e4e4;
-  max-width: 250px; }
-.tooltip .arrow {
-  width: 11px;
-  height: 11px;
-  border: 2px solid #e3e4e4;
-  bottom: 1px; }
-  .tooltip .arrow:before {
+.tooltip {
+  width: auto;
+  max-width: 90vw;
+  opacity: 1 !important;
+  white-space: pre-line; }
+  .tooltip .tooltip-inner {
+    background: white;
+    color: black;
+    border: 2px solid #e3e4e4;
+    text-align: left;
+    width: auto;
+    max-width: 90vw;
+    white-space: pre-line; }
+  .tooltip .arrow {
     width: 11px;
     height: 11px;
-    background: white;
-    border: 0; }
-.tooltip.bs-tooltip-top .arrow {
-  transform: rotate(-135deg); }
-.tooltip.bs-tooltip-bottom .arrow {
-  transform: rotate(135deg);
-  top: 2px; }
+    border: 2px solid #e3e4e4;
+    bottom: 1px; }
+    .tooltip .arrow:before {
+      width: 11px;
+      height: 11px;
+      background: white;
+      border: 0; }
+  .tooltip.bs-tooltip-top .arrow {
+    transform: rotate(-135deg); }
+  .tooltip.bs-tooltip-bottom .arrow {
+    transform: rotate(135deg);
+    top: 2px; }
 
 @media screen and (min-width: 1199.98px) {
   .container,

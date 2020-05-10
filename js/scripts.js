@@ -60,9 +60,8 @@ jQuery(document).ready(function($) {
       title: downloadText
     });
 
-    $('.show-full-command').tooltip({
-      title: showCommandText
-    });
+
+    $('.show-full-command').tooltip();
 
     //cn-link
     $('.cn-link').tooltip({
@@ -161,7 +160,6 @@ jQuery(document).ready(function($) {
 
       });
 
-      $('#modal').on('show.bs.modal', modalContent)
   }
 
 
@@ -296,35 +294,4 @@ function testiSlick($) {
     slidesToShow: 1,
     slidesToScroll: 1,
   });
-}
-
-function modalContent(event) {
-  console.log('ckc');
-  let button = $(event.relatedTarget) // Button that triggered the modal
-  let title = button.data('modal-title') // Extract info from data-* attributes
-  let textareaContentContainer = button.data('textarea-content-container')
-  console.log(textareaContentContainer);
-  let textToCopy = $(textareaContentContainer).text().trim()
-  console.log(textToCopy);
-  let modal = $(this)
-  modal.find('#modalTitle').text(title)
-  modal.find('#modalTextArea').text(textToCopy)
-}
-
-const modalCopyBtn = document.getElementById('modalCopyBtn');
-const modalTextArea = document.getElementById('modalTextArea');
-modalCopyBtn.addEventListener('click', copyModalText);
-
-function copyModalText() {
-  modalTextArea.select();
-  let textCopied = document.execCommand('copy')
-  if (textCopied) {
-    modalCopyBtn.textContent = 'Copied.';
-    setTimeout(function(){
-       modalCopyBtn.textContent = 'Copy';
-    }, 3000);
-  } else {
-    modalCopyBtn.textContent = 'Cmd + C';
-  }
-
 }

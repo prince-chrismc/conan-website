@@ -477,11 +477,9 @@ sudo apt-get install jfrog-artifactory-cpp
                       </div>
                       <!-- TEXT -->
                       <a class="cn-box cn-main copy-text show-full-command"
-                        data-toggle="modal"
-                        data-target="#modal"
-                        data-modal-title="Docker Install Command"
-                        data-textarea-content-container="#dockerCommand"
-                        data-toggle="tooltip">
+                        data-toggle="tooltip"
+                        title="docker run --name artifactory -d -p 8081:8081 -p 8082:8082
+                        releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest">
                          <span class="in-copy-text">$ docker run ... </span>
                       </a>
                       <!-- ACTION -->
@@ -491,7 +489,8 @@ sudo apt-get install jfrog-artifactory-cpp
                          data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
                       </a>
                       <div class="d-none" id="dockerCommand">
-                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
+                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases
+                        docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
                       </div>
                     </div>
                     <!-- / DOKCER -->
@@ -562,7 +561,7 @@ sudo apt-get install jfrog-artifactory-cpp
 
               <!-- GITHUB -->
               <a class="q-box d-block"
-                 href="https://github.com/conan-io">
+                 href="https://github.com/conan-io/conan/issues">
                 <div class="q-top">
                   <img src="img/social/github.svg" alt="Docs">
                 </div>
@@ -705,27 +704,6 @@ sudo apt-get install jfrog-artifactory-cpp
 
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTitle"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <textarea id="modalTextArea" style="resize: none;" readonly></textarea>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary modal-copy-button" id="modalCopyBtn">Copy</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- JS -->
     <script src="js/jquery.min.js"></script>
