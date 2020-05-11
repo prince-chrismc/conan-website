@@ -713,7 +713,7 @@ section#downloads h5 {
   font-size: 17px; }
 section#downloads .package-wrapper {
   margin-bottom: 8px; }
-  section#downloads .package-wrapper.package-copy-plus-download textarea {
+  section#downloads .package-wrapper textarea {
     z-index: -100;
     opacity: 0; }
 section#downloads .cn-box {

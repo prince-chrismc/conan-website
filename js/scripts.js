@@ -116,6 +116,26 @@ jQuery(document).ready(function($) {
          .tooltip('show');
      });
 
+     $('.package-wrapper.has-multiline-text .cn-copy-multiline').click(function(e) {
+       e.preventDefault();
+       console.log($(this));
+       let targetSelector = $(this).data('copy-target');
+       console.log(targetSelector);
+       let copyTarget     = $(targetSelector);
+       console.log(copyTarget);
+       let copyString     = copyTarget.text();
+       console.log(copyString);
+       copyString         = copyString.trim();
+       console.log(copyString);
+       copyTarget.text(copyString);
+       copyTarget.select();
+       document.execCommand('copy');
+       $(this)
+         .tooltip('hide')
+         .attr('data-original-title', "Copied!")
+         .tooltip('show');
+     })
+
 
     //cn-copy
     $('.cn-copy')

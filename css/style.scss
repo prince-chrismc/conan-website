@@ -857,11 +857,9 @@ section#downloads {
 
   .package-wrapper {
     margin-bottom: 8px;
-    &.package-copy-plus-download {
-      textarea {
-        z-index: -100;
-        opacity: 0;
-      }
+    textarea {
+      z-index: -100;
+      opacity: 0;
     }
   }
 

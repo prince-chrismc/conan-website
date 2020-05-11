@@ -468,7 +468,7 @@ sudo apt-get install jfrog-artifactory-cpp
                     <!-- / DOCKER COMPOSE -->
 
                     <!-- DOKCER -->
-                    <div class="package-wrapper d-flex flex-no-wrap">
+                    <div class="package-wrapper d-flex flex-no-wrap has-multiline-text">
                       <!-- LOGO -->
                       <div class="cn-box small">
                         <img class="lazy"
@@ -483,15 +483,15 @@ sudo apt-get install jfrog-artifactory-cpp
                          <span class="in-copy-text">$ docker run ... </span>
                       </a>
                       <!-- ACTION -->
-                      <a class="cn-box cn-action cn-copy"
+                      <a class="cn-box cn-action cn-copy-multiline"
+                         data-copy-target="textarea#dockerCommand"
                          data-toggle="tooltip"
-                         data-placement="top"
-                         data-copy-value="docker run --name artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest">
+                         data-placement="top">
                       </a>
-                      <div class="d-none" id="dockerCommand">
-                        docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases
-                        docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
-                      </div>
+                      <textarea class="position-absolute" id="dockerCommand">
+docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases
+docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
+                      </textarea>
                     </div>
                     <!-- / DOKCER -->
 
