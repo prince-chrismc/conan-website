@@ -150,6 +150,7 @@
                     <a class="cn-box big cn-copy copy-text"
                        data-toggle="tooltip"
                        data-placement="top"
+                       data-os="pypi_homepage"
                        data-copy-value="pip install conan">
                       <img data-src="img/downloads/pyton-small-pack.png"
                            alt="Pyton"
@@ -176,6 +177,7 @@
                       <a class="cn-box cn-action cn-copy"
                          data-toggle="tooltip"
                          data-placement="top"
+                         data-os="brew_homepage"
                          data-copy-value="brew install conan">
                       </a>
                     </div>
@@ -194,7 +196,7 @@
                          Ubuntu / Debian X64 Installer
                       </div>
                       <!-- ACTION -->
-                      <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_24_1.deb" class="cn-box cn-action cn-download">
+                      <a href="https://dl.bintray.com/conan/installers/conan-ubuntu-64_1_24_1.deb" data-os="ubuntu" class="cn-box cn-action cn-download">
                       </a>
                     </div>
                     <!-- / DEBIAN -->
@@ -225,6 +227,7 @@
                       </div>
                       <!-- ACTION -->
                       <a class="cn-box cn-action cn-download"
+                         data-os="windows"
                          href="https://dl.bintray.com/conan/installers/conan-win-64_1_22_3.exe">
                       </a>
                     </div>
@@ -323,7 +326,7 @@
                          Download tar.gz
                       </div>
                       <!-- ACTION -->
-                      <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box cn-action cn-download">
+                      <a href="https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-cpp-ce-$latest.zip;bt_package=jfrog-artifactory-cpp-ce-zip" class="cn-box cn-action cn-download" data-tech="zip">
                       </a>
                     </div>
                     <!-- / ARTIFACTORY ZIP -->
@@ -345,7 +348,7 @@
                          Liunx Installer
                       </div>
                       <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-linux.tar.gz" class="cn-box cn-action cn-download">
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-linux.tar.gz" data-tech="linux" class="cn-box cn-action cn-download">
                       </a>
                     </div>
                     <!-- / LINUX -->
@@ -392,6 +395,7 @@ yum update && yum install jfrog-artifactory-cpp-ce
                       <!-- ACTION -->
                       <a class="cn-box cn-action cn-download"
                          href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe"
+                         data-tech="rpm"
                          data-href="https://dl.bintray.com/conan/installers/conan-win-32_1_22_3.exe"
                          data-copy-target="textarea#artiRpm">
                       </a>
@@ -432,6 +436,7 @@ sudo apt-get install jfrog-artifactory-cpp
                   </div>
                   <!-- ACTION -->
                   <a class="cn-box cn-action cn-download"
+                     data-tech="debian"
                      href="https://releases.jfrog.io/artifactory/artifactory-pro-debs/pool/jfrog-artifactory-pro/jfrog-artifactory-pro-[RELEASE].deb"
                      data-href="https://releases.jfrog.io/artifactory/artifactory-pro-debs/pool/jfrog-artifactory-pro/jfrog-artifactory-pro-[RELEASE].deb"
                      data-copy-target="textarea#artiDebian">
@@ -452,7 +457,7 @@ sudo apt-get install jfrog-artifactory-cpp
                          Windows Installer
                       </div>
                       <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-windows.zip" class="cn-box cn-action cn-download">
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-windows.zip" data-tech="windows" class="cn-box cn-action cn-download">
                       </a>
                     </div>
                     <!-- / WINDOWS -->
@@ -470,7 +475,7 @@ sudo apt-get install jfrog-artifactory-cpp
                          Docker Compose Installer
                       </div>
                       <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/docker/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-compose.tar.gz" class="cn-box cn-action cn-download">
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/docker/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-compose.tar.gz" data-tech="docker_compose" class="cn-box cn-action cn-download">
                       </a>
                     </div>
                     <!-- / DOCKER COMPOSE -->
@@ -493,6 +498,7 @@ sudo apt-get install jfrog-artifactory-cpp
                       <!-- ACTION -->
                       <a class="cn-box cn-action cn-copy-multiline"
                          data-copy-target="textarea#dockerCommand"
+                         data-tech="docker"
                          data-toggle="tooltip"
                          data-placement="top">
                       </a>
@@ -516,7 +522,7 @@ releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
                          Darwin Installer
                       </div>
                       <!-- ACTION -->
-                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz" class="cn-box cn-action cn-download">
+                      <a href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz" data-tech="darwin" class="cn-box cn-action cn-download">
                       </a>
                     </div>
                     <!-- / DARWIN -->
@@ -692,7 +698,7 @@ releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
                 <div class="col-sm-3">
                   <h4 class="blue mb-1">GET</h4>
                   <ul>
-                    <li><a href="downloads.html">
+                    <li><a href="downloads.html" id="download_btn_bottom">
                         Download
                       </a></li>
                     <li><a href="https://conan.io/center">
