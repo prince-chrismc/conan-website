@@ -742,10 +742,10 @@ footer#siteFooter {
           font-weight: 400; }
           footer#siteFooter .footer-left .footer-menu ul li a:hover {
             color: #2c4257; }
-  footer#siteFooter .footer-right h4.sign-up-title {
-    font-size: 20px; }
-  footer#siteFooter .footer-right ul.socials {
-    list-style: none; }
+  footer#siteFooter ul.socials a {
+    transition: all 0.32s ease; }
+    footer#siteFooter ul.socials a:hover {
+      opacity: 0.5; }
 
 section#downloads .downloads-item-wrapper {
   background-color: #f6f6f6; }

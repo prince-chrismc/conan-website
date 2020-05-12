@@ -881,15 +881,12 @@ footer#siteFooter {
       }
     }
   }
-
-  .footer-right {
-
-    h4.sign-up-title {
-      font-size: 20px;
-    }
-
-    ul.socials {
-      list-style: none;
+  ul.socials {
+    a {
+      transition: all 0.32s ease;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
