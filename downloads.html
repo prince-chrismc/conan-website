@@ -13,7 +13,7 @@
           href="https://conan.io/downloads.html" />
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap"
           rel="stylesheet">
 
     <!-- STYLE -->
@@ -105,18 +105,26 @@
       </div>
     </header>
 
-    <section id="downloads"
-             class="pt-0 pt-md-5">
-      <img src="img/downloads-squares.png"
-           class="position-absolute hero-bg downloads-hero-bg d-none d-xl-inline"
+    <section class="downloads-hero position-relative" id="downloadsHero">
+      <img src="img/downloads-hero-bg-new.png"
+           class="position-absolute hero-bg downloads-hero-bg d-none d-xl-inline d-only-hero-bg"
            alt="JFrog Conan">
+      <div class="row">
+        <div class="col-12 py-5">
+          <h2 class="font-weight-bold text-center">Downloads</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads"
+             class="pt-0 pb-5">
       <div class="container">
-        <div class="row pb-3">
+        <div class="row pb-3 main-downloads-row ml-auto mr-auto">
 
           <!-- DOWNLOADS #1 -->
           <div class="col-lg-6 blue-downloads">
-            <div class="downloads-item-wrapper bg-bright-gray">
-              <div class="top bg-blue p-2">
+            <div class="downloads-item-wrapper">
+              <div class="top bg-blue download-col-topper">
 
               </div>
               <div class="content px-4 py-2 p-md-4">
@@ -262,19 +270,19 @@
                     <!-- / GITHUB -->
 
                   </div>
-                </div>
-                <!-- TEXT TWO -->
-                <div class="text text-two">
-                  <p>
-                    Read more about Conan installation: </br >
-                    <a href="https://docs.conan.io/en/latest/installation.html">
-                      https://docs.conan.io/en/latest/installation.html
-                    </a>
-                  </p>
+                  <!-- TEXT TWO -->
+                  <div class="text text-two">
+                    <p>
+                      Read more about Conan installation: </br >
+                      <a href="https://docs.conan.io/en/latest/installation.html">
+                        https://docs.conan.io/en/latest/installation.html
+                      </a>
+                    </p>
+                  </div>
                 </div>
 
                 <div class="cta-wrapper">
-                  <a href="https://docs.conan.io/en/latest/getting_started.html" class="ncta bg-blue d-inline-block mt-3">
+                  <a href="https://docs.conan.io/en/latest/getting_started.html" class="ncta bg-blue d-inline-block">
                     Getting Started With Conan
                   </a>
                 </div>
@@ -285,8 +293,8 @@
 
           <!-- DOWNLOADS #2 -->
           <div class="col-lg-6 mt-3 mt-lg-0 green-downloads">
-            <div class="downloads-item-wrapper bg-bright-gray">
-              <div class="top bg-green p-2">
+            <div class="downloads-item-wrapper">
+              <div class="top bg-green download-col-topper">
 
               </div>
               <div class="content px-4 py-2 p-md-4">
@@ -578,11 +586,11 @@ releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
 
 
     <!-- SIGN UP -->
-    <section class="sign-up py-5 bg-blue white text-center" id="signUp">
+    <section class="sign-up py-5 mt-5 bg-blue white text-center" id="signUp">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="white d-flex justify-content-center">
+            <h2 class="white d-flex justify-content-center" id="signUpTitle">
               <div class="position-relative"><img data-src="img/letter.png" alt="Sign Up" class="position-absolute letter lazy"></div>
               <span>SIGN ME UP FOR RELEASE UPDATES</span>
             </h2>
@@ -592,8 +600,21 @@ releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
               <div class="d-flex justify-content-center pt-3">
                 <form id="mktoForm_1479" class="text-center">
                 </form>
+
               </div>
-              <script>MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479);</script>
+              <script>
+                MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function(form) {
+                   // Add an onSuccess handler
+                  form.onSuccess(function (values, followUpUrl) {
+                    // Get the form's jQuery element and hide it
+                    form.getFormElem().fadeOut();
+                    //show success
+                    document.getElementById('signUpTitle').textContent = 'Thanks!, you have subscribed successfuly.'
+                    // Return false to prevent the submission handler from taking the lead to the follow up url
+                    return false;
+                  });
+                });
+              </script>
             </div>
 
           </div>
@@ -665,7 +686,7 @@ releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-7 footer-left d-md-flex d-none align-items-center">
+          <div class="col-md-5 footer-left d-md-flex d-none align-items-center">
             <div class="footer-menu w-100">
               <div class="row">
                 <div class="col-sm-3">

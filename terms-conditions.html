@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://conan.io/terms-conditions.html" />
 
   <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 
   <!-- STYLE -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -117,14 +117,14 @@ The look and feel of the Service is copyright ©2018 JFrog. All rights reserved.
     </div>
 </section>
 
-
 <!-- SIGN UP -->
 <section class="sign-up py-5 bg-blue white text-center" id="signUp">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="white d-flex justify-content-center">
-          <div class="position-relative"><img data-src="img/letter.png" alt="Sign Up" class="position-absolute letter lazy"></div>
+        <h2 class="white d-flex justify-content-center" id="signUpTitle">
+          <div class="position-relative"><img src="img/letter.png" alt="Sign Up"
+              class="position-absolute letter"></div>
           <span>SIGN ME UP FOR RELEASE UPDATES</span>
         </h2>
         <div class="mktoFormWrapper">
@@ -133,14 +133,28 @@ The look and feel of the Service is copyright ©2018 JFrog. All rights reserved.
           <div class="d-flex justify-content-center pt-3">
             <form id="mktoForm_1479" class="text-center">
             </form>
+
           </div>
-          <script>MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479);</script>
+          <script>
+            MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function (form) {
+              // Add an onSuccess handler
+              form.onSuccess(function (values, followUpUrl) {
+                // Get the form's jQuery element and hide it
+                form.getFormElem().fadeOut();
+                //show success
+                document.getElementById('signUpTitle').textContent = 'Thanks!, you have subscribed successfuly.'
+                // Return false to prevent the submission handler from taking the lead to the follow up url
+                return false;
+              });
+            });
+          </script>
         </div>
 
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer
@@ -206,7 +220,7 @@ The look and feel of the Service is copyright ©2018 JFrog. All rights reserved.
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-7 footer-left d-md-flex d-none align-items-center">
+      <div class="col-md-5 footer-left d-md-flex d-none align-items-center">
         <div class="footer-menu w-100">
           <div class="row">
             <div class="col-sm-3">

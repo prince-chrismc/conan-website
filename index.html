@@ -20,7 +20,7 @@
 
     <!-- FONT -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
 
@@ -76,7 +76,7 @@
           </a>
 
           <!-- HAMBURGER -->
-          <div class="col-2 d-flex d-lg-none align-items-center justify-content-end">
+          <div class="col-2 d-flex d-lg-none align-items-center justify-content-end header-hamburger-col">
             <button
               class="d-block d-lg-none hamburger hamburger--collapse text-right"
               type="button"
@@ -147,16 +147,18 @@
               <h1 class="white">
                 Conan, the C/C++ Package Manager
               </h1>
-              <p class="my-3 px-4 white">
-                The open source, decentralized and multi-platform package <br />
-                manager to create and share all your native binaries.
+              <p class="homepage-hero-paragraph my-3 px-0 px-md-4 white">
+                The open source, decentralized and multi-platform package <br class="d-none d-md-inline" /> manager to create and share all your native binaries.
               </p>
-              <a
-                href="downloads.html"
-                class="cta bg-green white mt-4"
-              >
-                Download
-              </a>
+              <div class="downloads-cta arrow-cta">
+                <div class="button_cont">
+                  <a href="downloads.html" class="example_f cta bg-green">
+                    <span>
+                      Download
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,7 +166,7 @@
     </section>
 
     <!-- DIAGRAM -->
-    <section class="diagram py-5" id="diagram">
+    <section class="diagram py-3" id="diagram">
       <div class="container py-3">
         <div class="row">
           <div class="col-12 text-center">
@@ -184,8 +186,8 @@
     </section>
 
     <!-- ADVANTAGES -->
-    <section class="advantages py-2 py-md-5 bg-blue" id="advantages">
-      <div class="container py-5">
+    <section class="advantages py-0 py-md-5 bg-blue" id="advantages">
+      <div class="container py-0 py-md-5">
         <div class="row">
 
           <!-- ONE ADVANTAGE -->
@@ -260,7 +262,7 @@
     </section>
 
     <!-- LEARN MORE -->
-    <section class="learn-more bg-bright-gray py-5 position-relative" id="learnMore">
+    <section class="learn-more bg-bright-gray py-0 py-md-5 position-relative" id="learnMore">
       <img
         data-src="img/lm-bg.png"
         alt="JFrog Conan"
@@ -268,7 +270,7 @@
       />
       <div class="container text-center">
         <!-- TITLE -->
-        <div class="row py-5 mb-4">
+        <div class="row pb-2 pt-4 pt-md-5 py-md-5 mb-4">
           <div class="col-12">
             <h2>LEARN MORE ABOUT</h2>
           </div>
@@ -351,8 +353,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="white d-flex justify-content-center">
-              <div class="position-relative"><img data-src="img/letter.png" alt="Sign Up" class="position-absolute letter lazy"></div>
+            <h2 class="white d-flex justify-content-center" id="signUpTitle">
+              <div class="position-relative"><img data-src="img/letter.png" alt="Sign Up"
+                  class="position-absolute letter lazy"></div>
               <span>SIGN ME UP FOR RELEASE UPDATES</span>
             </h2>
             <div class="mktoFormWrapper">
@@ -361,8 +364,21 @@
               <div class="d-flex justify-content-center pt-3">
                 <form id="mktoForm_1479" class="text-center">
                 </form>
+
               </div>
-              <script>MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479);</script>
+              <script>
+                MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function (form) {
+                  // Add an onSuccess handler
+                  form.onSuccess(function (values, followUpUrl) {
+                    // Get the form's jQuery element and hide it
+                    form.getFormElem().fadeOut();
+                    //show success
+                    document.getElementById('signUpTitle').textContent = 'Thanks!, you have subscribed successfuly.'
+                    // Return false to prevent the submission handler from taking the lead to the follow up url
+                    return false;
+                  });
+                });
+              </script>
             </div>
 
           </div>
@@ -370,8 +386,9 @@
       </div>
     </section>
 
+
     <!-- OUR USERS -->
-    <section class="users my-4 py-5" id="users">
+    <section class="users my-4 py-2 py-md-5" id="users">
       <div class="container">
 
         <div class="users-image-stock d-none" id="usersStock">
@@ -419,7 +436,7 @@
 
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center py-2 mb-5">OUR USERS</h2>
+            <h2 class="text-center py-2 mb-4 mb-md-5">OUR USERS</h2>
           </div>
         </div>
 
@@ -561,6 +578,36 @@
               </button>
               <!-- CAROUSEL -->
               <div class="testis-carousel">
+
+
+                <div class="testi">
+                  <div class="inner">
+                    <!-- TEXT -->
+                    <p class="text text-center">
+                      Conan makes it easier for our many automotive GitHub
+                      Enterprise customers doing C and C++ programming to
+                      establish a continuous delivery pipeline that actually
+                      deserves that name.
+                    </p>
+                    <!-- QUOTE -->
+                    <div class="quote d-flex align-items-center justify-content-center my-3">
+                      <span class="line"></span>
+                      <img
+                        class="mx-2"
+                        src="img/white-quote.svg"
+                        alt=""
+                        class="quote-image"
+                      />
+                      <span class="line"></span>
+                    </div>
+                    <div class="name text-center">Johannes Nicolai</div>
+                    <div class="position text-center font-weight-bold">
+                      Enterprise Solutions Engineer at GitHub
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="testi">
                   <div class="inner">
                     <!-- TEXT -->
@@ -643,33 +690,6 @@
                     <div class="position text-center font-weight-bold">
                       Boost.Build and Boost.Predef author and lead programmer at
                       Disbelief LLC
-                    </div>
-                  </div>
-                </div>
-
-                <div class="testi">
-                  <div class="inner">
-                    <!-- TEXT -->
-                    <p class="text text-center">
-                      Conan makes it easier for our many automotive GitHub
-                      Enterprise customers doing C and C++ programming to
-                      establish a continuous delivery pipeline that actually
-                      deserves that name.
-                    </p>
-                    <!-- QUOTE -->
-                    <div class="quote d-flex align-items-center justify-content-center my-3">
-                      <span class="line"></span>
-                      <img
-                        class="mx-2"
-                        src="img/white-quote.svg"
-                        alt=""
-                        class="quote-image"
-                      />
-                      <span class="line"></span>
-                    </div>
-                    <div class="name text-center">Johannes Nicolai</div>
-                    <div class="position text-center font-weight-bold">
-                      Enterprise Solutions Engineer at GitHub
                     </div>
                   </div>
                 </div>
@@ -939,7 +959,7 @@
     </section>
 
     <!-- CONTACT US -->
-    <section class="contact-us position-relative py-5" id="contactUs">
+    <section class="contact-us position-relative py-0 py-md-5" id="contactUs">
       <img
         data-src="img/hero-bg.png"
         class="lazy position-absolute contact-bg d-none d-xl-inline"
@@ -948,10 +968,11 @@
       <div class="container form-container pt-2 pb-5">
         <div class="row">
           <div class="col-12 text-center py-4 title-mail">
-            <h2 class="font-weight-light">CONTACT US</h2>
+            <h2 class="font-weight-light" id="contactUsTitle">CONTACT US</h2>
             <a
               href="mailto:info@conan.io"
               class="font-weight-bold mt-n2 d-block"
+              id="contactUsEmail"
             >
               info@conan.io
             </a>
@@ -962,7 +983,20 @@
 
             <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
             <form id="mktoForm_2684"></form>
-            <script>MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 2684);</script>
+            <script>
+              MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 2684, function (form) {
+                // Add an onSuccess handler
+                form.onSuccess(function (values, followUpUrl) {
+                  // Get the form's jQuery element and hide it
+                  form.getFormElem().fadeOut();
+                  //show success and remove email
+                  document.getElementById('contactUsTitle').textContent = 'Thanks!, your message has been sent.';
+                  document.getElementById('contactUsEmail').fadeOut();
+                  // Return false to prevent the submission handler from taking the lead to the follow up url
+                  return false;
+                });
+              });
+            </script>
 
 
           </div>
@@ -1034,7 +1068,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-7 footer-left d-md-flex d-none align-items-center">
+          <div class="col-md-5 footer-left d-md-flex d-none align-items-center">
             <div class="footer-menu w-100">
               <div class="row">
                 <div class="col-sm-3">

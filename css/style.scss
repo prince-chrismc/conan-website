@@ -63,13 +63,15 @@ h1 {
   /* 13/18 */
   transition: all 0.32s ease;
 
-  &:hover {
-    opacity: 0.75;
-  }
-
   &.bg-blue {
     &:hover {
       color: #fff;
+      background-color: #2F6799;
+    }
+  }
+  &.bg-bright-gray {
+    &:hover {
+      background-color: #DEE7F9;
     }
   }
 }
@@ -96,9 +98,7 @@ a.big-btn {
   }
 
   &.bg-green {
-    &:hover {
-      background-color: #3fd63c;
-    }
+    color: white;
   }
 }
 
@@ -166,6 +166,46 @@ a.big-btn {
   @include blue-gradient-bg;
 }
 
+
+.arrow-cta {
+  example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding: 20px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+}
+
+
 header#masthead {
   border-bottom: 1px solid $bright-gray;
   padding-top: 8px;
@@ -173,6 +213,24 @@ header#masthead {
   .subscribe-btn {
     border: 1px solid $dark-blue;
     color: $dark-blue;
+  }
+  a.btn.bg-blue.white img {
+    position: relative;
+    bottom: 1px;
+  }
+  @media screen and (max-width: 480px) {
+    .header-hamburger-col {
+      padding-right: 5px;
+    }
+    button.hamburger--collapse {
+      padding-right: 0;
+      .hamburger-inner {
+        width: 30px ;
+        &:before, &:after {
+          width: 30px;
+        }
+      }
+    }
   }
 }
 
@@ -189,6 +247,11 @@ section#hero {
     &.downloads-hero-bg {
       top: 150px;
     }
+    @media screen and (max-width: 480px) {
+      .homepage-hero-paragraph {
+        font-size: 1rem;
+      }
+    }
   }
 
   .hero-content {
@@ -200,6 +263,13 @@ section#hero {
       font-size: 1.111rem;
       /* 20/18 */
     }
+  }
+}
+
+section#downloadsHero {
+  .d-only-hero-bg {
+    top: -30px;
+    width: 165px;
   }
 }
 
@@ -314,7 +384,7 @@ section.learn-more {
         transition: all 0.32s ease;
 
         &:hover {
-          background-color: #73b0ec;
+          background-color: #3E6387;
         }
       }
     }
@@ -399,11 +469,11 @@ section.testis {
 
       &.cs-slick-right {
         transform: rotate(180deg);
-        right: -50px;
+        right: -80px;
       }
 
       &.cs-slick-left {
-        left: -50px;
+        left: -80px;
       }
     }
   }
@@ -437,6 +507,10 @@ section.contact-us {
       margin-right: auto;
       background: $green;
       font-size: 19px;
+      transition: all 0.32s ease;
+      &:hover {
+        background-color: #07940E;
+      }
     }
 
     .mktoFieldDescriptor.mktoFormCol {
@@ -525,7 +599,9 @@ section.contact-us {
 }
 
 section.sign-up {
-
+  @media screen and (max-width: 768px) {
+    img.letter {display: none !important;}
+  }
   img.letter {
     max-width: 200px;
     bottom: -10px;
@@ -544,6 +620,10 @@ section.sign-up {
     display: flex;
     flex-wrap: wrap;
     width: 535px !important;
+
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+    }
 
     input, button[type="submit"] {
       border-radius: 2px !important;
@@ -591,6 +671,10 @@ section.sign-up {
           font-size: 19px;
           padding-left: 17px;
           padding-right: 17px;
+          transition: all 0.32s ease;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
@@ -670,7 +754,7 @@ section.sign-up {
     @media screen and (max-width: 600px) {
       .mktoFormRow:nth-child(3) {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
       }
       .mktoFormRow:nth-child(2) input#Email {
         width: 210px !important;
@@ -760,6 +844,7 @@ footer#siteFooter {
   background-image: url("../img/footer-bg.png");
   background-position: bottom right;
   background-repeat: no-repeat;
+  background-color: #f7f7f7;
   background-size: 24vw;
   @media screen and (max-width: 991px) {
     background-image: none;
@@ -810,6 +895,15 @@ footer#siteFooter {
 }
 
 section#downloads {
+  .downloads-item-wrapper {
+    background-color: #f6f6f6;
+  }
+  .download-col-topper {height: 28px;}
+
+  .main-downloads-row {
+    width: 1304px;
+    max-width: 100%;
+  }
 
   .ncta {
     padding: 12px 16px;
@@ -831,7 +925,7 @@ section#downloads {
     font-weight: 400;
     &.front-text {
       font-size: 17px;
-      font-weight: 600;
+      font-weight: 500;
       max-width: 485px;
     }
   }
@@ -877,12 +971,12 @@ section#downloads {
     align-items: center;
     padding: 8px 13px;
     color: #000;
-    font-weight: 400;
+    font-weight: 300 !important;
     font-size: 20px;
     line-height: 1;
     text-align: center;
     transition: all 0.2s ease;
-    font-size: 20px;
+    font-size: 17px;
 
     &.copy-text {
       font-family: monospace;
@@ -921,7 +1015,8 @@ section#downloads {
           padding-left: 0;
           width: 100%;
           button.dropdown-toggle {
-            font-size: 20px;
+            font-size: 17px;
+            font-weight: 300;
             padding: 8px 13px;
             background: transparent;
             height: 100%;
@@ -954,7 +1049,7 @@ section#downloads {
     }
 
     &.cn-action {
-      background-color: $dark-gray;
+      background-color: $alt-gray;
       background-repeat: no-repeat;
       background-position: center center;
       transition: all 0.32s ease;
