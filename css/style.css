@@ -763,6 +763,10 @@ section#downloads .download-col-topper {
 section#downloads .main-downloads-row {
   width: 1304px;
   max-width: 100%; }
+  @media screen and (max-width: 767.98px) {
+    section#downloads .main-downloads-row .colored-downloads {
+      padding-left: 0;
+      padding-right: 0; } }
 section#downloads .ncta {
   padding: 12px 16px;
   color: white;
@@ -864,10 +868,17 @@ section#downloads .cn-box {
             margin-right: 15px;
             color: #8b8b8b;
             font-size: 120%; }
+          @media screen and (max-width: 767.98px) {
+            section#downloads .cn-box.cn-main.cn-dropdown .dropdown button.dropdown-toggle {
+              font-size: 15px !important; } }
         section#downloads .cn-box.cn-main.cn-dropdown .dropdown .dropdown-menu {
           width: 100%; }
       section#downloads .cn-box.cn-main.cn-dropdown .dropdown-item {
         cursor: pointer; }
+    @media screen and (max-width: 767.98px) {
+      section#downloads .cn-box.cn-main {
+        font-size: 15px !important;
+        margin-right: 0 !important; } }
   section#downloads .cn-box.cn-action {
     background-color: #D7D7D7;
     background-repeat: no-repeat;
@@ -891,6 +902,9 @@ section#downloads .cn-box {
           border-color: #acacac !important; }
     section#downloads .cn-box.cn-action.cn-link {
       background-image: url("../img/link-icon.png"); }
+    @media screen and (max-width: 767.98px) {
+      section#downloads .cn-box.cn-action {
+        display: none; } }
 section#downloads .download-questions h2 {
   font-size: 35px; }
 section#downloads .download-questions .q-box {

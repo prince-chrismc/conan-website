@@ -137,12 +137,12 @@
         <div class="row pb-3 main-downloads-row ml-auto mr-auto">
 
           <!-- DOWNLOADS #1 -->
-          <div class="col-lg-6 blue-downloads">
+          <div class="col-lg-6 blue-downloads colored-downloads">
             <div class="downloads-item-wrapper">
               <div class="top bg-blue download-col-topper">
 
               </div>
-              <div class="content px-4 py-2 p-md-4">
+              <div class="content px-2 px-md-4 py-2 p-md-4">
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
                   <img data-src="img/conan-downloads-logo.png"
@@ -161,17 +161,29 @@
                 <!-- INSTALL -->
                 <div class="install">
                   <div class="installers pb-4">
-                    <!-- PYTON -->
-                    <a class="cn-box big cn-copy copy-text"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       data-os="pypi_homepage"
-                       data-copy-value="pip install conan">
-                      <img data-src="img/downloads/pyton-small-pack.png"
-                           alt="Pyton"
-                           class="mr-2 lazy">
-                      <span>$ pip install conan</span>
-                    </a>
+                    
+                    <!-- MAIN PYTON -->
+                    <div class="package-wrapper d-flex flex-no-wrap">
+                      <!-- LOGO -->
+                      <div class="cn-box small">
+                        <img class="lazy"
+                             data-src="img/downloads/pyton-small-pack.png"
+                             alt="pyton">
+                      </div>
+                      <!-- TEXT -->
+                      <div class="cn-box cn-main copy-text">
+                         $ pip install conan
+                      </div>
+                      <!-- ACTION -->
+                      <a class="cn-box cn-action cn-copy"
+                         data-toggle="tooltip"
+                         data-placement="top"
+                         data-os="pypi_homepage"
+                         data-copy-value="pip install conan">
+                      </a>
+                    </div>
+                    <!-- / MAIN PYTON -->
+
                   </div>
                   <p>Other Installers:</p>
                   <div class="installers small-installers pb-4">
@@ -312,12 +324,12 @@
           </div>
 
           <!-- DOWNLOADS #2 -->
-          <div class="col-lg-6 mt-3 mt-lg-0 green-downloads">
+          <div class="col-lg-6 mt-3 mt-lg-0 green-downloads colored-downloads">
             <div class="downloads-item-wrapper">
               <div class="top bg-green download-col-topper">
 
               </div>
-              <div class="content px-4 py-2 p-md-4">
+              <div class="content px-2 px-md-4 py-2 p-md-4">
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
                   <img data-src="img/arti-downloads-logo.png"

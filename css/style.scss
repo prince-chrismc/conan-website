@@ -911,6 +911,12 @@ section#downloads {
   .main-downloads-row {
     width: 1304px;
     max-width: 100%;
+    .colored-downloads {
+      @media screen and (max-width: $sm) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 
   .ncta {
@@ -1045,6 +1051,9 @@ section#downloads {
               color: $gray;
               font-size: 120%;
             }
+            @media screen and (max-width: $sm) {
+              font-size: 15px !important;
+            }
           }
           .dropdown-menu {
             width: 100%;
@@ -1053,6 +1062,10 @@ section#downloads {
         .dropdown-item {
           cursor: pointer;
         }
+      }
+      @media screen and (max-width: $sm) {
+        font-size: 15px !important;
+        margin-right: 0 !important;
       }
     }
 
@@ -1085,6 +1098,9 @@ section#downloads {
       }
       &.cn-link {
         background-image: url('../img/link-icon.png');
+      }
+      @media screen and (max-width: $sm) {
+        display: none;
       }
     }
   }
