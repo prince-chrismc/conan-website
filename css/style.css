@@ -336,6 +336,10 @@ section#hero .hero-content {
       section#hero .hero-content h2 {
         font-size: 1rem; } }
 
+section.diagram .diagram-wrapper img.d-sm-inline {
+  width: 1041px;
+  max-width: 100%; }
+
 section#downloadsHero .d-only-hero-bg {
   top: -30px;
   width: 165px; }

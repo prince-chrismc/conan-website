@@ -274,6 +274,15 @@ section#hero {
   }
 }
 
+section.diagram {
+  .diagram-wrapper {
+    img.d-sm-inline {
+      width: 1041px;
+      max-width: 100%;
+    }
+  }
+}
+
 section#downloadsHero {
   .d-only-hero-bg {
     top: -30px;
