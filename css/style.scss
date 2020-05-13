@@ -49,6 +49,10 @@ h1 {
   /* 40/18 */
 }
 
+.h2 {
+  font-size: 30px;
+}
+
 .btn {
   padding: 8px 10px;
   min-width: 97px;
@@ -259,9 +263,13 @@ section#hero {
     margin-left: auto;
     margin-right: auto;
 
-    p {
+    h2 {
       font-size: 1.111rem;
+      font-weight: 300;
       /* 20/18 */
+      @media screen and (max-width: 480px) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -313,7 +321,7 @@ section.advantages {
       justify-content: center;
     }
 
-    h3 {
+    h4 {
       font-size: 1.111rem;
     }
 
@@ -380,6 +388,9 @@ section.learn-more {
       /* 40/18 */
       padding-bottom: 2.222rem;
       /* 40/18 */
+      a.text-link {
+        color: black !important;
+      }
       a.big-btn {
         transition: all 0.32s ease;
 

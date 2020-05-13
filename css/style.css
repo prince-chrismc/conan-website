@@ -175,6 +175,9 @@ h1 {
   font-size: 2.222rem;
   /* 40/18 */ }
 
+.h2 {
+  font-size: 30px; }
+
 .btn {
   padding: 8px 10px;
   min-width: 97px;
@@ -325,9 +328,13 @@ section#hero .hero-bg {
 section#hero .hero-content {
   margin-left: auto;
   margin-right: auto; }
-  section#hero .hero-content p {
+  section#hero .hero-content h2 {
     font-size: 1.111rem;
+    font-weight: 300;
     /* 20/18 */ }
+    @media screen and (max-width: 480px) {
+      section#hero .hero-content h2 {
+        font-size: 1rem; } }
 
 section#downloadsHero .d-only-hero-bg {
   top: -30px;
@@ -358,7 +365,7 @@ section.advantages .advantage {
     display: flex;
     align-items: center;
     justify-content: center; }
-  section.advantages .advantage h3 {
+  section.advantages .advantage h4 {
     font-size: 1.111rem; }
   section.advantages .advantage p {
     font-size: 0.833rem;
@@ -402,6 +409,8 @@ section.learn-more .lm-obj {
     /* 40/18 */
     padding-bottom: 2.222rem;
     /* 40/18 */ }
+    section.learn-more .lm-obj .content a.text-link {
+      color: black !important; }
     section.learn-more .lm-obj .content a.big-btn {
       transition: all 0.32s ease; }
       section.learn-more .lm-obj .content a.big-btn:hover {
