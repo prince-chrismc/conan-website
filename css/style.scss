@@ -864,7 +864,7 @@ section.sign-up {
 }
 
 footer#siteFooter {
-  background-image: url("../img/footer-bg.png");
+  background-image: url("../img/footer-bg.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
@@ -915,6 +915,15 @@ footer#siteFooter {
 }
 
 section#downloads {
+
+  button.dropdown-toggle {
+    &:after {
+      margin-right: 15px;
+      color: $gray;
+      font-size: 22px;
+    }
+  }
+
   .downloads-item-wrapper {
     background-color: #f6f6f6;
   }
@@ -1058,11 +1067,6 @@ section#downloads {
             align-items: center;
             justify-content: space-between;
             padding-left: 15px;
-            &:after {
-              margin-right: 15px;
-              color: $gray;
-              font-size: 120%;
-            }
             @media screen and (max-width: $sm) {
               font-size: 15px !important;
             }
@@ -1095,11 +1099,11 @@ section#downloads {
         margin-right: auto;
       }
       &.cn-copy, &.cn-copy-multiline {
-        background-image: url('../img/copy-icon.png');
+        background-image: url('../img/copy-icon.svg');
         cursor: pointer;
       }
       &.cn-download {
-        background-image: url('../img/download-icon.png');
+        background-image: url('../img/download-icon.svg');
         &.disabled {
           cursor: default;
           &:hover {
@@ -1109,7 +1113,7 @@ section#downloads {
         }
       }
       &.cn-link {
-        background-image: url('../img/link-icon.png');
+        background-image: url('../img/link-icon.svg');
       }
       @media screen and (max-width: $sm) {
         display: none;

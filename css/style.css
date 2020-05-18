@@ -731,7 +731,7 @@ section.sign-up form.footer-form .form-checkbox {
     color: #fff; }
 
 footer#siteFooter {
-  background-image: url("../img/footer-bg.png");
+  background-image: url("../img/footer-bg.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
@@ -762,6 +762,10 @@ footer#siteFooter {
     footer#siteFooter ul.socials a:hover {
       opacity: 0.5; }
 
+section#downloads button.dropdown-toggle:after {
+  margin-right: 15px;
+  color: #8b8b8b;
+  font-size: 22px; }
 section#downloads .downloads-item-wrapper {
   background-color: #f6f6f6; }
 section#downloads .download-col-topper {
@@ -870,10 +874,6 @@ section#downloads .cn-box {
           align-items: center;
           justify-content: space-between;
           padding-left: 15px; }
-          section#downloads .cn-box.cn-main.cn-dropdown .dropdown button.dropdown-toggle:after {
-            margin-right: 15px;
-            color: #8b8b8b;
-            font-size: 120%; }
           @media screen and (max-width: 767.98px) {
             section#downloads .cn-box.cn-main.cn-dropdown .dropdown button.dropdown-toggle {
               font-size: 15px !important; } }
@@ -897,17 +897,17 @@ section#downloads .cn-box {
       margin-left: auto;
       margin-right: auto; }
     section#downloads .cn-box.cn-action.cn-copy, section#downloads .cn-box.cn-action.cn-copy-multiline {
-      background-image: url("../img/copy-icon.png");
+      background-image: url("../img/copy-icon.svg");
       cursor: pointer; }
     section#downloads .cn-box.cn-action.cn-download {
-      background-image: url("../img/download-icon.png"); }
+      background-image: url("../img/download-icon.svg"); }
       section#downloads .cn-box.cn-action.cn-download.disabled {
         cursor: default; }
         section#downloads .cn-box.cn-action.cn-download.disabled:hover {
           background-color: #acacac !important;
           border-color: #acacac !important; }
     section#downloads .cn-box.cn-action.cn-link {
-      background-image: url("../img/link-icon.png"); }
+      background-image: url("../img/link-icon.svg"); }
     @media screen and (max-width: 767.98px) {
       section#downloads .cn-box.cn-action {
         display: none; } }
