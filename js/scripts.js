@@ -251,6 +251,7 @@ function matchHeight(set) {
 function downloadsMatchHeight() {
   matchHeight(jQuery('.front-text'))
   matchHeight(jQuery('.install'))
+  matchHeight(jQuery('.small-title'))  
 }
 
 //copy text to clipboard

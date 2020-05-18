@@ -303,6 +303,8 @@ header#masthead {
   header#masthead a.btn.bg-blue.white img {
     position: relative;
     bottom: 1px; }
+  header#masthead .header-logo {
+    max-height: 82px; }
   @media screen and (max-width: 480px) {
     header#masthead .header-hamburger-col {
       padding-right: 5px; }
