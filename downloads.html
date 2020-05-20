@@ -16,11 +16,11 @@
     type="image/png"
     href="favicon.png"
     />
-    <link rel="alternate" href="https://conan.io" hreflang="en" />
+    <link rel="alternate" href="https://conan.io/downloads.html" hreflang="en" />
     <title>C/C++ Open Source Package Manager</title>
     <link
       rel="canonical"
-      href="https://conan.io"
+      href="https://conan.io/dowloads.html"
     />
 
     <!-- FONT -->
@@ -88,10 +88,9 @@
             <!-- HEADER NAV -->
             <nav class="header-nav align-items-center d-lg-flex"
                  id="headerNav">
-              <a 
-                 
-                 href="https://github.com/conan-io/conan" rel="nofollow"
-                 class="btn bg-bright-gray">
+              <a href="https://github.com/conan-io/conan" rel="nofollow"
+                 class="btn bg-bright-gray"
+                 rel="nofollow">
                 <img src="img/small-github.svg"
                      alt="Github">
               </a>
@@ -146,7 +145,7 @@
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
                   <img src="img/conan-downloads-logo.svg"
-                       alt="Conan Package"
+                       alt="Downlod Conan Open Source C/C++ Package Manager"
                        class="mr-2 small-title-lazy"
                        style="width: 280px">
                 </div>
@@ -335,7 +334,7 @@
                 <!-- SMALL TITLE WITH ICON -->
                 <div class="small-title d-flex align-items-center">
                   <img src="img/arti-downloads-logo.svg"
-                       alt="Artifactory"
+                       alt="Downlod JFrog Artifactory Community Edition for C/C++"
                        class="mr-2 lazy"
                        style="width: 200px;">
                 </div>
@@ -608,7 +607,8 @@ docker.bintray.io/jfrog/artifactory-cpp-ce:latest
 
               <!-- GITHUB -->
               <a class="q-box d-block"
-                 href="https://github.com/conan-io/conan/issues">
+                 href="https://github.com/conan-io/conan/issues"
+                 rel=nofollow>
                 <div class="q-top">
                   <img src="img/social/github.svg" alt="Docs">
                 </div>
@@ -625,14 +625,15 @@ docker.bintray.io/jfrog/artifactory-cpp-ce:latest
 
 
     <!-- SIGN UP -->
-    <section class="sign-up py-5 mt-5 bg-blue white text-center" id="signUp">
+    <section class="sign-up py-5 bg-blue white text-center" id="signUp">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="white d-flex justify-content-center" id="signUpTitle">
-              <div class="position-relative"><img data-src="img/letter.svg" alt="Sign Up" class="position-absolute letter lazy"></div>
+            <div class="h2 white d-flex justify-content-center" id="signUpTitle">
+              <div class="position-relative"><img data-src="img/letter.svg" alt="Sign Up"
+                  class="position-absolute letter lazy"></div>
               <span>SIGN ME UP FOR RELEASE UPDATES</span>
-            </h2>
+            </div>
             <div class="mktoFormWrapper">
               <!-- FOOTER FORM HERE -->
               <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
@@ -642,8 +643,8 @@ docker.bintray.io/jfrog/artifactory-cpp-ce:latest
 
               </div>
               <script>
-                MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function(form) {
-                   // Add an onSuccess handler
+                MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function (form) {
+                  // Add an onSuccess handler
                   form.onSuccess(function (values, followUpUrl) {
                     // Get the form's jQuery element and hide it
                     form.getFormElem().fadeOut();
