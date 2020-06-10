@@ -278,6 +278,9 @@ a.github-link:hover {
 }
 #mktoForm_1479 input[type='checkbox'] {
     width: auto !important;
+    position: relative;
+    top: 5px;
+    left: 3px;
 }
 
 #mktoForm_1479 .mktoAsterix{
@@ -293,9 +296,24 @@ a.github-link:hover {
 }
 
 #mktoForm_1479 button{
-    padding: 0 5px 0 5px !important;
+    padding: 0 5px 0 5px ;
     height: 32px;
     margin-left: 20px;
+}
+#mktoForm_1479 .mktoErrorMsg{
+  padding: 15px!important;
+  display: inline;
+}
+#mktoForm_1479 .mktoError{
+  bottom: -66px !important;
+}
+#mktoForm_1479 .mktoErrorArrowWrap{
+  display: none !important;
+}
+
+#signUpHeading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 
@@ -324,6 +342,26 @@ a.github-link:hover {
 }
 #contact-us h2 {
     padding-bottom: 0;
+}
+
+form#mktoForm_1479 label.mktoLabel.mktoHasWidth[for="Email"] {
+  display: none;
+}
+
+form#mktoForm_1479 label.mktoLabel.mktoHasWidth[for="Communications_Opt_In__c"] {
+  font-size: 1rem;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  color: #fff;
+  width: 314px!important;
+}
+form#mktoForm_1479 button[type="submit"] {
+  background: rgba(50, 112, 165, 1);
+  text-transform: uppercase;
+  border: 0;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cu-form-container {
     padding-top: 40px;
