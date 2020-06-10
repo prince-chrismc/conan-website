@@ -348,26 +348,13 @@
               <span>SIGN ME UP FOR RELEASE UPDATES</span>
             </div>
             <div class="mktoFormWrapper">
-              <!-- FOOTER FORM HERE -->
+              <!-- FOOTER FORM HERE, script loads from 'scripts.js'-->
               <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
               <div class="d-flex justify-content-center pt-3">
                 <form id="mktoForm_1479" class="text-center">
                 </form>
 
               </div>
-              <script>
-                MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 1479, function (form) {
-                  // Add an onSuccess handler
-                  form.onSuccess(function (values, followUpUrl) {
-                    // Get the form's jQuery element and hide it
-                    form.getFormElem().fadeOut();
-                    //show success
-                    document.getElementById('signUpTitle').textContent = 'Thanks! you have subscribed successfuly.'
-                    // Return false to prevent the submission handler from taking the lead to the follow up url
-                    return false;
-                  });
-                });
-              </script>
             </div>
 
           </div>
@@ -990,21 +977,6 @@
 
             <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
             <form id="mktoForm_2684"></form>
-            <script>
-              MktoForms2.loadForm("https://leap.jfrog.com", "256-FNZ-187", 2684, function (form) {
-                // Add an onSuccess handler
-                form.onSuccess(function (values, followUpUrl) {
-                  // Get the form's jQuery element and hide it
-                  form.getFormElem().fadeOut();
-                  //show success and remove email
-                  document.getElementById('contactUsTitle').textContent = 'Thanks! your message has been sent.';
-                  document.getElementById('contactUsEmail').fadeOut();
-                  // Return false to prevent the submission handler from taking the lead to the follow up url
-                  return false;
-                });
-              });
-            </script>
-
 
           </div>
         </div>
@@ -1085,7 +1057,7 @@
                         Download
                       </a></li>
                     <li><a href="https://conan.io/center/">
-                        Conan-Center
+                      &nbsp;Conan-Center
                       </a></li>
                     <li><a href="https://github.com/conan-io/conan" rel="nofollow">
                         GitHub
