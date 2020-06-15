@@ -22,3 +22,9 @@ Base folder (html files)
 - img (images)
 - js (scripts)
 - slick (slicker slider)
+
+## Development Instructions
+- You must have gulp installed. For more info - https://gulpjs.com/
+- All the source files are located in src/ folder
+- After any change in a scss, js, or html file, run 'gulp' command in the command line
+- gulp will compile, minify, concatenate and update all the required files in the base folder
