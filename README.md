@@ -26,5 +26,5 @@ Base folder (html files)
 ## Development Instructions
 - `$ npm install`
 - All the source files are located in `src/` folder, any update to the website should be done from this folder, otherwise it will be overwritten by the next `gulp` task
-- After any change you do to any `HTML`, `scss, or `js` file in the `src/` folder, run `$ gulp`
+- After any change you do to any `HTML`, `SCSS`, or `JS` file in the `src/` folder, run `$ gulp`
 - Any new images will be added to `src/img`. After an image has been added, run `$ gulp imagesTask`
