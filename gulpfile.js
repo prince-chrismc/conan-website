@@ -50,7 +50,43 @@ function cssTask() {
 function imgTask() {
   return src('./src/img/*')
   .pipe(image())
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('img/'));
+}
+
+function imgAdvantagesTask() {
+  return src('./src/img/advantages/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/advantages/'));
+}
+
+function imgbrandsTask() {
+  return src('./src/img/brands/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/brands/'));
+}
+
+function imgdownloadsTask() {
+  return src('./src/img/downloads/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/downloads/'));
+}
+
+function imglogoTask() {
+  return src('./src/img/logo/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/logo/'));
+}
+
+function imgourusersTask() {
+  return src('./src/img/our-users/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/our-users/'));
+}
+
+function imgsocialTask() {
+  return src('./src/img/social/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/social/'));
 }
 
 exports.scssTask = scssTask;
@@ -59,4 +95,5 @@ exports.jsTask   = jsTask;
 exports.htmlTask = htmlTask;
 exports.imgTask  = imgTask;
 exports.default  = series(scssTask, cssTask, jsTask, htmlTask);
+exports.imagesTask = series(imgTask, imgAdvantagesTask, imgbrandsTask, imgdownloadsTask, imglogoTask, imgourusersTask, imgsocialTask);
 
