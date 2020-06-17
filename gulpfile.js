@@ -8,6 +8,7 @@ const sourcemaps   = require('gulp-sourcemaps');
 const postcss      = require('gulp-postcss');
 const cssnano      = require('cssnano');
 const autoprefixer = require('autoprefixer');
+const image        = require('gulp-image');
 const sass         = require('gulp-sass');
 sass.compiler      = require('node-sass');
 
@@ -17,7 +18,7 @@ const {src, series, parallel, dest, watch} = require('gulp');
 function htmlTask() {
   return src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('css/../'));
+    .pipe(gulp.dest('./'));
 }
 
 function jsTask() {
@@ -46,9 +47,16 @@ function cssTask() {
     .pipe(dest('css'));
 }
 
+function imgTask() {
+  return src('./src/img/*')
+  .pipe(image())
+  .pipe(gulp.dest('./'));
+}
+
 exports.scssTask = scssTask;
 exports.cssTask  = cssTask;
 exports.jsTask   = jsTask;
 exports.htmlTask = htmlTask;
+exports.imgTask  = imgTask;
 exports.default  = series(scssTask, cssTask, jsTask, htmlTask);
 
