@@ -22,3 +22,4 @@ Base folder (html files)
 - img (images)
 - js (scripts)
 - slick (slicker slider)
+
