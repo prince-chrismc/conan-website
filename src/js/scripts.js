@@ -119,7 +119,7 @@ jQuery(document).ready(function (t) {
       o.toggleClass("is-active"), toggleMenu(t, o);
     }),
     t("body.home").length &&
-      (testiSlick(t), shuffleUsers(t),
+      (testiSlick(t),
       window.matchMedia("(min-width: 769px)").matches &&
         (matchHeight(t(".one-advantage-content .text")),
         matchHeight(t(".advantage-text .line-1")))),
