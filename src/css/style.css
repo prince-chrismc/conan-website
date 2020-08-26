@@ -1042,3 +1042,18 @@ body.privacy-policy ul {
     display: none; }
   section.contact-us img.contact-bg {
     display: none; } }
+
+.legal-page table {
+  border: none;
+  word-break: break-all;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.legal-page table tr {
+  border-top: 1px solid #7ba7d3;
+  border-bottom: 1px solid #7ba7d3; }
+
+.legal-page table tr td, .legal-page table tr th {
+  border: none;
+  border-right: 1px solid #7ba7d3;
+  padding: 5px; }
