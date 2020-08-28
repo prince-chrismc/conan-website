@@ -87,10 +87,10 @@ function shuffleUsers(t) {
         ++a > 14 && (a = 0),
         (userBox = $(".user-box").eq(v)),
         (boxImg = userBox.find("img")),
-        boxImg.fadeOut(600, function () {
+        boxImg.fadeOut(300, function () {
           boxImg.appendTo(e),
             (stockImg = e.find("img").first()),
-            stockImg.appendTo(userBox).hide().fadeIn(600);
+            stockImg.appendTo(userBox).hide().fadeIn(300);
         });
     }, 3e3);
 }
@@ -119,7 +119,7 @@ jQuery(document).ready(function (t) {
       o.toggleClass("is-active"), toggleMenu(t, o);
     }),
     t("body.home").length &&
-      (testiSlick(t),
+      (testiSlick(t), shuffleUsers(t),
       window.matchMedia("(min-width: 769px)").matches &&
         (matchHeight(t(".one-advantage-content .text")),
         matchHeight(t(".advantage-text .line-1")))),
