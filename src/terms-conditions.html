@@ -48,6 +48,13 @@
         style="display: none; visibility: hidden;"
       ></iframe
     ></noscript>
+
+    <div id="top_banner" class="position-relative">
+      <a href="https://blog.conan.io/2020/09/24/New-conan-training-series.html" target="_blank"></a>
+      <img id="close_banner" class="position-absolute" src="img/close.svg" alt="close">
+    </div>
+
+
     <header id="masthead">
       <div class="container">
         <div class="row d-flex justify-content-between">
@@ -342,5 +349,10 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      document.getElementById('close_banner').onclick = function () {
+        document.getElementById('top_banner').style.display = 'none';
+      }
+    </script>
   </body>
 </html>
