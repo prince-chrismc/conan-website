@@ -1078,7 +1078,8 @@ body.privacy-policy ul {
   padding-top: 4rem; }
 
 .training-video {
-  width: 25%; }
+  width: 25%;
+  height: 20%; }
   @media (min-width: 1281px) {
     .training-video {
       width: 20%; } }
