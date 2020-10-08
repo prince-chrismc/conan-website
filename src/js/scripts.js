@@ -102,6 +102,20 @@ function testiSlick(t) {
     slidesToScroll: 1,
   });
 }
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('ytPlayer', {
+    height: '270',
+    width: '480',
+    videoId: 'MJw7F5HeuiI',
+    rel: '0'
+  });
+}
+
 jQuery(document).ready(function (t) {
   if (
     (t(".lazy").Lazy(),
