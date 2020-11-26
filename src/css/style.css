@@ -1166,6 +1166,9 @@ body.tribe #conanTribeMemberModal.modal .modal-dialog {
         width: 278px;
         height: 252px; }
 
+body.tribe .company {
+  border-bottom: 1px solid #cecece; }
+
 body.tribe .tribes-hero {
   background-image: url("../img/tribes-hero-background.png"); }
 

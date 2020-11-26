@@ -6,11 +6,11 @@ const shorten = (str, maxLen, separator = ' ')=>{
 }
 
 //
-const tribeCompareProperty = (a,b)=>{
-  if (a.hasOwnProperty('description') && !b.hasOwnProperty('description')) {
+const tribeCompareProperty = (a,b, property)=>{
+  if (a.hasOwnProperty(property) && !b.hasOwnProperty(property)) {
     return -1
   }
-  if (!a.hasOwnProperty('description') && b.hasOwnProperty('description')) {
+  if (!a.hasOwnProperty(property) && b.hasOwnProperty(property)) {
     return 1
   }
   return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)
@@ -20,9 +20,9 @@ tribeMembers.sort((a,b) => {
   if (a.hasOwnProperty('image') && !b.hasOwnProperty('image')) return -1;
   if (!a.hasOwnProperty('image') && b.hasOwnProperty('image')) return 1;
   if (a.hasOwnProperty('image') && b.hasOwnProperty('image')) {
-    return tribeCompareProperty(a,b)
+    return tribeCompareProperty(a,b, 'description')
   }
-  return tribeCompareProperty(a,b)
+  return tribeCompareProperty(a,b, 'description')
 }); 
 
 const anonymousImg = 'anonymous.png'
@@ -33,7 +33,7 @@ jQuery((function(t) {
      const $membersModal = $('#conanTribeMemberModal')
 
      tribeMembers.forEach((oneMember, i) => {
-       const oneMemberHTML = getTribeMemberHTML(i, oneMember.name, oneMember.image, oneMember.description, oneMember.twitter, oneMember.linkedin)
+       const oneMemberHTML = getTribeMemberHTML(i, oneMember.name, oneMember.company, oneMember.image, oneMember.description, oneMember.twitter, oneMember.linkedin)
        membersRow.insertAdjacentHTML('beforeend',oneMemberHTML)
        t('.lazy').Lazy()
      });
@@ -48,9 +48,9 @@ jQuery((function(t) {
   }
 }))
 
-const getTribeMemberHTML = (id, name, image, description = '', twitter = false , linkedin = false) => {
+const getTribeMemberHTML = (id, name, company, image, description = '', twitter = false , linkedin = false) => {
   
-  let twitterHTML = '', linkedinHTML = '', shortDescription = ''
+  let twitterHTML = '', linkedinHTML = '', shortDescription = '', companyHTML = ''
   
   if (description.length > 170 && description !== '') {
     shortDescription = shorten(description, 170) + '...'
@@ -70,15 +70,18 @@ const getTribeMemberHTML = (id, name, image, description = '', twitter = false ,
   /></a>
 </li>`
 
+  if (company) companyHTML = `<p class="company py-2">${company}</p>`
+
   if (!image) image = anonymousImg
   
   return `<div class="col-sm-6 col-md-4 col-lg-3 mb-4  one-tribe-member oneTribeMember" id="tribeMember_${id}" data-json-id=${id}>
     <div class="p-3 bg-bright-gray h-100 tm_Id">
               
       <div class="d-flex flex-column justify-content-between h-100">
-        <div class="content-top mb-3">
+        <div class="content-top mb-1">
           <img class="w-100 object-cover text-center bg-gray tm_Image lazy" data-src="../img/conan-tribe-nov-2020/${image}" alt="${name}" width="278" height="252">
           <h3 class="mt-3 tm_Name">${name}</h3>
+          ${companyHTML}
           <p class="short-description">${shortDescription} </p>
           <p class="tm_Description d-none">${description}</p>
         </div>
@@ -106,6 +109,13 @@ const setMembersModalContent = ($membersModal, memberInfo) => {
 
   $membersModal.find('.tmModal_Name').text(memberInfo.name)
   $membersModal.find('.tmModal_Image').attr('src', '../img/conan-tribe-nov-2020/'+memberInfo.image).attr('alt', memberInfo.name)
+  //Company
+  if (memberInfo.hasOwnProperty('company')) {
+    $membersModal.find('.company').text(memberInfo.company).removeClass('d-none')
+  } else {
+    $membersModal.find('.company').addClass('d-none')
+  }
+  //Description
   if (memberInfo.description) {
     $membersModal.find('.tmModal_LongDescription').text(memberInfo.description)
   } else {
