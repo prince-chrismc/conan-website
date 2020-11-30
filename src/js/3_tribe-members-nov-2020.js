@@ -311,5 +311,12 @@ var tribeMembers = [
       description: 'Product owner basis software for automated driving at Bosch. Expert in nothing, know enough to solve most of the problems thrown at me.',
       linkedin: 'https://www.linkedin.com/in/janosch-steinhoff-a501b6142/',
       company: 'Robert Bosch GmbH'
+  },
+  {
+    name: 'Kevin A. Mitchell',
+    image: 'Kevin_Mitchell.jpg',
+    description: "Kevin is a Senior Software Architect at Datalogics, where he introduced Conan to our C++ projects. He's also got a strong background in Python and Java as well as other programming languages.",
+    company: 'Datalogics',
+    twitter: 'https://twitter.com/kamitchell/'
   }
 ]
