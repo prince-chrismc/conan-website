@@ -72,6 +72,7 @@ var tribeMembers = [
   },
   {
       name: 'Julien Marrec',
+      image: 'Julien_Marrec-B_W-400x400_-_Julien_Marrec.jpg',
       description: 'Energy engineer/BEM professional, Founder of EffiBEM. Interests include: building energy modeling, Python, ruby, C++, CI/CD, dataviz, machine learning. ',
       linkedin: 'https://www.linkedin.com/in/julienmarrec/',
       twitter: 'https://twitter.com/MarrecJulien/',
@@ -250,7 +251,6 @@ var tribeMembers = [
   },
   {
       name: 'Thomas Steiner',
-      image: 'Julien_Marrec-B_W-400x400_-_Julien_Marrec.jpg',
       description: "I'm a software developer for an Austrian injection moulding machine manufacturer. My programming languages are C++, Java and some Python (for conan recipes ;). I also do SPS programming and sometimes DevOps stuff.",
       company: 'ENGEL Austria GmbH'
   },
