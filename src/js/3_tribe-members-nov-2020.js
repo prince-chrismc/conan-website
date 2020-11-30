@@ -304,6 +304,7 @@ var tribeMembers = [
   },
   {
       name: 'Janosch Steinhoff',
+      image: 'Janosch_Steinhoff.png',
       description: 'Product owner basis software for automated driving at Bosch. Expert in nothing, know enough to solve most of the problems thrown at me.',
       linkedin: 'https://www.linkedin.com/in/janosch-steinhoff-a501b6142/',
       company: 'Robert Bosch GmbH'
