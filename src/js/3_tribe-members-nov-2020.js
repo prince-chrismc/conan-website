@@ -184,7 +184,7 @@ var tribeMembers = [
   },
   {
       name: 'Theo Delrieu',
-      image: 'theo_-_Théo_Delrieu.jpg',
+      image: 'Theo_Delrieu.jpg',
       description: 'Started with C++ metaprogramming, went to package management, now to CI/CD, tomorrow with DevOps?',
       company: 'Tanker'
   },
@@ -254,7 +254,7 @@ var tribeMembers = [
   },
   {
       name: 'Tamás Szelei',
-      image: '10686701_10204167378798614_4331712257909313449_n_-_Tamás_Szelei.jpg',
+      image: 'Tamas_Szelei.jpg',
       description: 'I enjoy wrangling build systems and long walks on the beach at sunset.',
       linkedin: 'https://www.linkedin.com/in/tamasszelei/',
       twitter: 'https://twitter.com/szeleitamas/',
