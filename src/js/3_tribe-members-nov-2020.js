@@ -300,6 +300,9 @@ var tribeMembers = [
   },
   {
       name: 'Jayanth Bapu',
+      description: 'R&D Software Engineer working on DevOps and all things Cloud.',
+      linkedin: 'www.linkedin.com/in/jayanthbapu',
+      company: 'Keysight Technologies'
   },
   {
       name: 'Janosch Steinhoff',
