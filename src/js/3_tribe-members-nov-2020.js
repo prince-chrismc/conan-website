@@ -321,4 +321,10 @@ var tribeMembers = [
     company: 'Datalogics',
     twitter: 'https://twitter.com/kamitchell/'
   }
+  {
+    name: 'Alex Brinkman',
+    image: 'Alex_Brinkman.jpg',
+    description: "Robotics software developer at NASA-JPL leveraging Conan to develop C/C++ manipulation applications",
+    company: 'NASA-JPL'
+  }
 ]
