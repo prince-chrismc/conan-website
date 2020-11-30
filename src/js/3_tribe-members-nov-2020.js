@@ -251,6 +251,7 @@ var tribeMembers = [
   },
   {
       name: 'Thomas Steiner',
+      image: 'Thomas_Steiner.png',
       description: "I'm a software developer for an Austrian injection moulding machine manufacturer. My programming languages are C++, Java and some Python (for conan recipes ;). I also do SPS programming and sometimes DevOps stuff.",
       company: 'ENGEL Austria GmbH'
   },
