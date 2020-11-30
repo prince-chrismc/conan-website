@@ -120,6 +120,7 @@ var tribeMembers = [
   },
   {
       name: 'Johannes Asal',
+      image: 'Johannes_Asal.png',
       description: 'Graduate physicist with interest in Computer Science ended up in Software Engineering. Working for SICK AG as Embedded Software Engineer since 2011. Key competencies are C++, Linux system development and tooling, especially build systems.',
       linkedin: 'https://www.linkedin.com/in/johannes-asal-8695b746/',
       company: 'SICK AG'
