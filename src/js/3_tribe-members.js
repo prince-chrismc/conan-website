@@ -37,6 +37,7 @@ var tribeMembers = [
   },
   {
       name: 'Michael Maguire',
+      image: 'Michael_Maguire.jpg',
       description: 'C++ and Java software engineering professional at Bloomberg, previously at Microsoft in Redmond and at Research in Motion on the BlackBerry team. Architected the Java email and SMS applications for the BlackBerry. Inventor of the threaded message view UI now ubiquitous for mobile chat and text applications.',
       linkedin: 'https://www.linkedin.com/in/michaelmaguire/',
       twitter: 'https://twitter.com/michaelmaguire/',
