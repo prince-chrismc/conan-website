@@ -320,7 +320,7 @@ var tribeMembers = [
     description: "Kevin is a Senior Software Architect at Datalogics, where he introduced Conan to our C++ projects. He's also got a strong background in Python and Java as well as other programming languages.",
     company: 'Datalogics',
     twitter: 'https://twitter.com/kamitchell/'
-  }
+  },
   {
     name: 'Alex Brinkman',
     image: 'Alex_Brinkman.jpg',
