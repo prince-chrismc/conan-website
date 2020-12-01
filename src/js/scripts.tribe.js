@@ -79,7 +79,7 @@ const getTribeMemberHTML = (id, name, company, image, description = '', twitter 
               
       <div class="d-flex flex-column justify-content-between h-100">
         <div class="content-top mb-1">
-          <img class="w-100 object-cover text-center bg-gray tm_Image lazy" data-src="../img/conan-tribe-nov-2020/${image}" alt="${name}" width="278" height="252">
+          <img class="w-100 object-cover text-center bg-gray tm_Image lazy" data-src="../img/conan-tribe/${image}" alt="${name}" width="278" height="252">
           <h3 class="mt-3 tm_Name">${name}</h3>
           ${companyHTML}
           <p class="short-description">${shortDescription} </p>
@@ -108,7 +108,7 @@ const setMembersModalContent = ($membersModal, memberInfo) => {
   if (!memberInfo.image) memberInfo.image = anonymousImg
 
   $membersModal.find('.tmModal_Name').text(memberInfo.name)
-  $membersModal.find('.tmModal_Image').attr('src', '../img/conan-tribe-nov-2020/'+memberInfo.image).attr('alt', memberInfo.name)
+  $membersModal.find('.tmModal_Image').attr('src', '../img/conan-tribe/'+memberInfo.image).attr('alt', memberInfo.name)
   //Company
   if (memberInfo.hasOwnProperty('company')) {
     $membersModal.find('.company').text(memberInfo.company).removeClass('d-none')

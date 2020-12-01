@@ -122,9 +122,9 @@ function imgsocialTask() {
 }
 
 function imgTribe2020() {
-  return src('./src/img/conan-tribe-nov-2020/*')
+  return src('./src/img/conan-tribe/*')
   .pipe(image())
-  .pipe(gulp.dest('img/conan-tribe-nov-2020/'));
+  .pipe(gulp.dest('img/conan-tribe/'));
 }
 
 function watchAll() {

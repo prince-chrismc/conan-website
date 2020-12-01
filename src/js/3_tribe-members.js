@@ -37,6 +37,7 @@ var tribeMembers = [
   },
   {
       name: 'Michael Maguire',
+      image: 'Michael_Maguire.jpg',
       description: 'C++ and Java software engineering professional at Bloomberg, previously at Microsoft in Redmond and at Research in Motion on the BlackBerry team. Architected the Java email and SMS applications for the BlackBerry. Inventor of the threaded message view UI now ubiquitous for mobile chat and text applications.',
       linkedin: 'https://www.linkedin.com/in/michaelmaguire/',
       twitter: 'https://twitter.com/michaelmaguire/',
@@ -72,6 +73,7 @@ var tribeMembers = [
   },
   {
       name: 'Julien Marrec',
+      image: 'Julien_Marrec-B_W-400x400_-_Julien_Marrec.jpg',
       description: 'Energy engineer/BEM professional, Founder of EffiBEM. Interests include: building energy modeling, Python, ruby, C++, CI/CD, dataviz, machine learning. ',
       linkedin: 'https://www.linkedin.com/in/julienmarrec/',
       twitter: 'https://twitter.com/MarrecJulien/',
@@ -120,6 +122,7 @@ var tribeMembers = [
   },
   {
       name: 'Johannes Asal',
+      image: 'Johannes_Asal.png',
       description: 'Graduate physicist with interest in Computer Science ended up in Software Engineering. Working for SICK AG as Embedded Software Engineer since 2011. Key competencies are C++, Linux system development and tooling, especially build systems.',
       linkedin: 'https://www.linkedin.com/in/johannes-asal-8695b746/',
       company: 'SICK AG'
@@ -221,7 +224,9 @@ var tribeMembers = [
   {
       name: 'Matthias Fuchs',
       image: '20201106_151321_-_Matthias_Fuchs.jpg',
-      description: 'Matthias is a software architect at Carl Zeiss Meditec AG. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      description: 'Matthias is a software architect at Zeiss Meditec. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      linkedin: 'https://www.linkedin.com/in/matzfuchs/',
+      company: 'Carl Zeiss Meditec AG'
   },
   {
       name: 'Max Kolesin',
@@ -249,8 +254,8 @@ var tribeMembers = [
   },
   {
       name: 'Thomas Steiner',
-      image: 'Julien_Marrec-B_W-400x400_-_Julien_Marrec.jpg',
-      description: "I'm a software developer for an Austrian injection moulding machine manufacturer. My programming languages are C++, Java and some Python (for conan recipes ;). I also do SPS programming and sometimes DevOps stuff.",
+      image: 'Thomas_Steiner.png',
+      description: "I'm a software developer for an Austrian injection moulding machine manufacturer. My programming languages are C++, Java and some Python (for conan recipes ;). I also do PLC programming and sometimes DevOps stuff.",
       company: 'ENGEL Austria GmbH'
   },
   {
@@ -301,11 +306,28 @@ var tribeMembers = [
   },
   {
       name: 'Jayanth Bapu',
+      description: 'R&D Software Engineer working on DevOps and all things Cloud.',
+      linkedin: 'www.linkedin.com/in/jayanthbapu',
+      company: 'Keysight Technologies'
   },
   {
       name: 'Janosch Steinhoff',
+      image: 'Janosch_Steinhoff.png',
       description: 'Product owner basis software for automated driving at Bosch. Expert in nothing, know enough to solve most of the problems thrown at me.',
       linkedin: 'https://www.linkedin.com/in/janosch-steinhoff-a501b6142/',
       company: 'Robert Bosch GmbH'
+  },
+  {
+    name: 'Kevin A. Mitchell',
+    image: 'Kevin_Mitchell.jpg',
+    description: "Kevin is a Senior Software Architect at Datalogics, where he introduced Conan to our C++ projects. He's also got a strong background in Python and Java as well as other programming languages.",
+    company: 'Datalogics',
+    twitter: 'https://twitter.com/kamitchell/'
+  },
+  {
+    name: 'Alex Brinkman',
+    image: 'Alex_Brinkman.jpg',
+    description: "Robotics software developer at NASA-JPL leveraging Conan to develop C/C++ manipulation applications",
+    company: 'NASA-JPL'
   }
 ]
