@@ -37,6 +37,7 @@ var tribeMembers = [
   },
   {
       name: 'Michael Maguire',
+      image: 'Michael_Maguire.jpg',
       description: 'C++ and Java software engineering professional at Bloomberg, previously at Microsoft in Redmond and at Research in Motion on the BlackBerry team. Architected the Java email and SMS applications for the BlackBerry. Inventor of the threaded message view UI now ubiquitous for mobile chat and text applications.',
       linkedin: 'https://www.linkedin.com/in/michaelmaguire/',
       twitter: 'https://twitter.com/michaelmaguire/',
@@ -223,7 +224,9 @@ var tribeMembers = [
   {
       name: 'Matthias Fuchs',
       image: '20201106_151321_-_Matthias_Fuchs.jpg',
-      description: 'Matthias is a software architect at Carl Zeiss Meditec AG. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      description: 'Matthias is a software architect at Zeiss Meditec. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      linkedin: 'https://www.linkedin.com/in/matzfuchs/',
+      company: 'Carl Zeiss Meditec AG'
   },
   {
       name: 'Max Kolesin',
