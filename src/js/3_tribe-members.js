@@ -223,7 +223,9 @@ var tribeMembers = [
   {
       name: 'Matthias Fuchs',
       image: '20201106_151321_-_Matthias_Fuchs.jpg',
-      description: 'Matthias is a software architect at Carl Zeiss Meditec AG. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      description: 'Matthias is a software architect at Zeiss Meditec. He wants to have a state-of-the-art CI infrastructure so that people can create solutions instead of fixing builds.',
+      linkedin: 'https://www.linkedin.com/in/matzfuchs/',
+      company: 'Carl Zeiss Meditec AG'
   },
   {
       name: 'Max Kolesin',
