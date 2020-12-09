@@ -249,6 +249,7 @@ var tribeMembers = [
   },
   {
       name: 'Andreas Hader-Kregl',
+      image: 'Andreas_Hader-Kregl.jpg',
       description: "I am a software developer and architect at ENGEL Austria. I have a master's degree in software engineering and been working as a software developer since 2011. My main languages are C++, C# and Python. I like hiking and playing quidditch in my spare time.",
       company: 'ENGEL Austria GmbH'
   },
