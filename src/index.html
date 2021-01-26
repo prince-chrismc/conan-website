@@ -61,7 +61,18 @@
             <div class="col-lg-6 text-right d-flex align-items-center justify-content-end">
                 <!-- HEADER NAV -->
                 <nav class="header-nav align-items-center d-lg-flex" id="headerNav">
+                    
+                    <!-- TODO commented search bar for now -->
+                    <!-- <div class="autocomplete show-lg-and-up" style="width:300px;">
+                        <input id="searchInput" type="text" name="search" placeholder="Search ConanCenter" class="p-1 px-3">
+                    </div> -->
+
                     <a href="https://conan.io/center/" class="btn bg-blue white">
+                        <img src="img/small-search.svg" alt="Search">
+                        Conan-Center
+                    </a>
+
+                    <a href="https://conan.io/center/" class="btn bg-blue white show-md-and-down">
                         <img src="img/small-search.svg" alt="Search">
                         Conan-Center
                     </a>
@@ -106,17 +117,14 @@
                         </div>
                     </div>
                     <div class="training row justify-content-center">
-                        <!-- <div class="training-video embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MJw7F5HeuiI?rel=0" allowfullscreen></iframe>
-                        </div> -->
                         <div id="ytPlayer" class="training-video"></div>
-                        <div class="training-text white text-left ml-3">
+                        <a class="training-text white text-left ml-3" href="https://academy.jfrog.com/path/conan" alt="JFrog Academy" target="_blank">
                             <span>Learn Conan C / C++ </span>
                             <br>
                             <span>Package Management</span>
                             <br>
                             <div class="green mt-1">
-                                <a href="https://academy.jfrog.com/path/conan" alt="JFrog Academy" target="_blank">
+                                <div>
                                     <img
                                     alt="JFrog Academy" class="mr-2 lazy"
                                     src="img/hat.png" style="width:30px;">
@@ -124,11 +132,11 @@
                                     <img
                                     alt="JFrog Academy" class="mr-2 lazy"
                                     src="img/left-arrow.svg" style="width:10px; transform: rotateZ(180deg);">
-                                </a>
+                                </div>
                             </div>
                             <hr class="dotted green">
                             <span class="xs-text">Join our hands-on free training</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -159,9 +167,9 @@
         <div class="row">
             <div class="col-12 text-center diagram-wrapper">
                 <img src="img/diagram.svg" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                     class="d-none d-sm-inline" />
+                    class="d-none d-sm-inline" />
                 <img src="img/diagram-mobile.png" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                     class="d-sm-none img-fluid" />
+                    class="d-sm-none img-fluid" />
             </div>
         </div>
     </div>
