@@ -346,7 +346,7 @@ var tribeMembers = [
   },
   {
     name: 'Joel Johnson',
-    // image: '#TODO From email',
+    image: 'joel_johnson.jpg',
     description: "Joel is a Software Engineer supporting development and CI/CD across multiple software products.",
     company: 'Stellar Science'
   },
