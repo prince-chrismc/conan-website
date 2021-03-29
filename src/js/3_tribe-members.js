@@ -367,13 +367,10 @@ var tribeMembers = [
   {
     name: 'Udo Tremel',
     description: "Principal R&D Engineer working on the geometry acquisition for meshing and the exposure of meshing technology in Ansys products.",
-    company: 'ANSYS',
-    twitter: 'https://twitter.com/mateusz_pusz/',
-    linkedin: 'https://www.linkedin.com/in/mpusz/'
+    company: 'ANSYS'
   },
   {
     name: 'Antoine Charpentier',
-    // image: '#TODO: Picture link is not available. Can we use from Linkedin?',
     description: "Space Operation Engineer, mainly focused on ground segment development, flight dynamics, data analysis, and tactical operations in deep space exploration. I've worked on several space exploration missions and foundamental physics experiments with CNES, NASA/JPL, DLR, ESA and JAXA.",
     company: 'Telespazio',
     linkedin: 'https://www.linkedin.com/in/antoine-charpentier-831b0a4'
