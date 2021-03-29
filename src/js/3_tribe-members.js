@@ -339,7 +339,7 @@ var tribeMembers = [
   {
     name: 'Michael Aigner',
     image: 'michael_aigner.png',
-    description: "Michael Aigner is currently working with cross platform products including CAD system, raytracer, package manager mainly for desktop and server applications with C++ and Qt.",
+    description: "Build cross platform products including CAD system, raytracer, package manager mainly for desktop and server applications with C++ and Qt. I also write applications in python, golang, typescript and many more. Daily conan user since 0.7. Huge CI/CD fan mostly done with GitLab CI.",
     company: 'ZKW Lichtsysteme GmbH',
     twitter: 'https://twitter.com/tonka_2000/',
     linkedin: 'https://www.linkedin.com/in/michael-aigner-ab06809/'
@@ -353,7 +353,7 @@ var tribeMembers = [
   {
     name: 'Chris Robinson',
     image: 'chris_robinson.jpg',
-    description: "Chris is currently working with Conan in our software builds, supporting use of Conan thoughout the company and streamline Conan deployment within the organization.",
+    description: "ANSYS employee. Use conan in our softare builds. Support use of Conan thoughout the company. Streamline Conan deployment within the organization.",
     company: 'ANSYS'
   },
   {
@@ -366,7 +366,7 @@ var tribeMembers = [
   },
   {
     name: 'Udo Tremel',
-    description: "Udo is currently working as DevOps Engineer, with experience in a variety of infrastructures and languages.",
+    description: "Principal R&D Engineer working on the geometry acquisition for meshing and the exposure of meshing technology in Ansys products.",
     company: 'ANSYS',
     twitter: 'https://twitter.com/mateusz_pusz/',
     linkedin: 'https://www.linkedin.com/in/mpusz/'
@@ -377,5 +377,13 @@ var tribeMembers = [
     description: "Space Operation Engineer, mainly focused on ground segment development, flight dynamics, data analysis, and tactical operations in deep space exploration. I've worked on several space exploration missions and foundamental physics experiments with CNES, NASA/JPL, DLR, ESA and JAXA.",
     company: 'Telespazio',
     linkedin: 'https://www.linkedin.com/in/antoine-charpentier-831b0a4'
+  },
+  {
+    name: 'Gayan Pathirage',
+    image: 'gayan_pathirage.jpg',
+    description: "I’m a C++ and Python developer with about 14 years of experience in FinTech. I’m currently responsible for the engineering tool chain of LSEG Technology. (Technology arm of London Stock Exchange Group)",
+    company: 'LSEG Technology',
+    linkedin: 'https://lk.linkedin.com/in/gayancp/',
+    twitter: 'https://twitter.com/gayanpathirage/'
   },
 ]
