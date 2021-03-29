@@ -338,7 +338,7 @@ var tribeMembers = [
   },
   {
     name: 'Michael Aigner',
-    // image: '#TODO From email',
+    image: 'michael_aigner.png',
     description: "Michael Aigner is currently working with cross platform products including CAD system, raytracer, package manager mainly for desktop and server applications with C++ and Qt.",
     company: 'ZKW Lichtsysteme GmbH',
     twitter: 'https://twitter.com/tonka_2000/',
@@ -352,7 +352,7 @@ var tribeMembers = [
   },
   {
     name: 'Chris Robinson',
-    // image: '#TODO From email',
+    image: 'chris_robinson.jpg',
     description: "Chris is currently working with Conan in our software builds, supporting use of Conan thoughout the company and streamline Conan deployment within the organization.",
     company: 'ANSYS'
   },
