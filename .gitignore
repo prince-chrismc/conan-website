@@ -1,6 +1,7 @@
 # phpstorm
 .idea
 .DS_Store
+.vscode
 node_modules
 debug.log
 /css
@@ -11,3 +12,4 @@ debug.log
 /terms-conditions.html
 /downloads.html
 /privacy-policy.html
+/faq.html
