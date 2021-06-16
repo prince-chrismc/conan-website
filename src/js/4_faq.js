@@ -72,6 +72,10 @@ const faqArray = [
   },
 ];
 jQuery(($) => {
+
+  //run this script only in FAQ page.
+  if (!document.body.classList.contains('faq')) return
+
   const faqListLeft  = document.getElementById('faqQuestionsListLeft');
   const faqListRight = document.getElementById('faqQuestionsListRight');
 
