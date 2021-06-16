@@ -6,15 +6,16 @@
         @@if (noJS === true) {
           <ul class="socials d-flex mt-1 mb-0 pt-2 pl-0 justify-content-center list-unstyled">
             <li><a class="mr-2" href="https://twitter.com/conan_io"><img alt="twitter" class="lazy"
-                  data-src="img/social/twitter.svg"></a></li>
+                  src="img/social/twitter.svg"></a></li>
             <li><a class="mr-2" href="https://facebook.com/conan.io"><img alt="facebook" class="lazy"
-                  data-src="img/social/facebook.svg"></a></li>
+                  src="img/social/facebook.svg"></a></li>
             <li><a class="mr-2" href="https://cpplang.​slack.​com/?id=conan"><img alt="slack" class="lazy"
-                  data-src="img/social/slack.svg"></a></li>
+                  src="img/social/slack.svg"></a></li>
             <li><a class="mr-2" href="https://github.com/conan-io"><img alt="github" class="lazy"
-                  data-src="img/social/github.svg"></a></li>
+                  src="img/social/github.svg"></a></li>
           </ul>
-        } else {
+        }
+        @@if (noJS === false) {
           <ul class="socials d-flex mt-1 mb-0 pt-2 pl-0 justify-content-center list-unstyled">
             <li><a class="mr-2" href="https://twitter.com/conan_io"><img alt="twitter" class="lazy"
                   data-src="img/social/twitter.svg"></a></li>

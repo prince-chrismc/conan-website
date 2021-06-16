@@ -134,7 +134,7 @@ function imgTribe2020() {
 }
 
 function watchAll() {
-  const htmlWatcher = watch(['src/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
+  const htmlWatcher = watch(['src/*', 'src/templates/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
   htmlWatcher.on('change', function(path, stats) {
     console.log(`File ${path} was changed, running htmlTask`);
     htmlTask();
