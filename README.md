@@ -28,6 +28,9 @@ Base folder `src/`
 
 - All the source files are located in `src/` folder, any update to the website should be done in this folder.
 - To install the dependencies do: `$ npm install`
+- Run `gulp init` - this will create all the necessary static files.
+- To view the website, just open `./index.html` with your browser.
+- It is recommended to use a server with live reload, for example: [VSCode Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - After any change you do to any `HTML`, `SCSS`, or `JS` file in the `src/` folder, you can run `$ gulp` 
   to test the changes.
 - If you want to use watch and let the gulp tasks run automatically, run `gulp watchAll`. Please note that the watch task will not run on addition new files (or deletion of files).
@@ -37,4 +40,3 @@ Base folder `src/`
 - After the push to the `develop` branch the website by CI's pipeline is deployed to the development, test and QA environments.
 - After the push to the `staging` branch the website by CI's pipeline is deployed to staging environment.
 - After the push to the `master` branch the website by CI's pipeline is deployed to production environment.
--

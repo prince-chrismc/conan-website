@@ -1632,3 +1632,13 @@ input[type=submit] {
         color: black; } }
   #faqAccordion li.faq-element path, #faqAccordion li.faq-element svg {
     transition: all 0.32s ease; }
+
+body.user-stories h1 {
+  font-size: 35px; }
+
+body.user-stories .single-user-story .image {
+  height: 190px;
+  max-height: 190px; }
+
+body.user-stories .single-user-story .title {
+  height: 54px; }

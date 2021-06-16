@@ -2003,3 +2003,18 @@ input[type=submit] {
     }
   }
 }
+
+body.user-stories {
+  h1 {
+    font-size: 35px;
+  }
+  .single-user-story {
+    .image {
+      height: 190px;
+      max-height: 190px;
+    }
+    .title {
+      height: 54px;
+    }
+  }
+}

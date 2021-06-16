@@ -43,12 +43,18 @@ const autoprefixer = require('autoprefixer');
 const image        = require('gulp-image');
 const sass         = require('gulp-sass');
 sass.compiler      = require('node-sass');
+const fileInclude  = require('gulp-file-include');
+
 
 const {src, series, parallel, dest, watch} = require('gulp');
 
 //functions
 function htmlTask() {
   return src('src/*.html')
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./'));
 }
@@ -178,4 +184,5 @@ exports.watchAll = watchAll;
 
 exports.default    = series(scssTask, cssTask, jsTask, htmlTask);
 exports.imagesTask = series(imgTask, imgAdvantagesTask, imgbrandsTask, imgdownloadsTask, imglogoTask, imgourusersTask, imgsocialTask, imgTribe2020);
+exports.init = series(this.default, this.imagesTask);
 
