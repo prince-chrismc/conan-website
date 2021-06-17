@@ -6,17 +6,17 @@
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <meta
     name="title"
-    content="User Stories"
+    content="metaDescription"
   >
   <meta
     name="description"
-    content="User Stories Description" 
+    content="@@metaDescription" 
   >
   <link href="favicon.png" rel="shortcut icon" type="image/png" />
-  <link href="https://conan.io/user-stories.html" hreflang="en" rel="alternate" />
-  <title>Conan | User Stories</title>
+  <link href="@@fullPageURL" hreflang="en" rel="alternate" />
+  <title>@@pageTitle</title>
 
-  <link rel="canonical" href="https://conan.io/user-stories.html" />
+  <link rel="canonical" href="@@fullPageURL" />
 
   <link rel="stylesheet" href="css/all.css">
 
@@ -24,19 +24,23 @@
 
 </head>
 
-<body class="user-stories"> <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
+<body class="single-user-story"> <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
       style="display:none;visibility:hidden" width="0"></iframe> </noscript>
   
-  @@include('./templates/header.html')
+  @@include('./header.html')
 
-  <section class="user-stories-section py-2">
+  <section class="user-story-top">
     <div class="container py-5">
       
-      <h1 class="text-center pb-5">User Stories</h1>
+      User Story top
 
-      <div class="row">
-        @@loop('./templates/user-story-card.html', "./data/user-stories.json")
-      </div>
+    </div> 
+  </section>
+
+  <section class="user-story-content">
+    <div class="container py-5">
+      
+      user story Content
 
     </div> 
   </section>
@@ -60,7 +64,7 @@
     </div>
   </section>
 
-  @@include('./templates/footer.html', {"noJS": false})
+  @@include('./footer.html', {"noJS": false})
 
   <div
     id="openSourceSubscribeModal"

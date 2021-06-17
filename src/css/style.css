@@ -1636,9 +1636,17 @@ input[type=submit] {
 body.user-stories h1 {
   font-size: 35px; }
 
-body.user-stories .single-user-story .image {
-  height: 190px;
-  max-height: 190px; }
-
-body.user-stories .single-user-story .title {
-  height: 54px; }
+body.user-stories a.single-user-story {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 150%;
+  color: #000000; }
+  body.user-stories a.single-user-story:hover .image {
+    background-color: rgba(139, 139, 139, 0.4); }
+  body.user-stories a.single-user-story .image {
+    transition: all 0.32s ease;
+    height: 190px;
+    max-height: 190px; }
+  body.user-stories a.single-user-story .title {
+    height: 54px; }

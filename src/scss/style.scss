@@ -2008,8 +2008,19 @@ body.user-stories {
   h1 {
     font-size: 35px;
   }
-  .single-user-story {
+  a.single-user-story {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 150%;
+    color: #000000;
+    &:hover {
+      .image {
+        background-color: rgba($gray, .4);
+      }
+    }
     .image {
+      transition: all 0.32s ease;
       height: 190px;
       max-height: 190px;
     }
