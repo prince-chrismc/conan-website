@@ -50,7 +50,7 @@ const {src, series, parallel, dest, watch} = require('gulp');
 
 //functions
 function htmlTask() {
-  return src(['src/*.html', 'src/user-stories/*'])
+  return src('src/*.html')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
@@ -59,13 +59,13 @@ function htmlTask() {
     .pipe(gulp.dest('./'));
 }
 function htmlUserStoriesTask() {
-  return src('src/user-stories/rti.html')
+  return src('src/user-stories/*')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
     }))
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./user-stories/'));
 }
 
 function jsTask() {
@@ -149,10 +149,11 @@ function imgTribe2020() {
 }
 
 function watchAll() {
-  const htmlWatcher = watch(['src/*', 'src/templates/*', 'src/data/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
+  const htmlWatcher = watch(['src/*', 'src/templates/*', 'src/data/*', 'src/data/user-stories/*' , '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
   htmlWatcher.on('change', function(path, stats) {
-    console.log(`File ${path} was changed, running htmlTask`);
+    console.log(`File ${path} was changed, running html Tasks`);
     htmlTask();
+    htmlUserStoriesTask();
     console.log(colors.bg.Green, colors.fg.White, 'Success', colors.Reset);
   });
   const scssWatcher = watch(['src/scss/*']);
@@ -181,11 +182,12 @@ function watchAll() {
   console.log(colors.fg.Green, 'Watching files...', colors.Reset)
 }
 
-exports.scssTask = scssTask;
-exports.cssTask  = cssTask;
-exports.jsTask   = jsTask;
-exports.htmlTask = htmlTask;
-exports.imgTask  = imgTask;
+exports.scssTask            = scssTask;
+exports.cssTask             = cssTask;
+exports.jsTask              = jsTask;
+exports.htmlTask            = htmlTask;
+exports.htmlUserStoriesTask = htmlUserStoriesTask;
+exports.imgTask             = imgTask;
 
 exports.imgAdvantagesTask  = imgAdvantagesTask;
 exports.imgbrandsTask      = imgbrandsTask;

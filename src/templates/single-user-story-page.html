@@ -1,3 +1,13 @@
+<!-- 
+companyName
+metaTitle
+metaDescription
+pageTitle
+imgSrc
+downloadFileURL
+downloadFileImgSrc
+contentHTML
+-->
 <!DOCTYPE html> 
 <html lang="en">
 
@@ -12,13 +22,13 @@
     name="description"
     content="@@metaDescription" 
   >
-  <link href="favicon.png" rel="shortcut icon" type="image/png" />
+  <link href="../favicon.png" rel="shortcut icon" type="image/png" />
   <link href="@@fullPageURL" hreflang="en" rel="alternate" />
   <title>@@pageTitle</title>
 
   <link rel="canonical" href="@@fullPageURL" />
 
-  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="../css/all.css">
 
   <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WK44ZFM');</script>
 
@@ -27,20 +37,97 @@
 <body class="single-user-story"> <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
       style="display:none;visibility:hidden" width="0"></iframe> </noscript>
   
-  @@include('./header.html')
+  @@include('./header.html', {"webRoot": ".."})
 
-  <section class="user-story-top">
-    <div class="container py-5">
-      
-      User Story top
+  <section class="breadcrumbs pt-5">
+    <div class="container">
+      <a class="blue" href="../user-stories.html"> &lt; Back to all resources </a> 
+    </div>
+  </section>
 
-    </div> 
+  <section class="user-story-top py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1>
+            <span>@@pageTitle</span>
+          </h1>
+        </div>
+        <div class="col-lg-3">
+          <div class="position-relative">
+            <div class="position-absolute d-none d-lg-block">
+              <div class="download text-center">
+                <div class="image pb-3">
+                  <img src="@@downloadFileImgSrc" alt="Download File" class="img-fluid">
+                </div>
+                <a
+                  class="big-btn bg-blue white mt-4"
+                  href="@@downloadFileURL"
+                  rel="noopener noreferrer"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-relative">
+      <img
+        class="position-absolute d-none d-xl-inline"
+        alt="@@pageTitle"
+        src="../img/user-stories/user-story-left-aquares.png"
+      >
+    </div>
+    <div class="container pt-5">
+      <div class="d-flex justify-content-center align-items-center top-together-images">
+        <div class="position-relative">
+          <div class="blue-line bg-blue position-absolute"></div>
+        </div>
+        <img
+          alt="Conan"
+          height="103"
+          src="../img/user-stories/conan-box.png"
+          width="90"
+        >
+        <div class="plus mx-3">+</div>
+        <img
+          alt="@@companyName"
+          src="@@imgSrc"
+        >
+      </div>
+    </div>
   </section>
 
   <section class="user-story-content">
     <div class="container py-5">
       
-      user story Content
+      <div class="row justify-content-between">
+        <div class="col-lg-8">
+          <div class="content">
+            @@contentHTML
+          </div>
+        </div>
+        <div class="col-lg-4 d-lg-none">
+          <div class="download text-center">
+            <div class="image pb-3">
+              <img src="@@downloadFileImgSrc" alt="Download File" class="img-fluid">
+            </div>
+            <a
+              class="big-btn bg-blue white mt-4"
+              href="@@downloadFileURL"
+              rel="noopener noreferrer"
+              rel="noopener"
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div> 
   </section>
@@ -51,7 +138,7 @@
         <div class="col-12">
           <div class="h2 white d-flex justify-content-center" id="signUpTitle">
             <div class="position-relative"><img alt="Sign Up" class="position-absolute letter lazy"
-                data-src="img/letter.svg"></div> <span>SIGN ME UP FOR RELEASE UPDATES</span>
+                data-src="../img/letter.svg"></div> <span>SIGN ME UP FOR RELEASE UPDATES</span>
           </div>
           <div class="mktoFormWrapper">
             <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
@@ -64,7 +151,7 @@
     </div>
   </section>
 
-  @@include('./footer.html', {"noJS": false})
+  @@include('./footer.html', {"noJS": false, "webRoot": ".."})
 
   <div
     id="openSourceSubscribeModal"
@@ -113,7 +200,7 @@
       </div>
   </div>
 
-  <script src="js/all.js"></script>
+  <script src="../js/all.js"></script>
 
   
 
