@@ -43,14 +43,29 @@ const autoprefixer = require('autoprefixer');
 const image        = require('gulp-image');
 const sass         = require('gulp-sass');
 sass.compiler      = require('node-sass');
+const fileInclude  = require('gulp-file-include');
+
 
 const {src, series, parallel, dest, watch} = require('gulp');
 
 //functions
 function htmlTask() {
   return src('src/*.html')
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./'));
+}
+function htmlUserStoriesTask() {
+  return src('src/user-stories/*')
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./user-stories/'));
 }
 
 function jsTask() {
@@ -109,6 +124,12 @@ function imglogoTask() {
   .pipe(gulp.dest('img/logo/'));
 }
 
+function imgUserStoriesTask() {
+  return src('./src/img/user-stories/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/user-stories/'));
+}
+
 function imgourusersTask() {
   return src('./src/img/our-users/*')
   .pipe(image())
@@ -128,10 +149,11 @@ function imgTribe2020() {
 }
 
 function watchAll() {
-  const htmlWatcher = watch(['src/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
+  const htmlWatcher = watch(['src/*', 'src/templates/*', 'src/data/*', 'src/data/user-stories/*' , '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
   htmlWatcher.on('change', function(path, stats) {
-    console.log(`File ${path} was changed, running htmlTask`);
+    console.log(`File ${path} was changed, running html Tasks`);
     htmlTask();
+    htmlUserStoriesTask();
     console.log(colors.bg.Green, colors.fg.White, 'Success', colors.Reset);
   });
   const scssWatcher = watch(['src/scss/*']);
@@ -160,22 +182,35 @@ function watchAll() {
   console.log(colors.fg.Green, 'Watching files...', colors.Reset)
 }
 
-exports.scssTask = scssTask;
-exports.cssTask  = cssTask;
-exports.jsTask   = jsTask;
-exports.htmlTask = htmlTask;
-exports.imgTask  = imgTask;
+exports.scssTask            = scssTask;
+exports.cssTask             = cssTask;
+exports.jsTask              = jsTask;
+exports.htmlTask            = htmlTask;
+exports.htmlUserStoriesTask = htmlUserStoriesTask;
+exports.imgTask             = imgTask;
 
-exports.imgAdvantagesTask = imgAdvantagesTask;
-exports.imgbrandsTask     = imgbrandsTask;
-exports.imgdownloadsTask  = imgdownloadsTask;
-exports.imglogoTask       = imglogoTask;
-exports.imgourusersTask   = imgourusersTask;
-exports.imgsocialTask     = imgsocialTask;
-exports.imgTribe2020      = imgTribe2020;
+exports.imgAdvantagesTask  = imgAdvantagesTask;
+exports.imgbrandsTask      = imgbrandsTask;
+exports.imgdownloadsTask   = imgdownloadsTask;
+exports.imglogoTask        = imglogoTask;
+exports.imgUserStoriesTask = imgUserStoriesTask;
+exports.imgourusersTask    = imgourusersTask;
+exports.imgsocialTask      = imgsocialTask;
+exports.imgTribe2020       = imgTribe2020;
 
 exports.watchAll = watchAll;
 
 exports.default    = series(scssTask, cssTask, jsTask, htmlTask);
-exports.imagesTask = series(imgTask, imgAdvantagesTask, imgbrandsTask, imgdownloadsTask, imglogoTask, imgourusersTask, imgsocialTask, imgTribe2020);
+exports.imagesTask = series(
+  imgTask,
+  imgAdvantagesTask,
+  imgbrandsTask,
+  imgdownloadsTask,
+  imglogoTask,
+  imgUserStoriesTask,
+  imgourusersTask,
+  imgsocialTask,
+  imgTribe2020
+);
+exports.init = series(this.default, this.imagesTask);
 

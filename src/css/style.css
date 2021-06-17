@@ -1632,3 +1632,58 @@ input[type=submit] {
         color: black; } }
   #faqAccordion li.faq-element path, #faqAccordion li.faq-element svg {
     transition: all 0.32s ease; }
+
+body.user-stories h1 {
+  font-size: 35px; }
+
+body.user-stories a.single-user-story {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 150%;
+  color: #000000; }
+  body.user-stories a.single-user-story:hover .image {
+    background-color: rgba(139, 139, 139, 0.4); }
+  body.user-stories a.single-user-story .image {
+    transition: all 0.32s ease;
+    height: 190px;
+    max-height: 190px; }
+  body.user-stories a.single-user-story .title {
+    height: 54px; }
+
+body.single-user-story .download .image {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15)); }
+
+body.single-user-story section.breadcrumbs a {
+  font-size: 20px;
+  line-height: 1.3; }
+
+body.single-user-story section.user-story-top h1 {
+  max-width: 664px;
+  line-height: 1.33;
+  font-size: 23px; }
+  @media screen and (min-width: 662px) {
+    body.single-user-story section.user-story-top h1 {
+      font-size: 30px; } }
+
+body.single-user-story section.user-story-top .position-relative img.position-absolute {
+  top: -40px;
+  left: 0; }
+
+body.single-user-story section.user-story-top .top-together-images {
+  max-width: 664px; }
+  body.single-user-story section.user-story-top .top-together-images .plus {
+    font-size: 38px; }
+  body.single-user-story section.user-story-top .top-together-images .blue-line {
+    height: 1px;
+    right: 28px;
+    top: 0;
+    width: 2000px; }
+
+body.single-user-story section.user-story-content .content {
+  max-width: 840px; }
+  body.single-user-story section.user-story-content .content h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: bold; }
