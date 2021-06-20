@@ -48,6 +48,11 @@ const fileInclude  = require('gulp-file-include');
 
 const {src, series, parallel, dest, watch} = require('gulp');
 
+const htmlMinifyOptions = {
+  removeComments: true,
+  collapseWhitespace: true
+}
+
 //functions
 function htmlTask() {
   return src('src/*.html')
@@ -55,7 +60,7 @@ function htmlTask() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin(htmlMinifyOptions))
     .pipe(gulp.dest('./'));
 }
 function htmlUserStoriesTask() {
@@ -64,7 +69,7 @@ function htmlUserStoriesTask() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin(htmlMinifyOptions))
     .pipe(gulp.dest('./user-stories/'));
 }
 
