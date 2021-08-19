@@ -2083,3 +2083,16 @@ body.single-user-story {
   }
 }
 
+section#userStoriesHomeSection {
+  overflow: hidden;
+  .container {
+    .content {
+      width: 722px;
+      max-width: 100%;
+    }
+  }
+  img.dots-background {
+    bottom: 0;
+    left: 0;
+  }
+}
