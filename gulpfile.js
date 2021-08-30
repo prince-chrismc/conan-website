@@ -205,7 +205,7 @@ exports.imgTribe2020       = imgTribe2020;
 
 exports.watchAll = watchAll;
 
-exports.default    = series(scssTask, cssTask, jsTask, htmlTask);
+exports.default    = series(scssTask, cssTask, jsTask, htmlTask, htmlUserStoriesTask);
 exports.imagesTask = series(
   imgTask,
   imgAdvantagesTask,
@@ -217,5 +217,9 @@ exports.imagesTask = series(
   imgsocialTask,
   imgTribe2020
 );
+exports.generalHtmlTask = series(
+  htmlTask,
+  htmlUserStoriesTask
+)
 exports.init = series(this.default, this.imagesTask);
 
