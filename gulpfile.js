@@ -222,4 +222,3 @@ exports.generalHtmlTask = series(
   htmlUserStoriesTask
 )
 exports.init = series(this.default, this.imagesTask);
-
