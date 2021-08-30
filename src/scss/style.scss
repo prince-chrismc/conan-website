@@ -2003,3 +2003,96 @@ input[type=submit] {
     }
   }
 }
+
+body.user-stories {
+  h1 {
+    font-size: 35px;
+  }
+  a.single-user-story {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 150%;
+    color: #000000;
+    &:hover {
+      .image {
+        background-color: rgba($gray, .4);
+      }
+    }
+    .image {
+      transition: all 0.32s ease;
+      height: 190px;
+      max-height: 190px;
+    }
+    .title {
+      height: 54px;
+    }
+  }
+}
+
+body.single-user-story {
+  .download {
+    .image {
+      filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15)); 
+    }
+  }
+  section.breadcrumbs {
+    a {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  }
+  section.user-story-top {
+    h1 {  
+      max-width: 664px; 
+      line-height: 1.33;
+      font-size: 23px; 
+      @media screen and (min-width: 662px) {
+        font-size: 30px;
+      }
+    }
+    .position-relative {
+      img.position-absolute {
+        top: -40px;
+        left: 0;
+      }
+    }
+    .top-together-images {
+      max-width: 664px;
+      .plus {
+        font-size: 38px;
+      }
+      .blue-line {
+        height: 1px;
+        right: 28px;
+        top: 0;
+        width: 2000px;
+      }
+    }
+  }
+  section.user-story-content {
+    .content {
+      max-width: 840px;
+      h2 {
+        font-size: 20px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+section#userStoriesHomeSection {
+  overflow: hidden;
+  .container {
+    .content {
+      width: 722px;
+      max-width: 100%;
+    }
+  }
+  img.dots-background {
+    bottom: 0;
+    left: 0;
+  }
+}

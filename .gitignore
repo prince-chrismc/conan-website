@@ -12,4 +12,11 @@ debug.log
 /terms-conditions.html
 /downloads.html
 /privacy-policy.html
+/user-stories.html
 /faq.html
+./user-stories.html
+./user-stories/*
+./user-stories.html
+./user-stories/rti.html
+/user-stories.html
+/user-stories/rti.html
