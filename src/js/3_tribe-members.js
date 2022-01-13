@@ -384,6 +384,13 @@ var tribeMembers = [
     twitter: 'https://twitter.com/gayanpathirage/'
   },
   {
+    name: 'Robert Boehne',
+    image: 'robert_boehne.jpg',
+    description: "Senior Software Architect with decades of C++ & Python coding experience with *NIX focus",
+    company: 'Datalogics',
+    linkedin: 'https://www.linkedin.com/in/rob-boehne-021a796/'
+  },
+  {
     name: 'Walid Boussaf',
     image: 'gayan_pathirage.jpg',
     description: "Senior devops consultant with solid c++ and python background. I started the effort to migrate all our projects to conan since conan 1.2 and since then maintaining a conan ecosystem which involve C++, python, jenkins and artifactory.",
