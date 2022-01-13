@@ -421,7 +421,6 @@ var tribeMembers = [
     image: 'fabian_sturm.jpg',
     description: "I am a long time software developer and project lead at Rohde & Schwarz, with experience in C++ and Python. My professional interests are new software stacks and programming languages and in my private time I participate in sailing races.",
     company: 'Rohde & Schwarz',
-    twitter: 'https://twitter.com/roalter'
   },
 
 ]
