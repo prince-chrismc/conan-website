@@ -383,4 +383,44 @@ var tribeMembers = [
     linkedin: 'https://lk.linkedin.com/in/gayancp/',
     twitter: 'https://twitter.com/gayanpathirage/'
   },
+  {
+    name: 'Robert Boehne',
+    image: 'robert_boehne.jpg',
+    description: "Senior Software Architect with decades of C++ & Python coding experience with *NIX focus",
+    company: 'Datalogics',
+    linkedin: 'https://www.linkedin.com/in/rob-boehne-021a796/'
+  },
+  {
+    name: 'Walid Boussaf',
+    image: 'gayan_pathirage.jpg',
+    description: "Senior devops consultant with solid c++ and python background. I started the effort to migrate all our projects to conan since conan 1.2 and since then maintaining a conan ecosystem which involve C++, python, jenkins and artifactory.",
+    company: 'Proteinmetrics',
+  },
+  {
+    name: 'Alexander Krutikov',
+    image: 'alexander_krutikov.jpg',
+    description: "SRE at OzonTech. Over 10 years of C++ development experience. I design CI/CDs, embed code guidelines, analyze software architecture.",
+    company: 'OzonTech',
+  },
+  {
+    name: 'Julien Bernard',
+    image: 'julien_bernard.jpg',
+    description: "Software engineer at the Australian National University, I develop real-time controller for telescopes in C++ and CUDA.",
+    company: 'Australian National University',
+    linkedin: 'https://www.linkedin.com/in/julien-bernard-6927b491'
+  },
+  {
+    name: 'Luis Roalter',
+    image: 'luis_roalter.jpg',
+    description: "I'm a C++ and Python developer since 2014. Main topics are continuous integration and deployment and tool development. Trying to solved everything with Python and Git.",
+    company: 'Rohde & Schwarz',
+    twitter: 'https://twitter.com/roalter'
+  },
+  {
+    name: 'Fabian Sturm',
+    image: 'fabian_sturm.jpg',
+    description: "I am a long time software developer and project lead at Rohde & Schwarz, with experience in C++ and Python. My professional interests are new software stacks and programming languages and in my private time I participate in sailing races.",
+    company: 'Rohde & Schwarz',
+  },
+
 ]
