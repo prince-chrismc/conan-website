@@ -391,8 +391,8 @@ var tribeMembers = [
     linkedin: 'https://www.linkedin.com/in/rob-boehne-021a796/'
   },
   {
-    name: 'Walid Boussaf',
-    image: 'walid_boussaf.jpg',
+    name: 'Walid Boussafa',
+    image: 'walid_boussafa.jpg',
     description: "Senior devops consultant with solid c++ and python background. I started the effort to migrate all our projects to conan since conan 1.2 and since then maintaining a conan ecosystem which involve C++, python, jenkins and artifactory.",
     company: 'Proteinmetrics',
   },
