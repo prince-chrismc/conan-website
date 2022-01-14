@@ -392,26 +392,26 @@ var tribeMembers = [
   },
   {
     name: 'Walid Boussaf',
-    image: 'gayan_pathirage.jpg',
+    image: 'walid_boussaf.jpg',
     description: "Senior devops consultant with solid c++ and python background. I started the effort to migrate all our projects to conan since conan 1.2 and since then maintaining a conan ecosystem which involve C++, python, jenkins and artifactory.",
     company: 'Proteinmetrics',
   },
   {
     name: 'Alexander Krutikov',
-    image: 'alexander_krutikov.jpg',
+    image: 'alexander_krutikov.jpeg',
     description: "SRE at OzonTech. Over 10 years of C++ development experience. I design CI/CDs, embed code guidelines, analyze software architecture.",
     company: 'OzonTech',
   },
   {
     name: 'Julien Bernard',
-    image: 'julien_bernard.jpg',
+    image: 'julien_bernard.jpeg',
     description: "Software engineer at the Australian National University, I develop real-time controller for telescopes in C++ and CUDA.",
     company: 'Australian National University',
     linkedin: 'https://www.linkedin.com/in/julien-bernard-6927b491'
   },
   {
     name: 'Luis Roalter',
-    image: 'luis_roalter.jpg',
+    image: 'luis_roalter.jpeg',
     description: "I'm a C++ and Python developer since 2014. Main topics are continuous integration and deployment and tool development. Trying to solved everything with Python and Git.",
     company: 'Rohde & Schwarz',
     twitter: 'https://twitter.com/roalter'
