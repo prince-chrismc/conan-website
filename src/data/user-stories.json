@@ -5,5 +5,12 @@
     "url": "user-stories/rti.html",
     "imgSrc": "../../img/user-stories/rti-m.png",
     "imgSrcS": "../../img/user-stories/rti-s.png"
+  },
+  {
+    "title": "Customer Success Story: TomTom",
+    "description": "Promotes use of Conan through the story of how it is used by TomTom. For the Conan website only.",
+    "url": "user-stories/tomtom.html",
+    "imgSrc": "../../img/user-stories/tomtom-m.png",
+    "imgSrcS": "../../img/user-stories/tomtom-s.png"
   }
 ]
