@@ -457,7 +457,7 @@ var tribeMembers = [
   },
   {
     name: 'Simon Schuster',
-    image: '',
+    image: 'simon_schuster.png',
     description: "I'm a Software Engineer at Dynatrace and am responsible for our build pipelines and the dependency management of our projects.",
     company: 'Dynatrace',
   },
