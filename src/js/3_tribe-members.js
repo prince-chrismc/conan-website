@@ -422,5 +422,51 @@ var tribeMembers = [
     description: "I am a long time software developer and project lead at Rohde & Schwarz, with experience in C++ and Python. My professional interests are new software stacks and programming languages and in my private time I participate in sailing races.",
     company: 'Rohde & Schwarz',
   },
+  {
+    name: 'Cuong Trinh',
+    image: 'cuong_trinh.jpg',
+    description: "I'm principal software engineer and also devops engineer. I'm responsible to build and maintain the CI/CD system of the company. I have experience on mobile platforms, cmake builds and c++ projects with the Qt framework.",
+    company: 'Emotiv',
+    linkedin: 'https://www.linkedin.com/in/nguoithichkhampha/'
+  },
+  {
+    name: 'Reg Arvidson',
+    image: 'reg_arvidson.jpg',
+    description: "I'm an embedded software engineer that has moved into the tooling, build support, package management space with a focus these days on integrating in Conan for a better dependency experience.",
+    company: 'Bose',
+  },
+  {
+    name: 'Glenn Duffy',
+    image: 'glenn_duffy.jpg',
+    description: "Software Engineer with 10 years of experience with embedded and cloud software. Passionate about CI/CD and software documentation. Relative newcomer to Conan but am enjoying it so far.",
+    company: 'Bose',
+  },
+  {
+    name: 'Gyula Gubacsi',
+    image: 'gyula_gubacsi.jpg',
+    description: "Nuke Lead Engineer at the Foundry. I work in C++ for 18 years, and build system related system for the last 5-6 years.",
+    company: 'Foundry VisionMongers',
+  },
+  {
+    name: 'Mikhail Matrosov',
+    image: 'mikhail_matrosov.jpeg',
+    description: "C++ jedi. C++ tools enthusiast. Speaker. Refactoring and software design fan. Full-stack developer in HFT field.",
+    company: 'Pinely',
+    linkedin: 'https://www.linkedin.com/in/mmatrosov/',
+    twitter: 'https://twitter.com/cppjedi'
+  },
+  {
+    name: 'Simon Schuster',
+    image: 'simon_schuster.png',
+    description: "I'm a Software Engineer at Dynatrace and am responsible for our build pipelines and the dependency management of our projects.",
+    company: 'Dynatrace',
+  },
+  {
+    name: 'Mohamed Qandil',
+    image: 'mohamed_qandil.jpg',
+    description: "I'm a C++ developer with 4 years of experience. I've worked on AI, big data and real-time applications.",
+    company: 'Viavi',
+    linkedin: 'https://www.linkedin.com/in/mohamed-alaa-a39b1b124/',
+  },
 
 ]
