@@ -443,7 +443,7 @@ var tribeMembers = [
   },
   {
     name: 'Gyula Gubacsi',
-    image: '',
+    image: 'gyula_gubacsi.jpg',
     description: "Nuke Lead Engineer at the Foundry. I work in C++ for 18 years, and build system related system for the last 5-6 years.",
     company: 'Foundry VisionMongers',
   },
