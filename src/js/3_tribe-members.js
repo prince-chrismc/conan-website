@@ -134,13 +134,6 @@ var tribeMembers = [
       company: 'German Aerospace Center'
   },
   {
-      name: 'Christopher McArthur',
-      image: 'download_-_chris_mc.png',
-      description: 'Passionate about the entire software process. Strong foundation in IP and web technologies. Bringing new ideas and a fresh perspective to an established build process.',
-      linkedin: 'https://www.linkedin.com/in/christophermcarthur1996/',
-      company: 'Matrox'
-  },
-  {
       name: 'Andreas Kleber',
       image: 'aln-mittel_-_Andreas_Kleber.jpg',
       description: 'Starting as C++ developer 12y years ago, I moved more and more to DevOps topics since about 7 years ago and I am now a DevOps Engineer since about 2,5 years. My big focus in our company currently is the introduction of Conan.',
