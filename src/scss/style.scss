@@ -74,6 +74,8 @@ h1 {
   font-size: 0.722rem;
   /* 13/18 */
   transition: all 0.32s ease;
+  border-radius: 50px;
+  box-sizing: border-box;
 
   &.bg-blue {
     &:hover {

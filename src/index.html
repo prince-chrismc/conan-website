@@ -3,18 +3,18 @@
 
 <head>
     <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="title" content="Conan.io - the Open Source C/C++ Package Manager for Developers">
     <meta name="description"
           content="Conan is an open source, decentralized and multi-platform package manager for C/C++ that allows you to create and share all your native binaries.">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="alternate" href="https://conan.io" hreflang="en" />
-    <title>C/C++ Open Source Package Manager</title>
-    <link rel="canonical" href="https://conan.io" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="alternate" href="https://conan.io" hreflang="en"/>
+    <title>Conan, software package manager for C/C++ developers</title>
+    <link rel="canonical" href="https://conan.io"/>
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet"/>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/all.css">
@@ -22,12 +22,17 @@
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
+        w[l] = w[l] || [];
+        w[l].push({
             'gtm.start':
                 new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-WK44ZFM');</script>
     <!-- End Google Tag Manager -->
 </head>
@@ -35,93 +40,52 @@
 <body class="home">
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM" height="0" width="0"
-                  style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 @@include('./templates/header.html')
 
 <!-- HERO -->
-<section id="hero" class="blue-gradient-bg position-relative">
-    <img src="img/hero-bg.svg" class="position-absolute hero-bg" alt="Conan C++ Package Manager" />
+<section id="hero" class="position-relative"
+         style="background: linear-gradient(180deg, #D5EFFF 0%, rgba(235, 247, 255, 0) 100%);">
+    <img src="img/hero-bg.svg" class="position-absolute hero-bg" alt="Conan C++ Package Manager"/>
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-2"></div>
+            <div class="col-8">
                 <div class="hero-content py-3">
-                    <h1 class="white">
-                        Conan, the C/C++ Package Manager
+                    <h1 class="black">
+                        Conan, software package manager for C/C++ developers
                     </h1>
-                    <h2 class="homepage-hero-paragraph my-3 px-0 px-md-4 white">
-                        The open source, decentralized and multi-platform package <br class="d-none d-md-inline" />
+                    <h2 class="homepage-hero-paragraph my-3 px-0 px-md-4 black">
+                        The open source, decentralized and multi-platform package <br class="d-none d-md-inline"/>
                         manager to create and share all your native binaries.
                     </h2>
-                    <div class="downloads-cta arrow-cta">
-                        <div class="button_cont">
-                            <a href="downloads.html" class="example_f cta bg-green" id="download_btn_middle">
-                                    <span>
-                                        Download
-                                    </span>
-                            </a>
-                        </div>
+                    <div>
+                        <a href="downloads.html" class="btn conan-blue-gradient-bg"
+                           id="download_btn_middle">
+                                <span>
+                                    Downloads
+                                </span>
+                        </a>
                     </div>
-                    <div class="training row justify-content-center">
-                        <div id="ytPlayer" class="training-video"></div>
-                        <a class="training-text white text-left ml-3" href="https://academy.jfrog.com/path/conan" alt="JFrog Academy" target="_blank">
-                            <span>Learn Conan C / C++ </span>
-                            <br>
-                            <span>Package Management</span>
-                            <br>
-                            <div class="green mt-1">
-                                <div>
-                                    <img
-                                    alt="JFrog Academy" class="mr-2 lazy"
-                                    src="img/hat.png" style="width:30px;">
-                                    JFrog Academy
-                                    <img
-                                    alt="JFrog Academy" class="mr-2 lazy"
-                                    src="img/left-arrow.svg" style="width:10px; transform: rotateZ(180deg);">
-                                </div>
-                            </div>
-                            <hr class="dotted green">
-                            <span class="xs-text">Join our hands-on free training</span>
+                    <div>
+                        <a href="downloads.html" class="btn conan-blue-border" id="get_started_btn_middle">
+                            <span>
+                                Get Started
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="col-2"></div>
         </div>
     </div>
 </section>
 
-<section id="homeBanner" class="home-banner bg-dark" style="background-image: url(./img/banner-bg.png)">
-    <div class="container">
-        <div class="banner-wrapper d-flex flex-column flex-lg-row align-items-center py-4 py-lg-2 h-100 justify-content-center">
-            <img src="./img/banner-tribe.png" alt="Meet The Tribe">
-            <div class="mx-3 m content mw-100 h-100 d-flex flex-nowrap flex-lg-wrap flex-column align-items-center align-items-lg-start justify-content-center text-white">
-                <h2 class="text-uppercase text-center text-lg-left">Meet the CONAN 2.0&nbsp;TRIBE</h2>
-                <p class="mb-0 pb-3 text-center text-lg-left">
-                    A group of more than 70 Conan expert users and contributors helping to define the next Conan 2.0 major version.
-                </p>
-            </div>
-            <a href="/tribe.html" class="green-cta text-white">
-                Learn more
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- DIAGRAM -->
-<section class="diagram py-3" id="diagram">
-    <div class="container py-3">
-        <div class="row">
-            <div class="col-12 text-center diagram-wrapper">
-                <img src="img/diagram.svg" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                    class="d-none d-sm-inline" />
-                <img src="img/diagram-mobile.png" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                    class="d-sm-none img-fluid" />
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- ADVANTAGES -->
 <section class="advantages py-0 py-md-5 bg-blue" id="advantages">
@@ -132,7 +96,7 @@
             <div class="col-md-4 adv-col border-white py-5 py-md-0">
                 <div class="advantage border-white text-center white text-center">
                     <div class="img">
-                        <img class="lazy" data-src="img/advantages/gear.svg" alt="UNIVERSALITY" />
+                        <img class="lazy" data-src="img/advantages/gear.svg" alt="UNIVERSALITY"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">UNIVERSALITY</h4>
                     <div class="advantage-text text-left">
@@ -152,12 +116,12 @@
             <div class="col-md-4 adv-col border-white py-5 py-md-0">
                 <div class="advantage border-white text-center white text-center">
                     <div class="img">
-                        <img class="lazy" data-src="img/advantages/speed.svg" alt="FLEXIBILITY & SPEED" />
+                        <img class="lazy" data-src="img/advantages/speed.svg" alt="FLEXIBILITY & SPEED"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">FLEXIBILITY & SPEED</h4>
                     <div class="advantage-text text-left">
                         <p class="mt-3 font-weight-light line-1">
-                            <strong>Full management of binaries. </strong> <br />
+                            <strong>Full management of binaries. </strong> <br/>
                             Create, manage and reuse any number of binaries, for any configuration: platform,
                             compiler, version, architectures… or build from sources at will.
                         </p>
@@ -173,7 +137,7 @@
             <div class="col-md-4 adv-col border-white py-5 py-md-0">
                 <div class="advantage text-center white text-center">
                     <div class="img">
-                        <img class="lazy" data-src="img/advantages/control.svg" alt="FLEXIBILITY & SPEED" />
+                        <img class="lazy" data-src="img/advantages/control.svg" alt="FLEXIBILITY & SPEED"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">CONTROL</h4>
                     <div class="advantage-text text-left">
@@ -193,10 +157,25 @@
     </div>
 </section>
 
+<!-- DIAGRAM -->
+<section class="diagram py-3" id="diagram">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 text-center diagram-wrapper">
+                <img src="img/diagram.svg" alt="Conan C/C++ Package Manager Decentralized Architecture"
+                     class="d-none d-sm-inline"/>
+                <img src="img/diagram-mobile.png" alt="Conan C/C++ Package Manager Decentralized Architecture"
+                     class="d-sm-none img-fluid"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- LEARN MORE -->
 <section class="learn-more bg-bright-gray py-0 py-md-5 position-relative" id="learnMore">
     <img data-src="img/lm-bg.svg" alt="Conan C++ Package Manager"
-         class="lm-bg position-absolute lazy d-none d-xl-inline" />
+         class="lm-bg position-absolute lazy d-none d-xl-inline"/>
     <div class="container text-center">
         <!-- TITLE -->
         <div class="row pb-2 pt-4 pt-md-5 py-md-5 mb-4">
@@ -218,7 +197,8 @@
                             efficiently manage their packages and dependencies across
                             platforms and build systems.
                         </p>
-                        <a href="https://docs.conan.io/en/latest/introduction.html" class="big-btn bg-blue white" rel="noopener">
+                        <a href="https://docs.conan.io/en/latest/introduction.html" class="big-btn bg-blue white"
+                           rel="noopener">
                             Learn More >
                         </a>
                     </div>
@@ -272,9 +252,9 @@
 
 <!-- SIGN UP -->
 <section
-  id="signUp"
-  class="sign-up py-5 bg-blue white text-center"
-  style="background: linear-gradient(265.35deg, #2C4257 51.72%, #7BA7D3 98.82%);"
+        id="signUp"
+        class="sign-up py-5 bg-blue white text-center"
+        style="background: linear-gradient(265.35deg, #2C4257 51.72%, #7BA7D3 98.82%);"
 >
     <div class="container">
         <div class="row">
@@ -301,13 +281,13 @@
 
 
 <section
-  id="userStoriesHomeSection"
-  class="py-5 bg-blue text-white position-relative"
+        id="userStoriesHomeSection"
+        class="py-5 bg-blue text-white position-relative"
 >
     <img
-      class="position-absolute dots-background"
-      alt="decoration"
-      src="/img/user-stories/section-background-dots.svg"
+            class="position-absolute dots-background"
+            alt="decoration"
+            src="/img/user-stories/section-background-dots.svg"
     >
     <div class="container py-5 text-center position-relative">
         <div class="content mx-auto">
@@ -315,7 +295,8 @@
                 User Stories
             </h2>
             <p class="mx-auto pb-4">
-                There are hundreds of companies using Conan successfully to build their products. Read&nbsp;more about some of the problem they are solving, and how Conan is helping them.
+                There are hundreds of companies using Conan successfully to build their products. Read&nbsp;more about
+                some of the problem they are solving, and how Conan is helping them.
             </p>
             <a href="/user-stories.html" class="big-btn bg-dark-blue white" rel="noopener">
                 Read More
@@ -343,49 +324,49 @@
 
         <div class="users-flex d-flex">
             <div class="user-box inner">
-                <img class="" src="img/brands/company_29.png" alt="Poco" />
+                <img class="" src="img/brands/company_29.png" alt="Poco"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_27.png" alt="Huawei" />
+                <img class="" src="img/brands/company_27.png" alt="Huawei"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_28.png" alt="Pix4D" />
+                <img class="" src="img/brands/company_28.png" alt="Pix4D"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_26.png" alt="Keysight" />
+                <img class="" src="img/brands/company_26.png" alt="Keysight"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_25.png" alt="Microblink" />
+                <img class="" src="img/brands/company_25.png" alt="Microblink"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_32.png" alt="Mercedes Benz" />
+                <img class="" src="img/brands/company_32.png" alt="Mercedes Benz"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_33.png" alt="Melexis" />
+                <img class="" src="img/brands/company_33.png" alt="Melexis"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_34.png" alt="OpenROV" />
+                <img class="" src="img/brands/company_34.png" alt="OpenROV"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_30.png" alt="Arxan" />
+                <img class="" src="img/brands/company_30.png" alt="Arxan"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_31.png" alt="Plex" />
+                <img class="" src="img/brands/company_31.png" alt="Plex"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_39.png" alt="Rheinmetall" />
+                <img class="" src="img/brands/company_39.png" alt="Rheinmetall"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_38.png" alt="Bitprim" />
+                <img class="" src="img/brands/company_38.png" alt="Bitprim"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_36.png" alt="Khomp" />
+                <img class="" src="img/brands/company_36.png" alt="Khomp"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_37.png" alt="Tanker" />
+                <img class="" src="img/brands/company_37.png" alt="Tanker"/>
             </div>
             <div class="user-box inner">
-                <img class="" src="img/brands/company_35.png" alt="Electrolux" />
+                <img class="" src="img/brands/company_35.png" alt="Electrolux"/>
             </div>
         </div>
     </div>
@@ -404,10 +385,10 @@
             <div class="col-12">
                 <div class="testi-cartousel-wrapper">
                     <button class="cs-slick-nav cs-slick-left">
-                        <img class="lazy" data-src="img/left-arrow.svg" alt="left" />
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="left"/>
                     </button>
                     <button class="cs-slick-nav cs-slick-right">
-                        <img class="lazy" data-src="img/left-arrow.svg" alt="right" />
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="right"/>
                     </button>
                     <!-- CAROUSEL -->
                     <div class="testis-carousel">
@@ -429,7 +410,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Johannes Nicolai</div>
@@ -461,7 +442,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Nenad Mikša</div>
@@ -487,7 +468,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Theo Delrieu</div>
@@ -512,7 +493,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Rene Rivera</div>
@@ -538,7 +519,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Daniel Greidinger</div>
@@ -564,7 +545,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Siva Mandadi</div>
@@ -593,7 +574,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Peter Tillemans</div>
@@ -618,7 +599,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Derian Reuss</div>
@@ -650,7 +631,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Luis Díaz Más</div>
@@ -679,7 +660,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Gerald R. Wiltse</div>
@@ -705,7 +686,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Uilian Ries</div>
@@ -732,7 +713,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Nathanael Jones</div>
@@ -756,7 +737,8 @@
             <div class="col-12">
                 <div class="h2 white text-center mt-2 mb-4">CONAN 2.0 TRIBE</div>
                 <p class="text text-center white">
-                    A group of more than 70 Conan expert users and contributors <br class="d-none d-sm-inline"> helping to define the next Conan 2.0 major version.
+                    A group of more than 70 Conan expert users and contributors <br class="d-none d-sm-inline"> helping
+                    to define the next Conan 2.0 major version.
                 </p>
                 <div class="text-center mt-4">
                     <a href="/tribe.html" class="big-btn bg-blue white d-inline-block" rel="noopener">Learn More </a>

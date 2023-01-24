@@ -1,0 +1,28 @@
+@import 'vars';
+
+.conan-blue-gradient-bg {
+  @include conan-gradient-bg;
+  color: #000000;
+}
+
+.conan-blue-border {
+  @include conan-border;
+  border: 1.5px solid black;
+  border-radius: 50px;
+}
+
+body#hero {
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159.68%;
+  }
+}
