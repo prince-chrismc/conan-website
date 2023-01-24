@@ -61,43 +61,6 @@ h1 {
   object-fit: cover;
 }
 
-.btn {
-  padding: 8px 10px;
-  min-width: 97px;
-  border-radius: 2px;
-  text-align: center;
-  line-height: 1.33em;
-  margin-left: 5px;
-  margin-right: 5px;
-  min-height: 2rem;
-  /* 36/18 */
-  font-size: 0.722rem;
-  /* 13/18 */
-  transition: all 0.32s ease;
-  border-radius: 50px;
-  box-sizing: border-box;
-
-  &.bg-blue {
-    &:hover {
-      color: #fff;
-      background-color: $darker-blue;
-    }
-  }
-  &.bg-dark-blue {
-    background-color: $darker-blue;
-    font-size: 20px;
-    color: #fff;
-    transition: all 0.32s ease;
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-  &.bg-bright-gray {
-    &:hover {
-      background-color: #DEE7F9;
-    }
-  }
-}
 
 .bg-bright-blue {
   background-color: $blue;
@@ -233,94 +196,7 @@ a.big-btn, button.big-btn {
 }
 
 
-header#masthead {
-  border-bottom: 1px solid $bright-gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  .subscribe-btn {
-    border: 1px solid $dark-blue;
-    color: $dark-blue;
-  }
-  a.btn.bg-blue.white img {
-    position: relative;
-    bottom: 1px;
-  }
-  .header-logo {
-    max-height: 82px;
-  }
-  .header-dark-blue {
-    background-color: #2F6799 !important;
-  }
-  #searchInput {
-    height: 37px;
-  }
-  @media screen and (max-width: 480px) {
-    .header-hamburger-col {
-      padding-right: 5px;
-    }
-    button.hamburger--collapse {
-      padding-right: 0;
-      .hamburger-inner {
-        width: 30px ;
-        &:before, &:after {
-          width: 30px;
-        }
-      }
-    }
-  }
-}
 
-
-.hero-bg, .contact-bg {
-  width: 15.6vw;
-  max-width: 300px;
-}
-
-section#hero {
-  .hero-bg {
-    top: 20px;
-    left: 0;
-    &.downloads-hero-bg {
-      top: 150px;
-    }
-    @media screen and (max-width: 480px) {
-      .homepage-hero-paragraph {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  .hero-content {
-    // max-width: 616px;
-    margin-left: auto;
-    margin-right: auto;
-
-    h2 {
-      font-size: 1.111rem;
-      font-weight: 300;
-      /* 20/18 */
-      @media screen and (max-width: 480px) {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-section.diagram {
-  .diagram-wrapper {
-    img.d-sm-inline {
-      width: 1041px;
-      max-width: 100%;
-    }
-  }
-}
-
-section#downloadsHero {
-  .d-only-hero-bg {
-    top: -30px;
-    width: 165px;
-  }
-}
 
 //marketo for errors
 
@@ -335,66 +211,6 @@ html body {
   }
 }
 
-
-section.advantages {
-  .adv-col {
-    &:first-child,
-    &:nth-child(2) {
-      border-right: 1px solid white;
-      @media screen and (max-width: $sm) {
-        border-right: 0;
-        border-bottom: 1px solid white;
-      }
-    }
-  }
-
-  .advantage {
-    max-width: 296px;
-    margin-left: auto;
-    margin-right: auto;
-
-    .img {
-      min-height: 101px;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    h4 {
-      font-size: 1.111rem;
-    }
-
-    p {
-      font-size: 0.833rem;
-      /* 15/18 */
-      strong {
-        font-weight: 700;
-      }
-    }
-
-    .read-more-wrapper {
-      .read-more-content {
-        display: none;
-      }
-    }
-
-    .read-more {
-      span {
-        display: inline-block;
-        position: relative;
-        left: 3px;
-        top: 2px;
-        transform: rotate(90deg);
-      }
-
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-}
 
 section.learn-more {
   img.lm-bg {
@@ -443,93 +259,7 @@ section.learn-more {
   }
 }
 
-section.users {
-  .users-flex {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    justify-content: center;
 
-    .user-box {
-      width: 20%;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      border-left: 1px solid black;
-      border-top: 1px solid black;
-      height: 150px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .users-flex {
-      .user-box {
-        width: 33.3%;
-        height: calc((100vw - 30px) / 3);
-        padding: 10px;
-      }
-    }
-  }
-}
-
-section.testis {
-  overflow: hidden;
-  //
-  h2 {
-    font-weight: 300;
-  }
-
-  .testi-cartousel-wrapper {
-    position: relative;
-    max-width: 646px;
-    margin-left: auto;
-    margin-right: auto;
-
-    .testi {
-      font-weight: 300;
-
-      .quote {
-        span.line {
-          background: #fff;
-          height: 1px;
-          width: 95px;
-        }
-      }
-    }
-
-    .slick-track {
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      align-items: center;
-    }
-
-    .cs-slick-nav {
-      position: absolute;
-      background-color: transparent;
-      border: 0;
-      margin-top: auto;
-      margin-bottom: auto;
-      top: 0;
-      bottom: 0;
-      outline: 0 !important;
-
-      &.cs-slick-right {
-        transform: rotate(180deg);
-        right: -80px;
-      }
-
-      &.cs-slick-left {
-        left: -80px;
-      }
-    }
-  }
-}
 
 section.contact-us {
   form#mktoForm_2684 {
@@ -887,57 +617,6 @@ section.sign-up {
         z-index: 2;
         font-size: 14px;
         color: #fff;
-      }
-    }
-  }
-}
-
-footer#siteFooter {
-  background-image: url("../img/footer-bg.svg");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-color: #f7f7f7;
-  background-size: 24vw;
-  @media screen and (max-width: 991px) {
-    background-image: none;
-  }
-
-  .footer-left {
-    border-top: 1px solid rgba($gray, .5);
-    padding-top: 30px;
-    margin-top: 20px;
-
-    .footer-menu {
-      font-size: 15px;
-
-      h4 {
-        font-size: 16px;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 0;
-
-        li {
-          a {
-            color: #000;
-            transition: all 0.32s ease;
-            font-weight: 400;
-
-            &:hover {
-              color: $dark-blue;
-            }
-          }
-        }
-      }
-    }
-  }
-  ul.socials {
-    a {
-      transition: all 0.32s ease;
-      &:hover {
-        opacity: 0.5;
       }
     }
   }
@@ -1575,17 +1254,6 @@ ul.blue-bullets {
   background-color: $mid-blue;
 }
 
-.home-banner {
-  background-size: cover;
-  background-position: center;
-  @media screen and (max-width: 768px) {
-    background-size: 1920px 100%;
-  }   
-  p {
-    width: 536px;
-    max-width: 100%;
-  }
-}
 
 a.green-cta {
   color: white !important;
