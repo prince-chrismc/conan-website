@@ -58,7 +58,6 @@ const htmlMinifyOptions = {
 
 function justMove() {
     return through2.obj({}, async (file, enc, callback) => {
-        console.log(colors.fg.Cyan, `DEV: Skipping minification of ${file.basename}`, colors.Reset);
         callback(null, file);
     });
 }

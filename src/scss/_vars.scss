@@ -10,6 +10,7 @@ $bright-gray: #eaebee;
 $conan-light-blue: #21AFFF;
 $conan-dark-blue: #0086FD;
 $main-font: 'Roboto', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 
 $xl: '1399.98px';
 $lg: '1199.98px';
@@ -29,8 +30,3 @@ $xxs: '478.98px';
 @mixin artifactory-gradient-bg {
   background: linear-gradient(92.17deg, #40BE46 6.81%, #62DA68 83.22%);
 }
-
-@mixin conan-gradient-border {
-  border-color: linear-gradient(95deg, $conan-dark-blue 100%, $conan-light-blue 100%);
-}
-$gradient-test: linear-gradient(95deg, $conan-dark-blue 100%, $conan-light-blue 100%);
