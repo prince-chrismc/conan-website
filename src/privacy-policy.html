@@ -523,48 +523,6 @@
         </div>
       </div>
     </section>
-    <section class="sign-up py-5 bg-blue white text-center" id="signUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="h2 white d-flex justify-content-center"
-              id="signUpTitle"
-            >
-              <div class="position-relative">
-                <img
-                  src="img/letter.svg"
-                  alt="Sign Up"
-                  class="position-absolute letter lazy"
-                />
-              </div>
-              <span>SIGN ME UP FOR RELEASE UPDATES</span>
-            </div>
-            <div class="mktoFormWrapper">
-              <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
-              <div class="d-flex justify-content-center pt-3">
-                <form id="mktoForm_1479" class="text-center"></form>
-              </div>
-              <script>
-                MktoForms2.loadForm(
-                  "https://leap.jfrog.com",
-                  "256-FNZ-187",
-                  1479,
-                  function (form) {
-                    form.onSuccess(function (values, followUpUrl) {
-                      form.getFormElem().fadeOut();
-                      document.getElementById("signUpTitle").textContent =
-                        "Thanks! you have subscribed successfuly.";
-                      return false;
-                    });
-                  }
-                );
-              </script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     
     @@include('./templates/footer.html', {"noJS": true})
 

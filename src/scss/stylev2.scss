@@ -1,5 +1,17 @@
 @import 'vars';
 
+
+#onetrust-banner-sdk {
+  // DEV: SILENCE COOKIES
+  display: none !important;
+}
+
+h4, .h4 {
+  font-size: 1.111rem;
+  font-weight: 700;
+}
+
+
 #masthead {
   .btn {
     height: 3vh;
@@ -20,10 +32,12 @@
   transition: all 0.32s ease;
   border-radius: 50px;
   box-sizing: border-box;
-  height: 5vh;
+  height: 51px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &.bg-blue {
     &:hover {
@@ -44,6 +58,14 @@
     &:hover {
       background-color: #DEE7F9;
     }
+  }
+
+  &.conan-blue-gradient-bg,
+  &.artifactory-green-gradient-bg {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -73,7 +95,7 @@
 }
 
 
-body#hero {
+body#hero, body#heroFaq {
   h1 {
     font-style: normal;
     font-weight: 700;
@@ -90,19 +112,27 @@ body#hero {
 }
 
 
-section#hero {
-  .hero-bg {
-    top: 231px;
-    left: 0;
-    &.downloads-hero-bg {
-      top: 150px;
-    }
-    @media screen and (max-width: 480px) {
-      .homepage-hero-paragraph {
-        font-size: 1rem;
-      }
+section#faqQuestions {
+  background: linear-gradient(0deg, rgba(216, 240, 255, 0) 0%, rgba(232, 246, 255, 0.14) 29.69%, #FBFDFF 100%);
+}
+
+
+.hero-bg {
+  top: 231px;
+  left: 0;
+
+  &.downloads-hero-bg {
+    top: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    .homepage-hero-paragraph {
+      font-size: 1rem;
     }
   }
+}
+
+section#hero, section#heroFaq {
+  background: linear-gradient(180deg, rgba(216, 240, 255, 0) 0%, rgba(232, 246, 255, 0.14) 29.69%, #FBFDFF 90.16%);
 
   .hero-content {
     // max-width: 616px;
@@ -117,6 +147,25 @@ section#hero {
       @media screen and (max-width: 480px) {
         font-size: 1rem;
       }
+    }
+  }
+}
+
+
+.faq-questions {
+  .container {
+    border-bottom: 1px solid #E6E6E6;
+
+    @media screen and (max-width: 480px) {
+      border-bottom: 0;
+    }
+  }
+  li.faq-anchor {
+    list-style: none;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    a {
+      color: darken($blue, 20%);
     }
   }
 }
@@ -139,7 +188,6 @@ section.advantages {
       margin-top: 10%;
       margin-right: 10%;
       margin-left: 10%;
-      font-size: 1.111rem;
     }
 
     p {
@@ -178,7 +226,12 @@ section.advantages {
 }
 
 section.diagram {
-  background: linear-gradient(180deg, #D5EFFF 0%, rgba(235, 247, 255, 0) 100%);;
+  background: linear-gradient(180deg, #D5EFFF 0%, rgba(235, 247, 255, 0) 100%);
+  p {
+    font-weight: 400;
+    font-size: 0.888rem;
+    line-height: 23.95px;
+  }
 }
 
 
@@ -188,7 +241,8 @@ section.diagram {
     background-size: 1920px 100%;
   }
   p {
-    width: 536px;
+    font-weight: 400;
+    font-size: 1.11rem;
     max-width: 100%;
   }
 }
@@ -196,6 +250,7 @@ section.diagram {
 .header-bg {
   background: linear-gradient(180deg, #D5EFFF 0%, rgba(235, 247, 255, 0) 100%);
   width: 100%;
+  z-index: -2;
 }
 
 .conan-card {
@@ -203,15 +258,11 @@ section.diagram {
   box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.63125px rgba(0, 0, 0, 0.035);
 }
 
+
 .customer-success {
   background: linear-gradient(183.92deg, #FFFFFF 3.21%, #CBEBFF 113.24%, #A9DCFC 158.55%);
-  h4 {
-    font-weight: 700;
-    font-size: 22px;
-  }
   .success-stories {
-    h4 {
-      font-weight: 700;
+    h5 {
       font-size: 18px;
       line-height: 139%;
     }
@@ -235,6 +286,11 @@ section.testis {
   //
   h2 {
     font-weight: 300;
+  }
+
+  p.text {
+    font-family: $secondary-font;
+    font-weight: 400;
   }
 
   .testi-cartousel-wrapper {
@@ -281,6 +337,19 @@ section.testis {
         left: -80px;
       }
     }
+  }
+
+  .company-logo {
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: none;
+      object-position: 50% 50%
+    }
+  }
+
+  .company-quote {
+    width: 70%;
   }
 }
 
@@ -333,15 +402,9 @@ footer#siteFooter {
   }
 }
 
-section.users {
-  .users-flex {
-    .user-box {
-      width: 20%;
-      padding: 20px;
-    }
-  }
-}
-
+// section.users-voices {
+//   color: white;
+// }
 
 section.sign-up {
   @media screen and (max-width: 768px) {
@@ -586,14 +649,16 @@ section.sign-up {
 }
 
 .conan-center-icon {
-  color: $conan-light-blue;
+  // Witchery to get this to show up as $conan-dark-blue
+  filter: invert(37%) sepia(52%) saturate(5711%) hue-rotate(195deg) brightness(106%) contrast(105%);
 }
 
 
 section.users {
+
   .users-flex {
     flex-wrap: wrap;
-    gap: 20px 1%;
+    gap: 40px 1%;
     justify-content: center;
 
     .user-box {
@@ -602,6 +667,8 @@ section.users {
       }
       padding: 20px;
       height: 150px;
+      width: 14vw;
+      padding: 20px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -634,5 +701,63 @@ section.users {
 @media screen and (max-width: $sm) {
   .get-involved-btn {
     display: none !important;
+  }
+}
+
+.learn-more-ce-link {
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: underline;
+}
+.success-icon-bg {
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+
+#faqAccordion {
+  li.faq-element {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 15px;
+    .top {
+      cursor: pointer;
+    }
+    .question {
+      font-size: 0.88rem;
+      line-height: 1.2;
+      font-weight: 700;
+      transition: all 0.32s ease;
+      max-width: 900px;
+
+      @media screen and (min-width: 480px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+      }
+    }
+    .answer {
+      font-size: 0.808rem;
+      color: #757575;
+      max-width: 900px;
+      font-weight: 300;
+      a {
+        color: $darker-blue;
+        text-decoration: underline;
+      }
+
+      @media screen and (min-width: 480px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        color: black;
+      }
+    }
+    path,svg {
+      transition: all 0.32s ease;
+    }
+  }
+
+  li.faq-element:nth-child(even) {
+    background-color: rgba(235, 247, 255, 0.1);
   }
 }

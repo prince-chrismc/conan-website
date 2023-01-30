@@ -19,19 +19,24 @@
   <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WK44ZFM');</script>
 </head>
 
-<body class="downloads"> <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
-      style="display:none;visibility:hidden" width="0"></iframe> </noscript>
+<body class="downloads">
+
+
+<noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
+      style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
   
   @@include('./templates/header.html')
 
   
-  <section class="downloads-hero position-relative" id="downloadsHero"><img alt="Conan C++ Package Manager"
-      class="position-absolute hero-bg downloads-hero-bg d-none d-xl-inline d-only-hero-bg"
-      src="img/downloads-hero-bg-new.svg">
+  <section class="downloads-hero position-relative" id="downloadsHero">
+
+    <img src="img/conan-cubes.svg" class="position-absolute hero-bg" alt="Conan C++ Package Manager"/>
+
     <div class="container">
       <div class="row">
         <div class="col-12 py-5">
-          <h1 class="font-weight-bold text-center">Downloads</h1>
+          <h1 class="black text-center">Downloads</h1>
         </div>
       </div>
     </div>
@@ -114,8 +119,8 @@
                     </a></p>
                 </div>
               </div>
-              <div class="cta-wrapper"><a class="ncta bg-blue d-inline-block"
-                  href="https://docs.conan.io/en/latest/getting_started.html">Getting Started With Conan </a></div>
+              <div class="cta-wrapper"><a class="btn conan-blue-gradient-bg white font-weight-bold"
+                  href="https://docs.conan.io/en/latest/getting_started.html">Getting Started With Conan</a></div>
             </div>
           </div>
         </div>
@@ -248,9 +253,9 @@
                       href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz"></a>
                   </div>
                 </div>
-                <div class="cta-wrapper"><a class="ncta bg-green d-inline-block mt-0"
+                <div class="cta-wrapper"><a class="btn artifactory-green-gradient-bg"
                     href="https://docs.conan.io/en/latest/uploading_packages/artifactory/artifactory_ce.html">Getting Started with
-                    Artifactory CE </a></div>
+                    Artifactory CE</a></div>
               </div>
             </div>
           </div>
@@ -274,24 +279,7 @@
       </div>
     </div>
   </section>
-  <section class="sign-up py-5 bg-blue white text-center" id="signUp">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="h2 white d-flex justify-content-center" id="signUpTitle">
-            <div class="position-relative"><img alt="Sign Up" class="position-absolute letter lazy"
-                data-src="img/letter.svg"></div> <span>SIGN ME UP FOR RELEASE UPDATES</span>
-          </div>
-          <div class="mktoFormWrapper">
-            <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
-            <div class="d-flex justify-content-center pt-3">
-              <form class="text-center" id="mktoForm_1479"></form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
  
   @@include('./templates/footer.html', {"noJS": false})
 
