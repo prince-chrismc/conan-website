@@ -74,7 +74,6 @@ h4, .h4 {
 }
 
 .hero-bg, .contact-bg {
-  width: 15.6vw;
   max-width: 300px;
 }
 
@@ -548,6 +547,9 @@ section.sign-up form.footer-form .form-checkbox [type=checkbox]:checked + span:b
   color: #fff;
 }
 
+.footer-links {
+  gap: 15px;
+}
 .footer-links a {
   color: white;
 }

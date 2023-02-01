@@ -90,7 +90,6 @@ h4, .h4 {
 
 
 .hero-bg, .contact-bg {
-  width: 15.6vw;
   max-width: 300px;
 }
 
@@ -646,6 +645,7 @@ section.sign-up {
   a:hover {
     text-decoration: underline;
   }
+  gap: 15px;
 }
 
 .conan-center-icon {
