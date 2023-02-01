@@ -129,7 +129,9 @@ section#faqQuestions {
     }
   }
 }
-
+.artifactory-buttons {
+  gap: 5px;
+}
 section#hero, section#heroFaq {
   background: linear-gradient(180deg, rgba(216, 240, 255, 0) 0%, rgba(232, 246, 255, 0.14) 29.69%, #FBFDFF 90.16%);
 
