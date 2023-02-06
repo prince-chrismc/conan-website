@@ -48,7 +48,7 @@ h4, .h4 {
 .btn.bg-bright-gray:hover {
   background-color: #DEE7F9;
 }
-.btn.conan-blue-gradient-bg, .btn.artifactory-green-gradient-bg {
+.btn.conan-blue-gradient-bg, .btn.conan-blue-to-dark-gradient-bg, .btn.artifactory-green-gradient-bg {
   font-size: 1.05rem;
   font-weight: 700;
   color: white;
@@ -60,12 +60,21 @@ h4, .h4 {
   border-radius: 50px;
 }
 
+.conan-blue-to-dark-gradient-bg {
+  background: linear-gradient(272.14deg, #000000 -21.83%, #0086FD 50.03%, #21AFFF 93.6%);
+}
+
 .conan-blue-bg {
   background-color: #21AFFF;
 }
 
 .conan-blue-border {
   border: 2px solid #21AFFF;
+  border-radius: 50px;
+}
+
+.conan-white-border {
+  border: 2px solid white;
   border-radius: 50px;
 }
 

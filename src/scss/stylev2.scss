@@ -61,6 +61,7 @@ h4, .h4 {
   }
 
   &.conan-blue-gradient-bg,
+  &.conan-blue-to-dark-gradient-bg,
   &.artifactory-green-gradient-bg {
     font-size: 1.05rem;
     font-weight: 700;
@@ -74,12 +75,21 @@ h4, .h4 {
   border-radius: 50px;
 }
 
+.conan-blue-to-dark-gradient-bg {
+  background: linear-gradient(272.14deg, #000000 -21.83%, #0086FD 50.03%, #21AFFF 93.6%);
+}
+
 .conan-blue-bg {
   background-color: $conan-light-blue;
 }
 
 .conan-blue-border {
   border: 2px solid $conan-light-blue;
+  border-radius: 50px;
+}
+
+.conan-white-border {
+  border: 2px solid white;
   border-radius: 50px;
 }
 
