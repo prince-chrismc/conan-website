@@ -37,7 +37,7 @@ const faqArray = [
   {
     q: `Can I create my own private repository for hosting Conan packages?`,
     a:
-      `Yes, Conan includes the ability to <a href="https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager" target="_blank" rel="noopener noreferrer">create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C/C++ is a free edition, which is designed to provide the C/C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.`,
+      `Yes, Conan includes the ability to <a href="https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager" target="_blank" rel="noopener noreferrer">create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C and C++ is a free edition, which is designed to provide the C and C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.`,
   },
   {
     q: `What platforms can I use Conan with?`,
@@ -62,7 +62,7 @@ const faqArray = [
   {
     q: `How active is the Conan project?`,
     a:
-      `In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2022, Conan received over <a href="https://github.com/conan-io/conan-io.github.io/pulls" target="_blank" rel="noopener noreferrer">5500 PRs</a> in total. Also, the #conan slack channel has 1200 members, and is one of the most active channels in the <a href="https://cppalliance.org/slack/" target="_blank" rel="noopener noreferrer">C++ community</a>.`,
+      `In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2022, Conan received over <a href="https://github.com/conan-io/conan-io.github.io/pulls" target="_blank" rel="noopener noreferrer">5500 PRs</a> in total. Also, the #conan Slack channel has over 2400 members, and is one of the most active channels in the <a href="https://cppalliance.org/slack/" target="_blank" rel="noopener noreferrer">C++ community</a>.`,
   },
   {
     q: `What resources exist to help me learn Conan?`,
