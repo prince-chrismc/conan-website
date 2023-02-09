@@ -159,6 +159,7 @@ section#hero .hero-content h2, section#heroFaq .hero-content h2 {
 section.advantages .advantage {
   margin-left: auto;
   margin-right: auto;
+  background: white;
 }
 section.advantages .advantage .img {
   min-height: 101px;
@@ -372,11 +373,15 @@ section.sign-up form#mktoForm_1479 {
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  width: 535px !important;
 }
 @media screen and (max-width: 480px) {
   section.sign-up form#mktoForm_1479 {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.sign-up form#mktoForm_1479 {
+    width: 535px !important;
   }
 }
 section.sign-up form#mktoForm_1479 h2 {

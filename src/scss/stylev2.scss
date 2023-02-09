@@ -185,6 +185,7 @@ section.advantages {
   .advantage {
     margin-left: auto;
     margin-right: auto;
+    background: white;
 
     .img {
       min-height: 101px;
@@ -438,10 +439,14 @@ section.sign-up {
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
-    width: 535px !important;
+
 
     @media screen and (max-width: 480px) {
       justify-content: center;
+    }
+
+    @media  screen and (min-width: 768px) {
+      width: 535px !important;
     }
 
     h2 {

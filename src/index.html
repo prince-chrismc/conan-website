@@ -51,7 +51,7 @@
 
 <!-- HERO -->
 <section id="hero" class="position-relative">
-    <img src="img/conan-cubes.svg" class="d-none d-md-block position-absolute hero-bg" alt="Conan C++ Package Manager"/>
+    <img src="img/conan-cubes.svg" class="d-none d-lg-block position-absolute hero-bg" alt="Conan C++ Package Manager"/>
 
     <a href="#mktoForm_1479" class="btn conan-blue-gradient-bg position-fixed get-involved-btn pl-3 pr-3">Get involved</a>
 
@@ -130,9 +130,9 @@
                     <h4 class="mt-3 text-left font-weight-bold">Conan is universal and portable.</h4>
                     <div class="advantage-text text-left pb-2">
                         <p class="mt-3 line-1">
-                            It works in all operating systems including Windows, Linux, OSX, FreeBSD, Solaris, and others,
+                            It works in all operating systems including Windows, Linux, OSX, FreeBSD, and others,
                             and it can target any platform, including desktop, server,
-                            and cross-building for embedded and bare metal devices.
+                            and cross-building for mobile (Android and iOS), as well as embedded and bare metal devices.
                             It integrates with other tools like Docker, MinGW, WSL,
                             and with all build systems such as CMake, MSBuild, Makefiles, Meson, SCons.
                             It can even integrate with any proprietary build systems.
@@ -144,14 +144,14 @@
             <!-- ONE ADVANTAGE -->
             <div class="col-md-3 py-5 py-md-0 flex-fill">
                 <div class="advantage text-center black text-center conan-card">
-                    <h4 class="mt-3 text-left font-weight-bold">Conan is completely free and open source.</h4>
+                    <h4 class="mt-3 text-left font-weight-bold">Conan is open source and completely free.</h4>
                     <div class="advantage-text text-left pb-2">
                         <p class="mt-3 line-1">
                             It has native integration with JFrog Artifactory,
                             including the free Artifactory Community Edition for Conan,
                             enabling developers to host their own private packages on their own server.
-                            The ConanCenter central repository contains hundreds of popular open source libraries packages,
-                            with many pre-compiled binaries for mainstream compiler versions.
+                            Conan is developed by a full team of full-time maintainers who support many thousands of users,
+                            from small to big enterprises, alongside an active and awesome community.
                         </p>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
             </div>
 
         </div>
-        <img src="img/conan-single-cube.svg" class="d-none d-md-block position-absolute" style="right: 0"/>
+        <img src="img/conan-single-cube.svg" class="d-none d-lg-block position-absolute" style="right: 0"/>
         <div class="row d-flex py-md-5 align-items-stretch justify-content-center">
             <a href="https://docs.conan.io/en/2.0/introduction.html" class="learn-more-ce-link" id="learn_more_btn_middle">Learn more about Conan</a>
         </div>
@@ -188,10 +188,10 @@
 <section class="diagram py-3" id="diagram">
     <div class="container py-5">
         <div class="row d-flex justify-content-center pb-5">
-            <div class="col-1 pt-3">
+            <div class="col-md-auto py-3 d-flex justify-content-center">
                 <img src="img/artifactory-logo.svg"/>
             </div>
-            <div class="col-6 text-left diagram-wrapper">
+            <div class="col-8 col-md-6 text-left diagram-wrapper">
                 <h4 class="font-weight-bold">
                     Artifactory Community Edition for C and C++
                 </h4>
@@ -213,17 +213,18 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-5">
-            <div class="col-1 pt-3">
+            <div class="col-md-auto py-3 d-flex justify-content-center">
                 <img src="img/conancenter-logo.svg" />
             </div>
-            <div class="col-6 text-left diagram-wrapper">
+            <div class="col-8 col-md-6 text-left diagram-wrapper">
                 <h4 class="font-weight-bold">
                     ConanCenter, the place to find and share popular C and C++ Conan packages
                 </h4>
                 <p>
                     ConanCenter is the central repository where you can search and discover all the available
                     open source Conan packages created by the community. It includes recipe and configuration information,
-                    and makes it easy to see package metadata in the UI.
+                    and makes it easy to see package metadata in the UI. ConanCenter contains more than a thousand
+                    popular open source libraries packages, with many pre-compiled binaries for mainstream compiler versions and platforms.
                 </p>
                 <div class="d-inline">
                     <a href="https://conan.io/center/" class="btn conan-blue-gradient-bg white font-weight-bold"
