@@ -1,40 +1,28 @@
-<svg width="275" height="607" viewBox="0 0 275 607" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3636_2)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M123.861 300.312L274.421 375.746L127.618 455.517L-19.5791 368.822L123.861 300.312Z" fill="#86C7F7"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M-19.5791 368.822L127.224 446.647V597.442L-19.5791 507.81V368.822Z" fill="url(#paint0_linear_3636_2)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M127.224 446.648L274.027 375.746V514.771L127.224 597.443V446.648Z" fill="#A9DCFC"/>
+<svg width="275" height="408" viewBox="0 0 275 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3645_2)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M123.861 101.312L274.421 176.746L127.618 256.517L-19.5791 169.822L123.861 101.312Z" fill="#86C7F7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-19.5791 169.822L127.224 247.647V398.442L-19.5791 308.81V169.822Z" fill="url(#paint0_linear_3645_2)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127.224 247.648L274.027 176.746V315.771L127.224 398.443V247.648Z" fill="#A9DCFC"/>
 </g>
-<g clip-path="url(#clip1_3636_2)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.3936 199.312L158.421 263.407L33.5882 331.186L-91.5791 257.524L30.3936 199.312Z" fill="#86C7F7"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M-91.5791 257.523L33.2535 323.649V451.776L-91.5791 375.618V257.523Z" fill="url(#paint1_linear_3636_2)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M33.2534 323.649L158.086 263.407V381.532L33.2534 451.776V323.649Z" fill="#A9DCFC"/>
-</g>
-<g clip-path="url(#clip2_3636_2)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M188.407 0.312256L252.421 32.1129L190.005 65.7417L127.421 29.194L188.407 0.312256Z" fill="#86C7F7"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M127.421 29.1938L189.837 62.0024V125.573L127.421 87.7869V29.1938Z" fill="url(#paint2_linear_3636_2)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M189.837 62.0025L252.254 32.1128V90.7212L189.837 125.573V62.0025Z" fill="#A9DCFC"/>
+<g clip-path="url(#clip1_3645_2)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.3936 0.312256L158.421 64.4066L33.5882 132.186L-91.5791 58.5235L30.3936 0.312256Z" fill="#86C7F7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-91.5791 58.5234L33.2535 124.649V252.776L-91.5791 176.618V58.5234Z" fill="url(#paint1_linear_3645_2)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.2534 124.649L158.086 64.4066V182.532L33.2534 252.776V124.649Z" fill="#A9DCFC"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear_3636_2" x1="-9.84866" y1="395.248" x2="106.509" y2="398.079" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_3645_2" x1="-9.84866" y1="196.248" x2="106.509" y2="199.079" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0086FD"/>
 <stop offset="1" stop-color="#21AFFF"/>
 </linearGradient>
-<linearGradient id="paint1_linear_3636_2" x1="-83.3049" y1="279.977" x2="15.6384" y2="282.386" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_3645_2" x1="-83.3049" y1="80.9766" x2="15.6384" y2="83.3856" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0086FD"/>
 <stop offset="1" stop-color="#21AFFF"/>
 </linearGradient>
-<linearGradient id="paint2_linear_3636_2" x1="131.558" y1="40.3341" x2="181.029" y2="41.5479" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0086FD"/>
-<stop offset="1" stop-color="#21AFFF"/>
-</linearGradient>
-<clipPath id="clip0_3636_2">
-<rect width="294" height="306" fill="white" transform="translate(-19.5791 300.312)"/>
+<clipPath id="clip0_3645_2">
+<rect width="294" height="306" fill="white" transform="translate(-19.5791 101.312)"/>
 </clipPath>
-<clipPath id="clip1_3636_2">
-<rect width="250" height="260" fill="white" transform="translate(-91.5791 199.312)"/>
-</clipPath>
-<clipPath id="clip2_3636_2">
-<rect width="125" height="129" fill="white" transform="translate(127.421 0.312256)"/>
+<clipPath id="clip1_3645_2">
+<rect width="250" height="260" fill="white" transform="translate(-91.5791 0.312256)"/>
 </clipPath>
 </defs>
 </svg>

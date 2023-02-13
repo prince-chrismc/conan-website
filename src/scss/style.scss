@@ -733,25 +733,6 @@ body.privacy-policy {
     }
   }
 }
-@media screen and (max-width: $xl) {
-  section#hero {
-    .hero-bg {
-      display: none;
-    }
-  }
-
-  section.learn-more {
-    img.lm-bg {
-      display: none;
-    }
-  }
-
-  section.contact-us {
-    img.contact-bg {
-      display: none;
-    }
-  }
-}
 
 .legal-page table {
   border: none;

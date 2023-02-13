@@ -817,19 +817,6 @@ body.privacy-policy ul {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 1399.98px) {
-  section#hero .hero-bg {
-    display: none;
-  }
-
-  section.learn-more img.lm-bg {
-    display: none;
-  }
-
-  section.contact-us img.contact-bg {
-    display: none;
-  }
-}
 .legal-page table {
   border: none;
   word-break: break-all;

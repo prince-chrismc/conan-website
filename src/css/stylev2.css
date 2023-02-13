@@ -104,7 +104,7 @@ section#faqQuestions {
 }
 
 .hero-bg {
-  top: 231px;
+  top: 422px;
   left: 0;
 }
 .hero-bg.downloads-hero-bg {
@@ -230,6 +230,7 @@ section.diagram p {
 }
 
 .conan-card {
+  height: 100%;
   border-top: 9px solid #1FACFF;
   box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.63125px rgba(0, 0, 0, 0.035);
 }
@@ -617,11 +618,6 @@ section.users .users-flex .user-box img {
   background: linear-gradient(180deg, #0086FD 40.81%, #21AFFF 83.22%);
 }
 
-@media screen and (max-width: 767.98px) {
-  .get-involved-btn {
-    display: none !important;
-  }
-}
 .learn-more-ce-link {
   font-weight: 700;
   font-size: 1.05rem;
