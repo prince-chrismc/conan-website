@@ -85,19 +85,19 @@ function htmlUserStoriesTask() {
 
 function jsTask() {
     return src('src/js/*.js')
-        .pipe(mode.production(sourcemaps.init('.')))
+        .pipe(sourcemaps.init('.'))
         .pipe(concat('all.js'))
         .pipe(mode.production(terser()))
-        .pipe(mode.production(sourcemaps.write('.')))
+        .pipe(sourcemaps.write('.'))
         .pipe(dest(path.join(buildOutputFolder, 'js')));
 }
 
 function scssTask() {
     return src('src/scss/*.scss')
-        .pipe(mode.production(sourcemaps.init('.')))
+        .pipe(sourcemaps.init('.'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('src/css'))
-        .pipe(mode.production(sourcemaps.write(buildOutputFolder)));
+        .pipe(sourcemaps.write(buildOutputFolder));
 }
 
 function cssTask() {
@@ -179,6 +179,16 @@ function imgTribe2020() {
         .pipe(gulp.dest(path.join(buildOutputFolder, 'img', 'conan-tribe')));
 }
 
+function slickFonts() {
+    return src('./slick/fonts/*')
+        .pipe(gulp.dest(path.join(buildOutputFolder, 'css', 'fonts')));
+}
+
+function slickLoadingGif() {
+    return src('./slick/ajax-loader.gif')
+        .pipe(gulp.dest(path.join(buildOutputFolder, 'css')));
+}
+
 function watchAll() {
     const htmlWatcher = watch(['src/*', 'src/templates/*', 'src/data/*', 'src/data/user-stories/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
     htmlWatcher.on('change', function (path, stats) {
@@ -229,6 +239,8 @@ exports.imgUserStoriesTask = imgUserStoriesTask;
 exports.imgourusersTask = imgourusersTask;
 exports.imgsocialTask = imgsocialTask;
 exports.imgTribe2020 = imgTribe2020;
+exports.slickFonts = slickFonts;
+exports.slickLoadingGif = slickLoadingGif;
 
 exports.watchAll = watchAll;
 
@@ -243,7 +255,9 @@ exports.imagesTask = series(
     imgUserStoriesTask,
     imgourusersTask,
     imgsocialTask,
-    imgTribe2020
+    imgTribe2020,
+    slickFonts,
+    slickLoadingGif
 );
 exports.generalHtmlTask = series(
     htmlTask,

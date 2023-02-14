@@ -302,9 +302,9 @@ section.testis .testi-cartousel-wrapper .cs-slick-nav.cs-slick-left {
   left: -80px;
 }
 section.testis .company-logo img {
-  width: 100%;
-  height: 150px;
-  object-fit: none;
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
   object-position: 50% 50%;
 }
 section.testis .company-quote {
@@ -594,7 +594,7 @@ section.users .users-flex .user-box {
 section.users .users-flex .user-box img {
   object-fit: contain;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575.98px) {
   section.users .users-flex .user-box {
     width: 33.3%;
     height: calc((100vw - 30px) / 3);
