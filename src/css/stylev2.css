@@ -307,6 +307,9 @@ section.testis .company-logo img {
   object-fit: contain;
   object-position: 50% 50%;
 }
+section.testis .company-logo.logo-squared img {
+  width: 50px !important;
+}
 section.testis .company-quote {
   width: 70%;
 }
