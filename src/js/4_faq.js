@@ -37,7 +37,7 @@ const faqArray = [
   {
     q: `Can I create my own private repository for hosting Conan packages?`,
     a:
-      `Yes, Conan includes the ability to <a href="https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager" target="_blank" rel="noopener noreferrer">create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C/C++ is a free edition, which is designed to provide the C/C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.`,
+      `Yes, Conan includes the ability to <a href="https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager" target="_blank" rel="noopener noreferrer">create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C and C++ is a free edition, which is designed to provide the C and C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.`,
   },
   {
     q: `What platforms can I use Conan with?`,
@@ -47,7 +47,7 @@ const faqArray = [
   {
     q: `Is Conan Stable?`,
     a:
-      `Yes.  Conan maintains a <a href="https://docs.conan.io/en/latest/introduction.html#stable" target="_blank" rel="noopener noreferrer">strong commitment to stability</a>. Packages built with a major version such as Conan 1.x will continue to work for all future Conan 1.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 2.x for example).`,
+      `Yes.  Conan maintains a <a href="https://docs.conan.io/en/latest/introduction.html#stable" target="_blank" rel="noopener noreferrer">strong commitment to stability</a>. Packages built with a major version such as Conan 2.x will continue to work for all future Conan 2.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 3.x for example).`,
   },
   {
     q: `How is Conan licensed?`,
@@ -57,12 +57,12 @@ const faqArray = [
   {
     q: `How is the Conan project maintained?`,
     a:
-      `<a href="http://jfrog.com/" target="_blank" rel="noopener noreferrer">JFrog Inc.</a> maintains Conan with a dedicated full-time development team .  This team includes the Conan founders, and several additional developers. The Conan team also has a formal community engagement and feedback strategy known as the <a href="https://conan.io/tribe.html" target="_blank" rel="noopener noreferrer">Conan Tribe</a>. The tribe is composed of over 70 volunteers from the Conan user community who have committed to providing input on major roadmap decisions whenever the Conan team requests it. `,
+      `<a href="http://jfrog.com/" target="_blank" rel="noopener noreferrer">JFrog Inc.</a> maintains Conan with a dedicated full-time development team. This team includes the Conan founders, and several additional developers. The Conan team also has a formal community engagement and feedback strategy known as the <a href="https://conan.io/tribe.html" target="_blank" rel="noopener noreferrer">Conan Tribe</a>. The tribe is composed of over 70 volunteers from the Conan user community who have committed to providing input on major roadmap decisions whenever the Conan team requests it. `,
   },
   {
     q: `How active is the Conan project?`,
     a:
-      `In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2020, Conan received over <a href="https://github.com/conan-io/conan-io.github.io/pulls" target="_blank" rel="noopener noreferrer">3500 PRs</a> in total. Also, the #conan slack channel has 1200 members, and is one of the most active channels in the <a href="https://cppalliance.org/slack/" target="_blank" rel="noopener noreferrer">C++ community</a>.`,
+      `In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2022, Conan received over <a href="https://github.com/conan-io/conan-io.github.io/pulls" target="_blank" rel="noopener noreferrer">5500 PRs</a> in total. Also, the #conan Slack channel has over 2400 members, and is one of the most active channels in the <a href="https://cppalliance.org/slack/" target="_blank" rel="noopener noreferrer">C++ community</a>.`,
   },
   {
     q: `What resources exist to help me learn Conan?`,
