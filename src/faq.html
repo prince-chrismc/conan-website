@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +10,7 @@
   >
   <meta
     name="description"
-    content="Conan is a dependency and package manager for C and C++ languages. It is free and open-source, and it works in all platforms: Windows, Linux, OSX etc." 
+    content="Conan is a dependency and package manager for C and C++ languages. It is free and open-source, and it works in all platforms: Windows, Linux, OSX etc."
   >
   <link href="favicon.png" rel="shortcut icon" type="image/png" />
   <link href="https://conan.io/faq.html" hreflang="en" rel="alternate" />
@@ -32,7 +32,7 @@
         "name": "What is Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Conan is a package manager for C and C++ which aims to solve some very common and difficult challenges. Not all developers have used a package manager before, so let’s briefly explain what that means. 
+          "text": "Conan is a package manager for C and C++ which aims to solve some very common and difficult challenges. Not all developers have used a package manager before, so let’s briefly explain what that means.
           First, the Conan package manager lets developers capture the artifacts which are created during builds of libraries and applications and store them as a “Conan Package”. This is often a combination of headers and libraries (static or dynamic), but can also include executables. Developers can then list the “Conan Packages” needed for other projects as “dependencies”, and Conan will pass all the artifacts to those projects as needed. With this strategy, package management with Conan provides a first-class mechanism for reusing code and sharing components across many projects. Finally, Conan has a server application upon which Conan repositories can be created. The Conan client can then upload and download Conan packages from these repositories, enabling developers to share packaged components among their teams, and across different development environments."
         }
       }, {
@@ -54,46 +54,46 @@
         "name": "Can I create my own Conan packages?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<p>Most Conan users leverage it to create packages for their own components in addition to using it as a method for consuming open-source packages. You can quickly learn how to create your own recipes for Conan packages following the [instructions in the documentation]. Once you’ve created some packages of your own, you can also learn how to <a href=https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager>upload them to your own private Conan repositories</a>.</p>"
+          "text": "<p>Most Conan users leverage it to create packages for their own components in addition to using it as a method for consuming open-source packages. You can quickly learn how to create your own recipes for Conan packages following the [instructions in the documentation]. Once you’ve created some packages of your own, you can also learn how to <a href=https://docs.conan.io/2/introduction.html#decentralized-package-manager>upload them to your own private Conan repositories</a>.</p>"
         }
       }, {
         "@type": "Question",
         "name": "Can Conan store/manage pre-compiled binaries?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, one of Conan’s core features is its ability to [store and manage pre-compiled binaries](https://docs.conan.io/en/latest/introduction.html#binary-management) of libraries and applications. When a Conan package is used to build a library or application, it stores the binaries in a local cache. These binaries can be uploaded and shared via a remote Conan repository. In this way, any number of unique configurations can be built and stored within a single package, including different operating systems, compilers, compiler versions and architectures."
+          "text": "Yes, one of Conan’s core features is its ability to [store and manage pre-compiled binaries](https://docs.conan.io/2/introduction.html#binary-management) of libraries and applications. When a Conan package is used to build a library or application, it stores the binaries in a local cache. These binaries can be uploaded and shared via a remote Conan repository. In this way, any number of unique configurations can be built and stored within a single package, including different operating systems, compilers, compiler versions and architectures."
         }
       }, {
         "@type": "Question",
         "name": "Can I Integrate my build system/tool with Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<p>Yes, Conan supports most <a href=https://docs.conan.io/en/latest/integrations.html>popular C and C++ build systems</a> out of the box, including CMake, Autotools, MSBuild, B2 and others. It is also extensible, enabling users to easily add support for custom or proprietary build systems, which are common in enterprise organizations. With Conan, you can build and package components regardless of what build system each component uses.</p>"
+          "text": "<p>Yes, Conan supports most <a href=https://docs.conan.io/2/integrations.html>popular C and C++ build systems</a> out of the box, including CMake, Autotools, MSBuild, B2 and others. It is also extensible, enabling users to easily add support for custom or proprietary build systems, which are common in enterprise organizations. With Conan, you can build and package components regardless of what build system each component uses.</p>"
         }
       }, {
         "@type": "Question",
         "name": "Can Conan manage different versions of the same library/package?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes, Conan has <a href=https://docs.conan.io/en/latest/versioning/introduction.html>robust comprehension of versioning</a>.  with Conan, each version of each library or package is managed independently in the repository. Any number of versions can be stored in the local cache or remote repository at the same time, each with its own pre-built binaries.  This is great when you have different applications which depend on different versions of the same library or package, or when you want to want to switch the version of a dependency for a given project.  Both cases are trivial and fully supported.</p>"}
+          "text":"<p>Yes, Conan has <a href=https://docs.conan.io/2/tutorial/consuming_packages/intro_to_versioning.html>robust comprehension of versioning</a>.  with Conan, each version of each library or package is managed independently in the repository. Any number of versions can be stored in the local cache or remote repository at the same time, each with its own pre-built binaries.  This is great when you have different applications which depend on different versions of the same library or package, or when you want to want to switch the version of a dependency for a given project.  Both cases are trivial and fully supported.</p>"}
         }, {
         "@type": "Question",
         "name": "Can I create my own private repository for hosting Conan packages?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes, Conan includes the ability to <a href=https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager>create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C and C++ is a free edition, which is designed to provide the C and C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.</p>"}
+          "text":"<p>Yes, Conan includes the ability to <a href=https://docs.conan.io/2/introduction.html#decentralized-package-manager>create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C and C++ is a free edition, which is designed to provide the C and C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.</p>"}
         }, {
         "@type": "Question",
         "name": "What platforms can I use Conan with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p><ahref=https://docs.conan.io/en/latest/introduction.html#all-platforms-all-build-systems-and-compilers>Conan is multi-platform</a>. This means two things. First, it means that the Conan client can run on Linux, Windows, macOS, and anywhere else python can run. Second, it means that it can build and store packages for any platform. If you have a compiler or cross-compiler which can target a platform, Conan can store the binaries for it. Common examples include mobile platforms like Android and IOS, real-time hardware platforms, and embedded hardware platforms including bare-metal devices.</p>"}
+          "text":"<p><ahref=https://docs.conan.io/2/introduction.html#all-platforms-all-build-systems-and-compilers>Conan is multi-platform</a>. This means two things. First, it means that the Conan client can run on Linux, Windows, macOS, and anywhere else python can run. Second, it means that it can build and store packages for any platform. If you have a compiler or cross-compiler which can target a platform, Conan can store the binaries for it. Common examples include mobile platforms like Android and IOS, real-time hardware platforms, and embedded hardware platforms including bare-metal devices.</p>"}
         }, {
         "@type": "Question",
         "name": "Is Conan Stable?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes.  Conan maintains a <a href=https://docs.conan.io/en/latest/introduction.html#stable>strong commitment to stability</a>. Packages built with a major version such as Conan 1.x will continue to work for all future Conan 1.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 2.x for example).</p>"}
+          "text":"<p>Yes.  Conan maintains a <a href=https://docs.conan.io/2/introduction.html#stable>strong commitment to stability</a>. Packages built with a major version such as Conan 1.x will continue to work for all future Conan 1.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 2.x for example).</p>"}
         }, {
         "@type": "Question",
         "name": "How is Conan licensed?",
@@ -117,7 +117,7 @@
         "name": "What resources exist to help me learn Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>The Conan team has created multiple interactive, self-paced Conan training courses. 
+          "text":"<p>The Conan team has created multiple interactive, self-paced Conan training courses.
           These courses are all available completely free, courtesy of JFrog in the <a href:https://academy.jfrog.com/series/conan/>JFrog academy</a></p>."}
         }]
     }
@@ -223,10 +223,10 @@
                               <p class="open-sans">
                                 Sign up for product updates and new features.
                               </p>
-                              
+
                               <div class="os-form">
                                 <form id="mktoForm_3511"></form>
-                                <p id="subscribeSuccess" class="black bold mb-0"></p> 
+                                <p id="subscribeSuccess" class="black bold mb-0"></p>
                               </div>
 
                           </div>
@@ -239,7 +239,7 @@
 
   <script src="js/all.js"></script>
 
-  
+
 
 </body>
 
