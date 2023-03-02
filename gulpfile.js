@@ -96,13 +96,6 @@ function scssTask() {
     return src('src/scss/*.scss')
         .pipe(sourcemaps.init('.'))
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('src/css'))
-        .pipe(sourcemaps.write(buildOutputFolder));
-}
-
-function cssTask() {
-    return src('src/css/*.css')
-        .pipe(sourcemaps.init('.'))
         .pipe(concat('all.css'))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write('.'))
@@ -203,12 +196,6 @@ function watchAll() {
         scssTask();
         console.log(colors.bg.Green, colors.fg.White, 'Success', colors.Reset);
     });
-    const cssWatcher = watch(['src/css/*']);
-    cssWatcher.on('change', function (path, stats) {
-        console.log(`File ${path} was changed, running cssTask`);
-        cssTask();
-        console.log(colors.bg.Green, colors.fg.White, 'Success', colors.Reset);
-    });
     const jsWatcher = watch(['src/js/*']);
     jsWatcher.on('change', function (path, stats) {
         console.log(`File ${path} was changed, running jsTask`);
@@ -224,7 +211,6 @@ function watchAll() {
 }
 
 exports.scssTask = scssTask;
-exports.cssTask = cssTask;
 exports.jsTask = jsTask;
 exports.htmlTask = htmlTask;
 exports.htmlUserStoriesTask = htmlUserStoriesTask;
@@ -244,7 +230,7 @@ exports.slickLoadingGif = slickLoadingGif;
 
 exports.watchAll = watchAll;
 
-exports.default = series(scssTask, cssTask, jsTask, htmlTask, htmlUserStoriesTask);
+exports.default = series(scssTask, jsTask, htmlTask, htmlUserStoriesTask);
 exports.imagesTask = series(
     imgTask,
     imgFaviconTask,
