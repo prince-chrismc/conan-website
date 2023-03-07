@@ -116,13 +116,6 @@ function imgFaviconTask() {
         .pipe(gulp.dest(buildOutputFolder));
 }
 
-function imgAdvantagesTask() {
-    return src('./src/img/advantages/*')
-        .pipe(mode.production(image()))
-        .pipe(mode.development(justMove()))
-        .pipe(gulp.dest(path.join(buildOutputFolder, 'img', 'advantages')));
-}
-
 function imgbrandsTask() {
     return src('./src/img/brands/*')
         .pipe(mode.production(image()))
@@ -217,7 +210,6 @@ exports.htmlUserStoriesTask = htmlUserStoriesTask;
 exports.imgTask = imgTask;
 
 exports.imgFaviconTask = imgFaviconTask;
-exports.imgAdvantagesTask = imgAdvantagesTask;
 exports.imgbrandsTask = imgbrandsTask;
 exports.imgdownloadsTask = imgdownloadsTask;
 exports.imglogoTask = imglogoTask;
@@ -234,7 +226,6 @@ exports.default = series(scssTask, jsTask, htmlTask, htmlUserStoriesTask);
 exports.imagesTask = series(
     imgTask,
     imgFaviconTask,
-    imgAdvantagesTask,
     imgbrandsTask,
     imgdownloadsTask,
     imglogoTask,
